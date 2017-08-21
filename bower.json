@@ -1,0 +1,17 @@
+{
+  "name": "new-horizon",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Cata Buades <catabuades@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

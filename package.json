@@ -1,0 +1,19 @@
+{
+  "name": "new-horizon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js --ignore /sessions"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "node-sass": "^4.5.3",
+    "pug": "^2.0.0-rc.3",
+    "strftime": "^0.10.0"
+  }
+}

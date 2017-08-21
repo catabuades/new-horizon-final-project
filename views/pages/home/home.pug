@@ -1,0 +1,48 @@
+extends ../layout
+
+block content
+  .background
+    nav.navbar.navbar-default
+      .container-fluid
+        .navbar-header
+          a(href='/logout')
+            button.btn.btn-default.navbar-btn(type='button') Sign out
+    .container.wrap
+      div.contentInfo
+        .form-group.col-xs-12.col-sm-10.col-sm-offset-2.col-md-8.col-md-offset-2
+          h1
+            | To-Do
+            small List
+          form(role='form', action='/tasks', method='POST')
+            .input-group
+              input.form-control.input-lg(type='text', placeholder='Type a new task...', name='title', autofocus)
+              span.input-group-btn
+                button.add-btn.btn.input-lg Add Task!
+        div.taskListBoxes.col-xs-12.col-sm-10.col-sm-offset-2.col-md-8.col-md-offset-2
+          ol.list-group
+            each task in tasks
+              if task.done === false
+                li.list-box.list-group-item.task-item
+                  div.content-box
+                    input.done.fa.fa-square-o(aria-hidden='true', type='checkbox', value=task._id)
+                    div.title-box
+                      span= task.title
+                        i.glyphicon.glyphicon-pencil
+                      form
+                        input(value=task.title)
+                  small= task.createdAt
+                  input.task-id(type='hidden', value=task._id)
+                  button.remove.pull-right Remove
+        div.col-xs-12.col-sm-10.col-sm-offset-2.col-md-8.col-md-offset-2.border
+          h1.completed
+            | Done
+            small List
+          ol.list-group
+            each task in tasks
+              if task.done === true
+                li.list-box.list-group-item.task-item 
+                  span= task.title
+                  input.task-id(type='hidden')
+                  p= task.createdAt
+                    //- |
+                    //- p= complete.timeCompleted
