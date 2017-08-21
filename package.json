@@ -4,7 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js --ignore /sessions"
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "build:scss": "node-sass src/scss/styles.scss client/css/styles.css",
+    "builde:scss:watch": "node-sass src/scss/styles.scss client/css/styles.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -12,8 +15,11 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
-    "node-sass": "^4.5.3",
     "pug": "^2.0.0-rc.3",
     "strftime": "^0.10.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0"
   }
 }

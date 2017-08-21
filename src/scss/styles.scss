@@ -1,0 +1,49 @@
+@import 'home';
+
+// nav {
+// 	padding-left: 30px;
+// 	.nav-style {
+// 		background-color: transparent;
+// 		border-color: none;
+// 	}
+// }
+
+nav.navbar.nav-style {
+	padding-left: 30px;
+	background-color: transparent;
+	border-color: none;
+	margin-bottom: 0;
+}
+
+nav ul li a {
+	color: #000000;
+}
+
+.header {
+	margin: 0;
+	background-color: #000000;
+	height: 80px;
+}
+
+.header h6 {
+	margin-top: 0;
+	padding-top: 20px;
+	padding-left: 70px;
+	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-style: italic;
+	font-size: 32px;
+	small {
+		padding-left: 20px;
+	}
+}
+
+img {
+	width: 90%;
+  	height: 200px !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+
+}
