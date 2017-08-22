@@ -6,49 +6,39 @@
     <title>Home</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:800i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" , href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel='stylesheet' , href='../../client/css/styles.css'>
 </head>
 
-<body>
+<body id='home'>
     <!-- navigator bar -->
-    <nav class="navbar nav-style">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href='#'>Booking Online</a></li>
-                    <li><a href='#'>Bikes</a></li>
-                    <li><a href='#'>Routes</a></li>
-                    <li><a href='#'>Where we are</a></li>
-                    <li><a href='#'>Contact</a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <nav class="navbar navbar-default">
+        <!-- nav collapse -->
+        <div class="navbar-header">
+            <button type="button" class="nav-button navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="home.html"><h1>NEW HORIZON<small>rent a bike</small></h1></a>
         </div>
-        <!-- /.container-fluid -->
+        <!-- @end nav collapse -->
+        <div class="inline collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class='white-link'><a href='catalogue.html'>Catalogue</a></li>
+                <li class='white-link'><a href='routes.html'>Routes</a></li>
+                <li class='white-link'><a href='contact.html'>Contact</a></li>
+                <li><a href='#'><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+            </ul>
+        </div>
     </nav>
     <!-- @end navigator bar -->
-    <!-- @begin header-->
-    <div class='header'>
-        <h6>NEW HORIZON<small>rent a bike</small></h6>
-    </div>
-    <!-- @end header -->
     <!-- @begin cover and searcher -->
     <div class='cover'>
         <div>
-            <!--             <div class='cover-left'>
-                <p>Rent your bike!</p>
-            </div> -->
             <div class='flex-container search-box'>
                 <form class="navbar-form navbar-left" role="search">
                     <div class="form-group">
@@ -105,26 +95,25 @@
         </div>
     </div>
     <!-- @end post cover -->
+    <!-- @begin footer -->
     <div class='footer'>
         <div class='container'>
             <div class='row'>
                 <div class='logo-footer col-sm-4 col-md-3'>
-                    <h6>NEW HORIZON<br><small>rent a bike</small></h6>
+                    <a href='home.html'><h6>NEW HORIZON<br><small>rent a bike</small></h6></a>
                 </div>
-                <div class='list-footer col-sm-4 col-md-3'>
-                    <ul>
+                <div class='list-footer col-sm-4 col-md-3 '>
+                    <ul class='custom-list'>
                         <li>MENU</li>
-                        <li><a href='#'>Booking Online</a></li>
-                        <li><a href='#'>Bikes</a></li>
-                        <li><a href='#'>Routes</a></li>
-                        <li><a href='#'>Where we are</a></li>
-                        <li><a href='#'>Contact</a></li>
+                        <li><a href='catalogue.html'>Catalogue</a></li>
+                        <li><a href='routes.html'>Routes</a></li>
+                        <li><a href='contact.html'>Contact</a></li>
                     </ul>
                 </div>
-                <div class='col-sm-4 col-md-3'>
-                    <ul>
+                <div class='list-footer col-sm-4 col-md-3'>
+                    <ul class='custom-list'>
                         <li>FOLLOW</li>
-                        <li><a href='#'>Facebook</a></li>
+                        <li><a href='https://www.facebook.com/newHorizonBikesRental'>Facebook</a></li>
                     </ul>
                 </div>
                 <div class='col-sm-4 col-md-3'>
@@ -138,7 +127,6 @@
             </div>
         </div>
     </div>
-    <!-- @begin footer -->
     <!-- @end footer -->
     <script src='https://code.jquery.com/jquery-2.0.3.min.js'></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>

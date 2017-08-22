@@ -1,5 +1,5 @@
 .cover {
-	background-image: url('images/home/slide3.jpg');
+	background-image: url('images/home/slide2.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center; 
@@ -89,5 +89,20 @@
 }
 
 .list-footer ul {
-	list-style: none;
+	list-style-type: none;
+	line-height: 25px;
+}
+
+.list-footer ul li:first-child {
+	font-weight: bold;
+}
+
+.custom-list {
+	padding-top: 6px;
+	color: #FFF;
+	font-family: 'Montserrat', sans-serif;
+	a {
+		color: #FFF;
+		font-family: 'Montserrat', sans-serif;
+	}
 }

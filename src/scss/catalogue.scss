@@ -1,0 +1,30 @@
+#catalogue .container {
+	padding-bottom: 30px;
+}
+
+.title-catalogue{
+	padding-top: 30px;
+	padding-left: 15px;
+	margin-top: 0;
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.thumbnail {
+	width: 100%;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    overflow: hidden;
+    img {
+    	background-size: contain;
+    }
+}
+
+h3 {
+	padding-left: 15px;
+}
+
+#catalogue .autofocus {
+	padding-top: 20px;
+}

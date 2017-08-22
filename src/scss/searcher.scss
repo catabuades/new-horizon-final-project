@@ -1,0 +1,62 @@
+.box-searcher-results {
+	margin-top: 20px;
+}
+
+.well h1{
+	padding-left: 15px;
+	margin-top: 0;
+	font-size: 27px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a.list-group-item {
+    height:auto;
+    min-height:220px;
+}
+a.list-group-item.active small {
+    color:#fff;
+}
+.stars {
+    margin:20px auto 1px;    
+}
+
+.pull-left {
+	width: 100%;
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    overflow: hidden;
+    img {
+    	background-size: contain;
+    	width: 100%;
+    	height: 200px;
+    }
+}
+
+h4.list-group-item-heading {
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+div.inline-block{
+	display: inline-block;
+}
+
+// div.filter-select {
+// 	display: flex;
+// 	justify-content: flex-end;
+// }
+
+
+.inline-block {
+	display: inline-block;
+}
+
+p.inline-block {
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+.button-add {
+	margin-top: 70px;
+}

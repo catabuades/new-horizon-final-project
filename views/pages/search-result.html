@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" , href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel='stylesheet' , href='../../client/css/styles.css'>
+</head>
+
+<body id='search-result'>
+    <nav class="navbar navbar-default">
+        <!-- nav collapse -->
+        <div class="navbar-header">
+            <button type="button" class="nav-button navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="home.html"><h1>NEW HORIZON<small>rent a bike</small></h1></a>
+        </div>
+        <!-- @end nav collapse -->
+        <div class="inline collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class='white-link'><a href='catalogue.html'>Catalogue</a></li>
+                <li class='white-link'><a href='routes.html'>Routes</a></li>
+                <li class='white-link'><a href='contact.html'>Contact</a></li>
+                <li><a href='#'><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- @end navigator bar -->
+    <!-- @begin cover and searcher -->
+    <div class='searcher'>
+        <div class='flex-container search-box'>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <p>Pick-Up</p>
+                    <input type="text" class="form-control input-lg" placeholder="21/08/17  9:00">
+                    <button type="button" class="btn btn-default btn-lg" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="form-group">
+                    <p>Drop-Off</p>
+                    <input type="text" class="form-control input-lg" placeholder="21/08/17  19:00">
+                    <button type="button" class="btn btn-default btn-lg" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                    </button>
+                    <button type="submit" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- @end cover and searcher -->
+    <!-- @begin search results -->
+    <div class='box-searcher-results'>
+        <div class="container">
+            <div class="row">
+                <div class="well">
+                    <h1 class='inline-block'>Search Result</h1>
+                    <div class='inline-block pull-right'>
+                        <p class='inline-block'>Filter by</p>
+                        <select>
+                            <option value='' selected disabled>type</option>
+                            <option>Road</option>
+                            <option>Mountain</option>
+                            <option>City</option>
+                            <option>E-bike</option>
+                            <option>Tandem</option>
+                            <option>Roller Skates</option>
+                        </select>
+                    </div>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">
+                            <div class="media col-md-3">
+                                <figure class="pull-left">
+                                    <img style="background-image: url(../../client/css/images/searcher-result/kross_vento7.png)" class="media-object img-rounded img-responsive">
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="list-group-item-heading">Kross Vento</h4>
+                                <p>Category: Road</p>
+                                <p class='inline-block'>Size:</p>
+                                <select>
+                                    <option value='' selected disabled>...</option>
+                                    <option>50 / XS</option>
+                                    <option>53 / S</option>
+                                    <option>56 / M</option>
+                                    <option>58 / L</option>
+                                    <option>60 / XL</option>
+                                </select>
+                                <p class='inline-block'>Pedals:</p>
+                                <select>
+                                    <option value='' selected disabled>...</option>
+                                    <option>Own pedals</option>
+                                    <option>Shimano SPD</option>
+                                    <option>Shimano SPL</option>
+                                    <option>Look Kio</option>
+                                </select>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">Insurance (1€ for day)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="button-add col-md-3 text-center">
+                                <button type="button" class="btn btn-default btn-lg btn-block">Add to book</button>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <div class="media col-md-3">
+                                <figure class="pull-left">
+                                    <img style="background-image: url(../../client/css/images/searcher-result/scott_sportster.jpg)" class="media-object img-rounded img-responsive">
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="list-group-item-heading">Scott Sportster</h4>
+                                <p>Category: Road</p>
+                                <p class='inline-block'>Size:</p>
+                                <select>
+                                    <option value='' selected disabled>...</option>
+                                    <option>50 / XS</option>
+                                    <option>53 / S</option>
+                                    <option>56 / M</option>
+                                    <option>58 / L</option>
+                                    <option>60 / XL</option>
+                                </select>
+                                <p class='inline-block'>Pedals:</p>
+                                <select>
+                                    <option value='' selected disabled>...</option>
+                                    <option>Own pedals</option>
+                                    <option>Shimano SPD</option>
+                                    <option>Shimano SPL</option>
+                                    <option>Look Kio</option>
+                                </select>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">Insurance (1€ for day)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="button-add col-md-3 text-center">
+                                <button type="button" class="btn btn-default btn-lg btn-block">Add to book</button>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <div class="media col-md-3">
+                                <figure class="pull-left">
+                                    <img style="background-image: url(../../client/css/images/searcher-result/trek_emondaS5.jpg)" class="media-object img-rounded img-responsive">
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="list-group-item-heading">Trek Emonda S5</h4>
+                                <p>Category: Road</p>
+                                <p class='inline-block'>Size:</p>
+                                <select>
+                                    <option value='' selected disabled>...</option>
+                                    <option>50 / XS</option>
+                                    <option>53 / S</option>
+                                    <option>56 / M</option>
+                                    <option>58 / L</option>
+                                    <option>60 / XL</option>
+                                </select>
+                                <p class='inline-block'>Pedals:</p>
+                                <select>
+                                    <option value='' selected disabled>...</option>
+                                    <option>Own pedals</option>
+                                    <option>Shimano SPD</option>
+                                    <option>Shimano SPL</option>
+                                    <option>Look Kio</option>
+                                </select>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">Insurance (1€ for day)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="button-add col-md-3 text-center">
+                                <button type="button" class="btn btn-default btn-lg btn-block">Add to book</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- @end search results -->
+    <!-- @begin footer -->
+    <div class='footer'>
+        <div class='container'>
+            <div class='row'>
+                <div class='logo-footer col-sm-4 col-md-3'>
+                    <a href='home.html'><h6>NEW HORIZON<br><small>rent a bike</small></h6></a>
+                </div>
+                <div class='list-footer col-sm-4 col-md-3 '>
+                    <ul class='custom-list'>
+                        <li>MENU</li>
+                        <li><a href='catalogue.html'>Catalogue</a></li>
+                        <li><a href='routes.html'>Routes</a></li>
+                        <li><a href='contact.html'>Contact</a></li>
+                    </ul>
+                </div>
+                <div class='list-footer col-sm-4 col-md-3 '>
+                    <ul class='custom-list '>
+                        <li>FOLLOW</li>
+                        <li><a href='https://www.facebook.com/newHorizonBikesRental'>Facebook</a></li>
+                    </ul>
+                </div>
+                <div class='col-sm-4 col-md-3 '>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- @end footer -->
+    <script src='https://code.jquery.com/jquery-2.0.3.min.js '></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js '></script>
+    <script src='../../client/js/main.js '></script>
+</body>
+
+</html>
