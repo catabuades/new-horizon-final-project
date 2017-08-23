@@ -3,12 +3,13 @@
 }
 
 .well {
+	box-shadow: none;
 	background-color: #FFF;
 	border: none;
 }
 
 figure.resume-image img {
-
+	background-color: #FFF;
 }
 
 .form-title {
@@ -22,7 +23,29 @@ figure.resume-image img {
 }
 
 .remove-button {
-	display: wrap;
-	align-items: flex-end;
+	
+}
 
+h4.list-group-item-heading {
+	margin-right: 10px;
+}
+
+h2.inline-block {
+	margin-top: 0;
+	color: #333;
+}
+
+.price-resume p {
+	padding-top: 8px;
+	display: flex;
+	justify-content: flex-end;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+p.total-price {
+	display: flex;
+	justify-content: flex-end;
+	font-weight: bold;
+	font-size: 20px;
 }

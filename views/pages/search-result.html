@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Search Results</title>
+    <title>Home</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:800i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -32,7 +32,7 @@
                     <li class='white-link'><a href='catalogue.html'>Catalogue</a></li>
                     <li class='white-link'><a href='routes.html'>Routes</a></li>
                     <li class='white-link'><a href='contact.html'>Contact</a></li>
-                    <li><a href='#'><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+                    <li><a href='booking.html'><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -42,7 +42,7 @@
     <!-- @end navigator bar -->
     <!-- @begin cover and searcher -->
     <div class='searcher'>
-        <div class='flex-container search-box'>
+        <div class='flex-container search-box searcherbar'>
             <form class="navbar-form" role="search">
                 <div class="form-group">
                     <p>Pick-Up</p>
@@ -51,7 +51,7 @@
                 <div class="form-group">
                     <p>Drop-Off</p>
                     <input type="date" class="form-control input-lg" placeholder="21/08/17  19:00">
-                    <button type="submit" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    <a href='search-result.html'><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
                 </div>
             </form>
         </div>
@@ -62,9 +62,9 @@
         <div class="container">
             <div class="row">
                 <div class="well">
-                    <h1 class='inline-block'>Search Result</h1>
+                    <h3 class='inline-block page-title'>Search Result</h1>
                     <div class='inline-block pull-right'>
-                        <p class='inline-block'>Filter by</p>
+                        <p class='inline-block size'>Filter by</p>
                         <select>
                             <option value='' selected disabled>type</option>
                             <option>Road</option>
@@ -85,7 +85,7 @@
                                     <h4 class="list-group-item-heading">Kross Vento</h4>
                                     <p>Category: Road</p>
                                 </div>
-                                <div class='col-md-4'>
+                                <div class='right-column-options col-md-4'>
                                     <p class='inline-block'>Size:</p>
                                     <select>
                                         <option value='' selected disabled>...</option>
@@ -123,7 +123,7 @@
                                     <h4 class="list-group-item-heading">Kross Vento</h4>
                                     <p>Category: Road</p>
                                 </div>
-                                <div class='col-md-4'>
+                                <div class='right-column-options col-md-4'>
                                     <p class='inline-block'>Size:</p>
                                     <select>
                                         <option value='' selected disabled>...</option>
@@ -161,7 +161,7 @@
                                     <h4 class="list-group-item-heading">Kross Vento</h4>
                                     <p>Category: Road</p>
                                 </div>
-                                <div class='col-md-4'>
+                                <div class='right-column-options col-md-4'>
                                     <p class='inline-block'>Size:</p>
                                     <select>
                                         <option value='' selected disabled>...</option>

@@ -17,7 +17,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <a class="navbar-brand" href="#"><h1>NEW HORIZON<small>rent a bike</small></h1></a>
+            <a class="navbar-brand" href="home.html"><h1>NEW HORIZON<small>rent a bike</small></h1></a>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
@@ -32,7 +32,7 @@
                     <li class='white-link'><a href='catalogue.html'>Catalogue</a></li>
                     <li class='white-link'><a href='routes.html'>Routes</a></li>
                     <li class='white-link'><a href='contact.html'>Contact</a></li>
-                    <li><a href='#'><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+                    <li><a href='booking.html'><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -45,33 +45,58 @@
         <div class="container">
             <div class="row">
                 <div class="well">
-                    <h1 class='inline-block'>Resume</h1>
+                    <h3 class='inline-block page-title'>Resume</h1>
                     <div class="list-group">
                         <div class='row'>
-                            <a href="#" class="list-group-item">
-                                <div class="media col-md-3">
+                            <a href="#" class="col-md-6 list-group-item">
+                                <div class="media col-md-4">
                                     <figure class="pull-left resume-image">
                                         <img style="background-image: url(../../client/css/images/searcher-result/kross_vento7.png)" class="media-object img-rounded img-responsive">
                                     </figure>
                                 </div>
-                                <div class="col-md-5">
-                                    <h4 class="list-group-item-heading">Kross Vento [S]</h4>
+                                <div class="col-md-8">
+                                    <h4 class="inline-block list-group-item-heading">Kross Vento</h4><h2 class='inline-block'>S</h2>
                                     <p>Category: Road</p>
                                     <p><span class='bold'>Dates:</span> 29/09/17 to 04/10/17</p>
                                     <p><span class='bold'>Description:</span> Road Kross Vento, size S, own pedals</p>
-                                </div>
-                                <div class='col-md-4'>
                                     <div>
                                         <p class='inline-block'>Quantity:</p>
                                         <input type="number" class="inline-block form-control" id="quantity" value="">
                                     </div>
+                                    <div class='price-resume'>
+                                        <p>Price: xxxx</p>
+                                    </div>
                                     <div class="remove-button text-center">
-                                        <button type="button" class=" btn btn-default btn-block">Remove</button>
+                                        <button type="button" class=" btn btn-danger btn-block">Remove</button>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="col-md-6 list-group-item">
+                                <div class="media col-md-4">
+                                    <figure class="pull-left resume-image">
+                                        <img style="background-image: url(../../client/css/images/searcher-result/specialized-allez.jpg)" class="media-object img-rounded img-responsive">
+                                    </figure>
+                                </div>
+                                <div class="col-md-8">
+                                    <h4 class="inline-block list-group-item-heading">Specialized Allez</h4><h2 class='inline-block'>L</h2>
+                                    <p>Category: Road</p>
+                                    <p><span class='bold'>Dates:</span> 29/09/17 to 04/10/17</p>
+                                    <p><span class='bold'>Description:</span> Road Kross Vento, size L, pedals SDL</p>
+                                    <div>
+                                        <p class='inline-block'>Quantity:</p>
+                                        <input type="number" class="inline-block form-control" id="quantity" value="">
+                                    </div>
+                                    <div class='price-resume'>
+                                        <p>Price: xxxx</p>
+                                    </div>
+                                    <div class="remove-button text-center">
+                                        <button type="button" class=" btn btn-danger btn-block">Remove</button>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     </div>
+                    <p class='total-price'>Total price: €€€€</p>
                 </div>
             </div>
         </div>
@@ -162,7 +187,7 @@
                         </div>
                     </div>
                 </fieldset>
-                <a href="#" class="btn btn-default btn-default col-md-offset-4 col-md-4">Submit</a>
+                <a href="#" class="btn btn-warning col-md-offset-4 col-md-4">Book Now</a>
             </form>
         </div>
     </div>

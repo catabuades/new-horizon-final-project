@@ -15,10 +15,10 @@
 // app.use(bodyParser.urlencoded({ extended: false }))
 // app.use(bodyParser.json())
 
-// app.use(routesApp)
+// // app.use(routesApp)
 
-// app.get('/', (req, res) => {
-//   res.render('pages/home')
+// app.get('/search-results', (req, res) => {
+//   res.sendFile(path.join(__dirname, '/views/pages/search-result.html'))
 // })
 
 // app.listen(PORT)

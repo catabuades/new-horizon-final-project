@@ -3,6 +3,7 @@
 @import 'catalogue';
 @import 'booking';
 @import 'contact';
+@import 'bike-info';
 
 // nav {
 // 	padding-left: 30px;
@@ -97,5 +98,14 @@ img {
 
 .list-footer ul li:first-child {
 	font-weight: bold;
+}
+
+h3.page-title {
+	padding-top: 20px;
+    padding-left: 10px;
+    margin-top: 0;
+    font-size: 27px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
 }
 

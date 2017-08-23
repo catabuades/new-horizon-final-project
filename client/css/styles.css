@@ -40,6 +40,14 @@
     color: #FFF;
     font-family: 'Montserrat', sans-serif; }
 
+span.glyphicon.glyphicon-search {
+  color: white;
+  padding-left: 10px;
+  font-size: 20px; }
+
+.thumbnail {
+  border: none; }
+
 .box-searcher-results {
   margin-top: 20px; }
 
@@ -66,9 +74,13 @@ a.list-group-item.active small {
   background-position: center center;
   overflow: hidden; }
   .pull-left img {
+    background-color: #FFF;
     background-size: contain;
     width: 100%;
     height: 200px; }
+
+.search-box.searcherbar {
+  background-color: rgba(0, 0, 0, 0.9); }
 
 h4.list-group-item-heading {
   font-size: 20px;
@@ -80,9 +92,14 @@ div.inline-block {
 .inline-block {
   display: inline-block; }
 
-p.inline-block {
+p.inline-block.size {
   margin-top: 10px;
   font-size: 16px; }
+
+.right-column-options {
+  padding-top: 35px; }
+  .right-column-options .add-button {
+    padding-top: 10px; }
 
 #catalogue .container {
   padding-bottom: 30px; }
@@ -113,8 +130,12 @@ h3 {
   padding-bottom: 30px; }
 
 .well {
+  box-shadow: none;
   background-color: #FFF;
   border: none; }
+
+figure.resume-image img {
+  background-color: #FFF; }
 
 .form-title {
   font-family: 'Montserrat', sans-serif;
@@ -124,26 +145,44 @@ h3 {
 .bold {
   font-weight: bold; }
 
-.remove-button {
-  display: wrap;
-  align-items: flex-end; }
+h4.list-group-item-heading {
+  margin-right: 10px; }
 
-#contact .navbar-default .navbar-brand {
+h2.inline-block {
   margin-top: 0;
-  padding-left: 70px;
-  color: #FFFFFF;
+  color: #333; }
+
+.price-resume p {
+  padding-top: 8px;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  font-size: 16px; }
+
+p.total-price {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  font-size: 20px; }
+
+.cover-contact {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  color: white;
+  overflow: hidden;
+  background-image: url("images/home/slide3.jpg");
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: overlay; }
+
+.form-group label {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-style: italic;
-  font-size: 32px;
-  display: inline; }
-  #contact .navbar-default .navbar-brand a a:hover a:active a:link a:visited {
-    color: #000; }
-  #contact .navbar-default .navbar-brand small {
-    color: #AAA;
-    font-size: 27;
-    padding-left: 20px;
-    display: inline; }
+  color: #000; }
 
 nav.navbar.navbar-default {
   margin-bottom: 0;
@@ -210,3 +249,11 @@ img {
 
 .list-footer ul li:first-child {
   font-weight: bold; }
+
+h3.page-title {
+  padding-top: 20px;
+  padding-left: 10px;
+  margin-top: 0;
+  font-size: 27px;
+  font-family: 'Montserrat', sans-serif;
+  color: #000; }

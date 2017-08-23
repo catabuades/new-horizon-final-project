@@ -1,19 +1,20 @@
-#contact .navbar-default .navbar-brand {
-	margin-top: 0;
-	padding-left: 70px;
-	color: #FFFFFF;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 800;
-	font-style: italic;
-	font-size: 32px;
-	display: inline;
-	a a:hover a:active a:link a:visited{
-		color: #000;
-	}
-	small {
-		color: #AAA;
-		font-size: 27;
-		padding-left: 20px;
-		display: inline;
-	}
+.cover-contact {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    color: white;
+    overflow: hidden;
+    background-image: url('images/home/slide3.jpg');
+    background-color: rgba(255,255,255,0.4);
+    background-blend-mode: overlay;
+}
+
+.form-group label {
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
 }
