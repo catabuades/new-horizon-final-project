@@ -2,6 +2,7 @@
 @import 'searcher';
 @import 'catalogue';
 @import 'booking';
+@import 'contact';
 
 // nav {
 // 	padding-left: 30px;
@@ -75,4 +76,26 @@ img {
 	background-position: center center;
 }
 
+.footer {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+.logo-footer h6 {
+	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-style: italic;
+	font-size: 22px;
+}
+
+.list-footer ul {
+	list-style-type: none;
+	line-height: 25px;
+}
+
+.list-footer ul li:first-child {
+	font-weight: bold;
+}
 

@@ -1,6 +1,17 @@
+// .cover {
+// 	background-image: url('images/home/slide2.jpg');
+//     background-size: 100%;
+//     background-repeat: no-repeat;
+//     background-position: center center; 
+//     overflow: hidden;
+//     height: 500px;
+//     display: flex;
+//     justify-content: center;
+//     padding-top: 100px;
+// }
+
 .cover {
-	background-image: url('images/home/slide2.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
     overflow: hidden;
@@ -8,6 +19,9 @@
     display: flex;
     justify-content: center;
     padding-top: 100px;
+	color: white;
+	overflow: hidden;
+	background-image: url('images/home/slide2.jpg');
 }
 
 // .cover-left {
@@ -29,7 +43,7 @@
 	justify-content: center;
 	align-items: center;
 	height: 120px;
-	background-color: rgba(0, 0, 0, 0.9);
+	// background-color: rgba(0, 0, 0, 0.9);
 	// background-color: #4A5AFF; azul
 	p {
 		font-weight: bold;
@@ -38,63 +52,15 @@
 	}
 }
 
-.post-cover {
-	padding-top: 60px;
-	padding-bottom: 60px;
-	background-color: #FFF;
-}
-
-.row.row-gallery {
-	display: flex;
-	justify-content: space-between;
-}
-
-// .gallery-home {
-// 	background-color: #AAA;
-// }
-
-.square-photo img {
-	height: 210px;
-	width: 100%;
-	border-radius: 3px;
-	border: 1px solid #AAA;
-	background-color: #FFF;
-	box-shadow: 4px 4px 29px 0px rgba(0,0,0,0.75);
-}
-
-.square-photo h3 {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
-	text-transform: uppercase;
-	font-size: 20px;
-	text-align: center;
-}
-
-// .partners {
-// 	border-style: 2px solid black;
-// }
-
-.footer {
-	height: 300px;
-	padding-top: 30px;
-	background-color: rgba(0, 0, 0, 0.9);
-}
-
-.logo-footer h6 {
-	color: #FFFFFF;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 800;
-	font-style: italic;
-	font-size: 22px;
-}
-
-.list-footer ul {
-	list-style-type: none;
-	line-height: 25px;
-}
-
-.list-footer ul li:first-child {
+.search-box-title {
 	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFF;
+}
+
+.jumbotron {
+	background-color: #FFF;
+	margin-bottom: 0;
 }
 
 .custom-list {

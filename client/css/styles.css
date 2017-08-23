@@ -1,13 +1,15 @@
 .cover {
-  background-image: url("images/home/slide2.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   overflow: hidden;
   height: 500px;
   display: flex;
   justify-content: center;
-  padding-top: 100px; }
+  padding-top: 100px;
+  color: white;
+  overflow: hidden;
+  background-image: url("images/home/slide2.jpg"); }
 
 .search-box {
   padding-top: 10px;
@@ -15,55 +17,20 @@
   padding-right: 100px;
   justify-content: center;
   align-items: center;
-  height: 120px;
-  background-color: rgba(0, 0, 0, 0.9); }
+  height: 120px; }
   .search-box p {
     font-weight: bold;
     text-transform: uppercase;
     color: #FFF; }
 
-.post-cover {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #FFF; }
-
-.row.row-gallery {
-  display: flex;
-  justify-content: space-between; }
-
-.square-photo img {
-  height: 210px;
-  width: 100%;
-  border-radius: 3px;
-  border: 1px solid #AAA;
-  background-color: #FFF;
-  box-shadow: 4px 4px 29px 0px rgba(0, 0, 0, 0.75); }
-
-.square-photo h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+.search-box-title {
+  font-weight: bold;
   text-transform: uppercase;
-  font-size: 20px;
-  text-align: center; }
+  color: #FFF; }
 
-.footer {
-  height: 300px;
-  padding-top: 30px;
-  background-color: rgba(0, 0, 0, 0.9); }
-
-.logo-footer h6 {
-  color: #FFFFFF;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-style: italic;
-  font-size: 22px; }
-
-.list-footer ul {
-  list-style-type: none;
-  line-height: 25px; }
-
-.list-footer ul li:first-child {
-  font-weight: bold; }
+.jumbotron {
+  background-color: #FFF;
+  margin-bottom: 0; }
 
 .custom-list {
   padding-top: 6px;
@@ -117,9 +84,6 @@ p.inline-block {
   margin-top: 10px;
   font-size: 16px; }
 
-.button-add {
-  margin-top: 70px; }
-
 #catalogue .container {
   padding-bottom: 30px; }
 
@@ -148,6 +112,32 @@ h3 {
 .cover-container {
   margin-top: 30px;
   margin-bottom: 30px; }
+
+.jumbotron {
+  padding-top: 20px; }
+
+.resum-left p:first-child {
+  padding-top: 25px; }
+
+.resume-left p {
+  font-size: 15px; }
+
+#contact .navbar-default .navbar-brand {
+  margin-top: 0;
+  padding-left: 70px;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 32px;
+  display: inline; }
+  #contact .navbar-default .navbar-brand a a:hover a:active a:link a:visited {
+    color: #000; }
+  #contact .navbar-default .navbar-brand small {
+    color: #AAA;
+    font-size: 27;
+    padding-left: 20px;
+    display: inline; }
 
 nav.navbar.navbar-default {
   margin-bottom: 0;
@@ -195,3 +185,22 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.9); }
+
+.logo-footer h6 {
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 22px; }
+
+.list-footer ul {
+  list-style-type: none;
+  line-height: 25px; }
+
+.list-footer ul li:first-child {
+  font-weight: bold; }

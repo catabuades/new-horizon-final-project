@@ -13,45 +13,44 @@
 </head>
 
 <body id='search-result'>
+    <!-- navigator bar -->
     <nav class="navbar navbar-default">
-        <!-- nav collapse -->
-        <div class="navbar-header">
-            <button type="button" class="nav-button navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="home.html"><h1>NEW HORIZON<small>rent a bike</small></h1></a>
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <a class="navbar-brand" href="#"><h1>NEW HORIZON<small>rent a bike</small></h1></a>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class='white-link'><a href='catalogue.html'>Catalogue</a></li>
+                    <li class='white-link'><a href='routes.html'>Routes</a></li>
+                    <li class='white-link'><a href='contact.html'>Contact</a></li>
+                    <li><a href='#'><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <!-- @end nav collapse -->
-        <div class="inline collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class='white-link'><a href='catalogue.html'>Catalogue</a></li>
-                <li class='white-link'><a href='routes.html'>Routes</a></li>
-                <li class='white-link'><a href='contact.html'>Contact</a></li>
-                <li><a href='#'><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
-            </ul>
-        </div>
+        <!-- /.container-fluid -->
     </nav>
     <!-- @end navigator bar -->
     <!-- @begin cover and searcher -->
     <div class='searcher'>
         <div class='flex-container search-box'>
-            <form class="navbar-form navbar-left" role="search">
+            <form class="navbar-form" role="search">
                 <div class="form-group">
                     <p>Pick-Up</p>
-                    <input type="text" class="form-control input-lg" placeholder="21/08/17  9:00">
-                    <button type="button" class="btn btn-default btn-lg" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-                    </button>
+                    <input type="date" class="form-control input-lg" placeholder="21/08/17  9:00">
                 </div>
                 <div class="form-group">
                     <p>Drop-Off</p>
-                    <input type="text" class="form-control input-lg" placeholder="21/08/17  19:00">
-                    <button type="button" class="btn btn-default btn-lg" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-                    </button>
+                    <input type="date" class="form-control input-lg" placeholder="21/08/17  19:00">
                     <button type="submit" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                 </div>
             </form>
@@ -72,119 +71,125 @@
                             <option>Mountain</option>
                             <option>City</option>
                             <option>E-bike</option>
-                            <option>Tandem</option>
-                            <option>Roller Skates</option>
                         </select>
                     </div>
                     <div class="list-group">
-                        <a href="#" class="list-group-item">
-                            <div class="media col-md-3">
-                                <figure class="pull-left">
-                                    <img style="background-image: url(../../client/css/images/searcher-result/kross_vento7.png)" class="media-object img-rounded img-responsive">
-                                </figure>
-                            </div>
-                            <div class="col-md-6">
-                                <h4 class="list-group-item-heading">Kross Vento</h4>
-                                <p>Category: Road</p>
-                                <p class='inline-block'>Size:</p>
-                                <select>
-                                    <option value='' selected disabled>...</option>
-                                    <option>50 / XS</option>
-                                    <option>53 / S</option>
-                                    <option>56 / M</option>
-                                    <option>58 / L</option>
-                                    <option>60 / XL</option>
-                                </select>
-                                <p class='inline-block'>Pedals:</p>
-                                <select>
-                                    <option value='' selected disabled>...</option>
-                                    <option>Own pedals</option>
-                                    <option>Shimano SPD</option>
-                                    <option>Shimano SPL</option>
-                                    <option>Look Kio</option>
-                                </select>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox">Insurance (1€ for day)
-                                    </label>
+                        <div class='row'>
+                            <a href="#" class="list-group-item">
+                                <div class="media col-md-3">
+                                    <figure class="pull-left">
+                                        <img style="background-image: url(../../client/css/images/searcher-result/kross_vento7.png)" class="media-object img-rounded img-responsive">
+                                    </figure>
                                 </div>
-                            </div>
-                            <div class="button-add col-md-3 text-center">
-                                <button type="button" class="btn btn-default btn-lg btn-block">Add to book</button>
-                            </div>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <div class="media col-md-3">
-                                <figure class="pull-left">
-                                    <img style="background-image: url(../../client/css/images/searcher-result/scott_sportster.jpg)" class="media-object img-rounded img-responsive">
-                                </figure>
-                            </div>
-                            <div class="col-md-6">
-                                <h4 class="list-group-item-heading">Scott Sportster</h4>
-                                <p>Category: Road</p>
-                                <p class='inline-block'>Size:</p>
-                                <select>
-                                    <option value='' selected disabled>...</option>
-                                    <option>50 / XS</option>
-                                    <option>53 / S</option>
-                                    <option>56 / M</option>
-                                    <option>58 / L</option>
-                                    <option>60 / XL</option>
-                                </select>
-                                <p class='inline-block'>Pedals:</p>
-                                <select>
-                                    <option value='' selected disabled>...</option>
-                                    <option>Own pedals</option>
-                                    <option>Shimano SPD</option>
-                                    <option>Shimano SPL</option>
-                                    <option>Look Kio</option>
-                                </select>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox">Insurance (1€ for day)
-                                    </label>
+                                <div class="col-md-5">
+                                    <h4 class="list-group-item-heading">Kross Vento</h4>
+                                    <p>Category: Road</p>
                                 </div>
-                            </div>
-                            <div class="button-add col-md-3 text-center">
-                                <button type="button" class="btn btn-default btn-lg btn-block">Add to book</button>
-                            </div>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <div class="media col-md-3">
-                                <figure class="pull-left">
-                                    <img style="background-image: url(../../client/css/images/searcher-result/trek_emondaS5.jpg)" class="media-object img-rounded img-responsive">
-                                </figure>
-                            </div>
-                            <div class="col-md-6">
-                                <h4 class="list-group-item-heading">Trek Emonda S5</h4>
-                                <p>Category: Road</p>
-                                <p class='inline-block'>Size:</p>
-                                <select>
-                                    <option value='' selected disabled>...</option>
-                                    <option>50 / XS</option>
-                                    <option>53 / S</option>
-                                    <option>56 / M</option>
-                                    <option>58 / L</option>
-                                    <option>60 / XL</option>
-                                </select>
-                                <p class='inline-block'>Pedals:</p>
-                                <select>
-                                    <option value='' selected disabled>...</option>
-                                    <option>Own pedals</option>
-                                    <option>Shimano SPD</option>
-                                    <option>Shimano SPL</option>
-                                    <option>Look Kio</option>
-                                </select>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox">Insurance (1€ for day)
-                                    </label>
+                                <div class='col-md-4'>
+                                    <p class='inline-block'>Size:</p>
+                                    <select>
+                                        <option value='' selected disabled>...</option>
+                                        <option>50 / XS</option>
+                                        <option>53 / S</option>
+                                        <option>56 / M</option>
+                                        <option>58 / L</option>
+                                        <option>60 / XL</option>
+                                    </select>
+                                    <p class='inline-block'>Pedals:</p>
+                                    <select>
+                                        <option value='' selected disabled>...</option>
+                                        <option>Own pedals</option>
+                                        <option>Shimano SPD</option>
+                                        <option>Shimano SPL</option>
+                                        <option>Look Kio</option>
+                                    </select>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Insurance (1€ for day)
+                                        </label>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-default btn-lg btn-block">Add to book</button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="button-add col-md-3 text-center">
-                                <button type="button" class="btn btn-default btn-lg btn-block">Add to book</button>
-                            </div>
-                        </a>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <div class="media col-md-3">
+                                    <figure class="pull-left">
+                                        <img style="background-image: url(../../client/css/images/searcher-result/kross_vento7.png)" class="media-object img-rounded img-responsive">
+                                    </figure>
+                                </div>
+                                <div class="col-md-5">
+                                    <h4 class="list-group-item-heading">Kross Vento</h4>
+                                    <p>Category: Road</p>
+                                </div>
+                                <div class='col-md-4'>
+                                    <p class='inline-block'>Size:</p>
+                                    <select>
+                                        <option value='' selected disabled>...</option>
+                                        <option>50 / XS</option>
+                                        <option>53 / S</option>
+                                        <option>56 / M</option>
+                                        <option>58 / L</option>
+                                        <option>60 / XL</option>
+                                    </select>
+                                    <p class='inline-block'>Pedals:</p>
+                                    <select>
+                                        <option value='' selected disabled>...</option>
+                                        <option>Own pedals</option>
+                                        <option>Shimano SPD</option>
+                                        <option>Shimano SPL</option>
+                                        <option>Look Kio</option>
+                                    </select>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Insurance (1€ for day)
+                                        </label>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-default btn-lg btn-block">Add to book</button>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <div class="media col-md-3">
+                                    <figure class="pull-left">
+                                        <img style="background-image: url(../../client/css/images/searcher-result/kross_vento7.png)" class="media-object img-rounded img-responsive">
+                                    </figure>
+                                </div>
+                                <div class="col-md-5">
+                                    <h4 class="list-group-item-heading">Kross Vento</h4>
+                                    <p>Category: Road</p>
+                                </div>
+                                <div class='col-md-4'>
+                                    <p class='inline-block'>Size:</p>
+                                    <select>
+                                        <option value='' selected disabled>...</option>
+                                        <option>50 / XS</option>
+                                        <option>53 / S</option>
+                                        <option>56 / M</option>
+                                        <option>58 / L</option>
+                                        <option>60 / XL</option>
+                                    </select>
+                                    <p class='inline-block'>Pedals:</p>
+                                    <select>
+                                        <option value='' selected disabled>...</option>
+                                        <option>Own pedals</option>
+                                        <option>Shimano SPD</option>
+                                        <option>Shimano SPL</option>
+                                        <option>Look Kio</option>
+                                    </select>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Insurance (1€ for day)
+                                        </label>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-default btn-lg btn-block">Add to book</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
