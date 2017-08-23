@@ -109,18 +109,24 @@ h3 {
 #catalogue .autofocus {
   padding-top: 20px; }
 
-.cover-container {
-  margin-top: 30px;
-  margin-bottom: 30px; }
+.container.container-cover {
+  padding-bottom: 30px; }
 
-.jumbotron {
-  padding-top: 20px; }
+.well {
+  background-color: #FFF;
+  border: none; }
 
-.resum-left p:first-child {
-  padding-top: 25px; }
+.form-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  padding-left: 30px; }
 
-.resume-left p {
-  font-size: 15px; }
+.bold {
+  font-weight: bold; }
+
+.remove-button {
+  display: wrap;
+  align-items: flex-end; }
 
 #contact .navbar-default .navbar-brand {
   margin-top: 0;
