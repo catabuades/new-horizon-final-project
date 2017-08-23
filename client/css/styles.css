@@ -120,7 +120,10 @@ p.inline-block.size {
   .thumbnail img {
     background-size: contain; }
 
-h3 {
+.caption h3 {
+  padding-left: 15px; }
+
+.caption p {
   padding-left: 15px; }
 
 #catalogue .autofocus {
@@ -175,10 +178,7 @@ p.total-price {
   justify-content: center;
   padding-top: 30px;
   color: white;
-  overflow: hidden;
-  background-image: url("images/home/slide3.jpg");
-  background-color: rgba(255, 255, 255, 0.4);
-  background-blend-mode: overlay; }
+  overflow: hidden; }
 
 .form-group label {
   font-family: 'Montserrat', sans-serif;
