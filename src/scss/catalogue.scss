@@ -1,3 +1,4 @@
+// CATALOGUE CONTENT
 #catalogue .container {
 	padding-bottom: 30px;
 }
@@ -7,9 +8,10 @@
 	padding-left: 15px;
 	margin-top: 0;
 	font-size: 30px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
+// THUMBNAIL PRODUCT
 .thumbnail {
 	width: 100%;
 	background-size: cover;
@@ -18,6 +20,7 @@
     overflow: hidden;
     img {
     	background-size: contain;
+    	margin-bottom: 15px;
     }
 }
 
@@ -30,5 +33,5 @@
 }
 
 #catalogue .autofocus {
-	padding-top: 20px;
+	padding-top: 30px;
 }

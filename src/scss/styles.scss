@@ -4,107 +4,134 @@
 @import 'booking';
 @import 'contact';
 
-// nav {
-// 	padding-left: 30px;
-// 	.nav-style {
-// 		background-color: transparent;
-// 		border-color: none;
-// 	}
-// }
-
-// nav.navbar.nav-style {
-// 	padding-left: 30px;
-// 	background-color: transparent;
-// 	border-color: none;
-// 	margin-bottom: 0;
-// }
-
-nav.navbar.navbar-default {
-	margin-bottom: 0;
-	padding-top: 20px;
-	padding-bottom: 30px;
-	background-color: #000;
-	border: none;
-	border-radius: 0;
+// GENERAL STYLES
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
-.collapse.navbar-collapse {
-	padding-top: 15px;
-	padding-right: 80px;
-}
-
-.navbar-default .navbar-nav>li>a {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;
-	color: #FFF;
-}
-
-.header {
-	display: inline;
-}
-
-.inline {
-	display: inline;
-}
-
-.navbar-brand h1{
-	margin-top: 0;
-	padding-left: 70px;
-	color: #FFFFFF;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 800;
-	font-style: italic;
-	font-size: 32px;
-	display: inline
-	a a:hover a:active a:link a:visited{
-		color: #000;
-	}
-	small {
-		padding-left: 20px;
-	}
-}
-
-.navbar-right {
-	color: #FFF;
-}
-
-img {
-	width: 90%;
-  	height: 200px !important;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-}
-
-.footer {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	background-color: rgba(0, 0, 0, 0.9);
-}
-
-.logo-footer h6 {
-	color: #FFFFFF;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 800;
-	font-style: italic;
-	font-size: 22px;
-}
-
-.list-footer ul {
-	list-style-type: none;
-	line-height: 25px;
-}
-
-.list-footer ul li:first-child {
-	font-weight: bold;
-}
-
-h3.page-title {
-	padding-top: 20px;
-    padding-left: 10px;
+.h1-nav {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    font-style: italic;
     margin-top: 0;
-    font-size: 27px;
-    font-family: 'Montserrat', sans-serif;
+    padding-left: 50px;
+    color: #FFFFFF;
+    line-height: 0.8;
+    a a:hover a:active a:link a:visited {
+        color: #000;
+        text-decoration: none;
+    }
+}
+
+.h1-footer {
+	margin: 0;
+    color: #DDD;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 0.8;
+}
+
+.h1-search-home {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFF;
+    font-style: italic;
+    padding-left: 70px;
+    padding-top: 20px;
+}
+
+.h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    margin-top: 0;
     color: #000;
 }
 
+.h3 {
+    margin-top: 0;
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.h4 {
+    padding-left: 15px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+// NAVIGATOR
+nav.navbar.navbar-default {
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: #000;
+    border: none;
+    border-radius: 0;
+}
+
+.collapse.navbar-collapse {
+    padding-top: 15px;
+    padding-right: 80px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.navbar-right {
+    color: #FFF;
+}
+
+img {
+    width: 90%;
+    height: 200px !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+// FOOTER STYLES
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.list-footer ul {
+	color: #DDD;
+    list-style-type: none;
+    line-height: 25px;
+}
+
+.list-footer ul li:first-child {
+	color: #DDD;
+    font-weight: bold;
+}

@@ -1,23 +1,36 @@
-.box-searcher-results {
-	margin-top: 20px;
+.well {
+	padding-top: 0;
 }
 
 .well h1{
 	padding-left: 15px;
 	margin-top: 0;
 	font-size: 27px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
-a.list-group-item {
+// SEARCH BOX
+.search-box.searcherbar {
+	background-color: rgba(0, 0, 0, 0.9);
+}
+.search-box {
+	padding-top: 15px;
+	padding-right: 100px;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	p {
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #FFF;
+		padding-left: 10px;
+	}
+}
+
+// IMAGE LEFT
+div.list-group-item {
     height:auto;
     min-height:220px;
-}
-a.list-group-item.active small {
-    color:#fff;
-}
-.stars {
-    margin:20px auto 1px;    
 }
 
 .pull-left {
@@ -34,28 +47,18 @@ a.list-group-item.active small {
     }
 }
 
-.search-box.searcherbar {
-	background-color: rgba(0, 0, 0, 0.9);
-}
-
+// TTITLE RESULT SEARCH
 h4.list-group-item-heading {
 	font-size: 20px;
-	padding-top: 10px;
-}
-
-div.inline-block{
-	display: inline-block;
-}
-
-.inline-block {
-	display: inline-block;
+	padding-top: 0;
 }
 
 p.inline-block.size {
-	margin-top: 10px;
+	margin-top: 40px;
 	font-size: 16px;
 }
 
+// CUSTOMIZE OPTIONS RIGHT
 .right-column-options {
 	padding-top: 35px;
 	.add-button {

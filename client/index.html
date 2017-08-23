@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:800i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" , href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel='stylesheet' , href='css/styles.css'>
@@ -17,7 +16,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <a class="navbar-brand" href="index.html"><h1>NEW HORIZON<small>rent a bike</small></h1></a>
+            <a class="navbar-brand" href='index.html'><h1 class='h1-nav'>NEW HORIZON<br><small>rent a bike</small></h1></a>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
@@ -42,50 +41,41 @@
     <!-- @end navigator bar -->
     <!-- @begin cover and searcher -->
     <div class='cover'>
-        <div class='flex-container search-box'>
-            <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <p>Pick-Up</p>
-                    <input type="date" class="form-control input-lg" placeholder="21/08/17  9:00">
+        <div class='container home'>
+            <div class='row'>
+                <div class='search-container col-xs-12 col-md-8'>
+                    <h1 class='h1-search-home'>Find your bike now!</h1>
+                    <form class="navbar-form search-home" role="search">
+                        <div class='row'>
+                            <div class="form-group col-xs-12 col-sm-5">
+                                <p class='inline-block'>Pick-Up</p>
+                                <input type="date" class="form-control input-lg" placeholder="21/08/17  9:00">
+                            </div>
+                            <div class="form-group col-xs-12 col-sm-5">
+                                <p class='inline-block'>Drop-Off</p>
+                                <input type="date" class="form-control input-lg" placeholder="21/08/17  19:00">
+                            </div>
+                            <div class='search-picto form-group col-xs-12 col-sm-2'>
+                                <a href='search-result.html'><span class="glyphicon glyphicon-search picto" aria-hidden="true"></span></a>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- </form> -->
                 </div>
-                <div class="form-group">
-                    <p>Drop-Off</p>
-                    <input type="date" class="form-control input-lg" placeholder="21/08/17  19:00">
-                    <a href='search-result.html'><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
-                    <!-- <button type="submit" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button> -->
-                </div>
-            </form>
-        </div>
-    </div>
-    <!-- @end cover and searcher -->
-    <!-- @begin jumbotron -->
-<!--     <div class="post-cover jumbotron main-block">
-        <div class="container" class="gallery">
-            <div class="row">
-                <div class="col-md-4">
-                    <img class="img-responsive img-thumbnail" src="" alt="">
-                    <h3>Routes</h3>
-                </div>
-                <div class="col-md-4">
-                    <img class="img-responsive img-thumbnail" src="" alt="">
-                    <h3>Catalogue</h3>
-                </div>
-                <div class="col-md-4">
-                    <img class="img-responsive img-thumbnail" src="" alt="">
-                    <h3>Contact</h3>
+                <div class='col-md-4'>
                 </div>
             </div>
         </div>
-    </div> -->
-    <!-- @end jumbotron -->
+    </div>
+    <!-- @end cover and searcher -->
     <!-- @begin footer -->
     <div class='footer'>
         <div class='container'>
             <div class='row'>
-                <div class='logo-footer col-sm-4 col-md-3'>
-                    <a href='index.html'><h6>NEW HORIZON<br><small>rent a bike</small></h6></a>
+                <div class='logo-footer col-xs-12 col-sm-3'>
+                    <a class="navbar-brand" href='index.html'><h1 class='h1-footer'>NEW HORIZON<br><small>rent a bike</small></h1></a>
                 </div>
-                <div class='list-footer col-sm-4 col-md-3 '>
+                <div class='list-footer col-xs-12 col-sm-3'>
                     <ul class='custom-list'>
                         <li>MENU</li>
                         <li><a href='catalogue.html'>Catalogue</a></li>
@@ -93,18 +83,18 @@
                         <li><a href='contact.html'>Contact</a></li>
                     </ul>
                 </div>
-                <div class='list-footer col-sm-4 col-md-3'>
+                <div class='list-footer col-xs-12 col-sm-3'>
                     <ul class='custom-list'>
                         <li>FOLLOW</li>
                         <li><a href='https://www.facebook.com/newHorizonBikesRental'>Facebook</a></li>
                     </ul>
                 </div>
-                <div class='col-sm-4 col-md-3'>
-                    <form class="navbar-form navbar-left">
+                <div class='col-xs-12 col-sm-3'>
+                    <form class="inline-block navbar-form">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Search">
                         </div>
-                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                        <a href='search-result.html'><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
                     </form>
                 </div>
             </div>

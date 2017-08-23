@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:800i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catalogue</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" , href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel='stylesheet' , href='css/styles.css'>
@@ -17,7 +16,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <a class="navbar-brand" href="index.html"><h1>NEW HORIZON<small>rent a bike</small></h1></a>
+            <a class="navbar-brand" href="index.html"><h1 class='h1-nav'>NEW HORIZON<br><small class='line-size-logo'>rent a bike</small></h1></a>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
@@ -40,18 +39,17 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- @end navigator bar -->
-
     <!-- @begin cover-->
     <div class='container'>
         <div>
-            <h3 class='inline-block page-title'>Catalogue</h1>
+            <h2 class='h2 inline-block page-title'>Catalogue</h2>
             <form class="autofocus navbar-form navbar-right">
                 <div class="form-group">
                     <input ng-model="query" type="text" placeholder="Search..." class="form-control" placeholder="Search" autofocus />
                 </div>
             </form>
         </div>
-        <h3>Road</h3>
+        <legend class='h3'>Road</legend>
         <div class="row">
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
@@ -59,10 +57,10 @@
                         <img style="background-image: url(css/images/catalogue/road/kross_vento7.png)" class="media-object img-rounded img-responsive">
                     </figure>
                     <div class="caption">
-                        <h3>Kross Vento</h3>
+                        <h4 class='h4'>Kross Vento</h4>
                         <p>Shimano Ultegra 22v</p>
                         <p>Light carbon</p>
-                        <p>Hidraulic brake</p>
+                        <p><a href="#" class="btn btn-default" role="button">+ info</a></p>
                     </div>
                 </div>
             </div>
@@ -72,9 +70,10 @@
                         <img style="background-image: url(css/images/catalogue/road/scott_speedsterS20.jpg)" class="media-object img-rounded img-responsive">
                     </figure>
                     <div class="caption">
-                        <h3>Scott Speedster</h3>
+                        <h4 class='h4'>Scott Speedster</h4>
                         <p>Compack Shimano 105 22v</p>
                         <p>Light aluminium</p>
+                        <p><a href="#" class="btn btn-default" role="button">+ info</a></p>
                     </div>
                 </div>
             </div>
@@ -84,9 +83,10 @@
                         <img style="background-image: url(css/images/catalogue/road/orbea.jpg)" class="media-object img-rounded img-responsive">
                     </figure>
                     <div class="caption">
-                        <h3>Orbea</h3>
+                        <h4 class='h4'>Orbea</h4>
                         <p>Shimano Triple Ultegra</p>
                         <p>Carbon frame</p>
+                        <p><a href="#" class="btn btn-default" role="button">+ info</a></p>
                     </div>
                 </div>
             </div>
@@ -96,14 +96,15 @@
                         <img style="background-image: url(css/images/catalogue/road/trek_emondaS5.jpg)" class="media-object img-rounded img-responsive">
                     </figure>
                     <div class="caption">
-                        <h3>Trek Emonda</h3>
+                        <h4 class='h4'>Trek Emonda</h4>
                         <p>Compack Shimano 105 22v</p>
                         <p>Carbon frame</p>
+                        <p><a href="#" class="btn btn-default" role="button">+ info</a></p>
                     </div>
                 </div>
             </div>
         </div>
-        <h3>Mountain</h3>
+        <legend class='h3'>Mountain</legend>
         <div class='row'>
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
@@ -111,8 +112,9 @@
                         <img style="background-image: url(css/images/catalogue/mountain/lea_mtb_mujer.jpg)" class="media-object img-rounded img-responsive">
                     </figure>
                     <div class="caption">
-                        <h3>Lea MTB Kross</h3>
+                        <h4 class='h4'>Lea MTB Kross</h4>
                         <p>...</p>
+                        <p><a href="#" class="btn btn-default" role="button">+ info</a></p>
                     </div>
                 </div>
             </div>
@@ -122,8 +124,9 @@
                         <img style="background-image: url(css/images/catalogue/mountain/level_b6_grafitowo_zolty_mat.png)" class="media-object img-rounded img-responsive">
                     </figure>
                     <div class="caption">
-                        <h3>Level MTB Kross</h3>
+                        <h4 class='h4'>Level MTB Kross</h4>
                         <p>...</p>
+                        <p><a href="#" class="btn btn-default" role="button">+ info</a></p>
                     </div>
                 </div>
             </div>
@@ -133,8 +136,9 @@
                         <img style="background-image: url(css/images/catalogue/mountain/lea_mtb_mujer.jpg)" class="media-object img-rounded img-responsive">
                     </figure>
                     <div class="caption">
-                        <h3>MTB</h3>
+                        <h4 class='h4'>MTB</h4>
                         <p>...</p>
+                        <p><a href="#" class="btn btn-default" role="button">+ info</a></p>
                     </div>
                 </div>
             </div>
@@ -144,8 +148,9 @@
                         <img style="background-image: url(css/images/catalogue/mountain/level_b6_grafitowo_zolty_mat.png)" class="media-object img-rounded img-responsive">
                     </figure>
                     <div class="caption">
-                        <h3>MTB</h3>
+                        <h4 class='h4'>MTB</h4>
                         <p>...</p>
+                        <p><a href="#" class="btn btn-default" role="button">+ info</a></p>
                     </div>
                 </div>
             </div>
@@ -157,30 +162,31 @@
     <div class='footer'>
         <div class='container'>
             <div class='row'>
-                <div class='logo-footer col-sm-4 col-md-3'>
-                    <a href='index.html'><h6>NEW HORIZON<br><small>rent a bike</small></h6></a>
+                <div class='logo-footer col-xs-12 col-sm-3'>
+                    <a class="navbar-brand" href='index.html'><h1 class='h1-footer'>NEW HORIZON<br><small>rent a bike</small></h1></a>
                 </div>
-                <div class='list-footer col-sm-4 col-md-3 '>
+                <div class='list-footer col-xs-12 col-sm-3'>
                     <ul class='custom-list'>
                         <li>MENU</li>
                         <li><a href='catalogue.html'>Catalogue</a></li>
                         <li><a href='routes.html'>Routes</a></li>
-                    <li><a href='contact.html'>Contact</a></li>
-                </ul>
-            </div>
-            <div class='list-footer col-sm-4 col-md-3 '>
-                <ul class='custom-list '>
-                    <li>FOLLOW</li>
-                    <li><a href='https://www.facebook.com/newHorizonBikesRental'>Facebook</a></li>
-                </ul>
-            </div>
-            <div class='col-sm-4 col-md-3 '>
-                <form class="navbar-form navbar-left">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                </form>
+                        <li><a href='contact.html'>Contact</a></li>
+                    </ul>
+                </div>
+                <div class='list-footer col-xs-12 col-sm-3'>
+                    <ul class='custom-list'>
+                        <li>FOLLOW</li>
+                        <li><a href='https://www.facebook.com/newHorizonBikesRental'>Facebook</a></li>
+                    </ul>
+                </div>
+                <div class='col-xs-12 col-sm-3'>
+                    <form class="inline-block navbar-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <a href='search-result.html'><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
