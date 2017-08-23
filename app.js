@@ -17,9 +17,9 @@ app.use(bodyParser.json())
 
 // app.use(routesApp)
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client/pages/home.html'))
-})
+// app.get('/', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'client/pages/home.html'))
+// })
 
 app.listen(PORT)
 console.log(`Listening on PORT ${PORT}`)
