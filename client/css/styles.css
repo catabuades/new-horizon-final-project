@@ -25,6 +25,25 @@
     color: #FFF;
     padding-left: 10px; }
 
+.advanced-option .btn {
+  margin-top: 20px;
+  margin-left: 70px;
+  background-color: transparent;
+  border: none;
+  font-weight: bold; }
+
+.advanced-option a:hover {
+  background-color: #f0ad4e; }
+
+div.checkboxes {
+  padding-left: 70px; }
+
+.checkboxes input {
+  margin-right: 7px; }
+
+.checkboxes label {
+  margin-right: 15px; }
+
 .custom-list {
   padding-top: 6px;
   color: #FFF;
@@ -96,12 +115,15 @@ p.inline-block.size {
   padding-top: 10px; }
 
 #catalogue legend.h3 {
-  margin-bottom: 30px;
   padding-left: 15px; }
 
 #catalogue .catpion a {
   color: #000 !important;
   text-decoration: none !important; }
+
+#catalogue .btn-default.info {
+  display: wrap;
+  justify-content: flex-end; }
 
 #catalogue .container {
   padding-bottom: 30px; }
@@ -131,6 +153,21 @@ p.inline-block.size {
 
 #catalogue .autofocus {
   padding-top: 30px; }
+
+.zoomIt {
+  display: block !important;
+  -webkit-transition: -webkit-transform 0.1s ease-out;
+  -moz-transition: -moz-transform 0.1s ease-out;
+  -o-transition: -o-transform 0.1s ease-out;
+  -ms-transition: -ms-transform 0.1s ease-out;
+  transition: transform 0.1s ease-out; }
+
+.zoomIt:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); }
 
 .container.container-cover {
   padding-bottom: 30px; }
@@ -181,7 +218,8 @@ p.total-price {
   background-color: transparent;
   border: none;
   color: #EF3054;
-  padding-right: 0; }
+  padding-right: 0;
+  text-decoration: underline; }
 
 .btn.btn-warning {
   margin-top: 30px;
@@ -208,10 +246,10 @@ p.total-price {
   height: 500px;
   display: flex;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 20px;
   color: white;
   overflow: hidden;
-  background-image: url("images/home/slide.jpg"); }
+  background-image: url("images/joao-silas-56055.jpg"); }
   .cover-confirmed p {
     color: #000;
     padding-left: 15px; }
@@ -220,8 +258,9 @@ p.total-price {
   font-weight: bold;
   font-size: 15px;
   color: #000; }
-  #booking4 .cover-confirmed a a:hover {
-    color: #BBB; }
+
+#booking4 .cover-confirmed a:hover {
+  text-decoration: underline; }
 
 .cover-contact {
   background-size: cover;
@@ -264,6 +303,33 @@ p.total-price {
   color: #000;
   font-weight: 400;
   padding: 0 10px 40px 12px; }
+
+#bike-info .row {
+  padding-bottom: 20px; }
+
+.thumbnail {
+  margin-top: 40px;
+  border: none;
+  box-shadow: none; }
+  .thumbnail img {
+    border-width: 0; }
+
+.search-details.searcherbar {
+  background-color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 30px; }
+
+.search-details {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .search-details p {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFF;
+    padding: 10px; }
+
+#bike-info.checkbox {
+  margin: 0; }
 
 body {
   font-family: 'Roboto', sans-serif; }

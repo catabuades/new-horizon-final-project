@@ -1,15 +1,15 @@
 .cover {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center; 
+    background-position: center center;
     overflow: hidden;
     height: 500px;
     display: flex;
     justify-content: center;
     padding-top: 100px;
-	color: white;
-	overflow: hidden;
-	background-image: url('images/home/slide3.jpg');
+    color: white;
+    overflow: hidden;
+    background-image: url('images/home/slide3.jpg');
 }
 
 // .search-home {
@@ -25,37 +25,59 @@
 // 		padding-left: 10px;
 // 	}
 // }
-
 .search-container {
-	background-color: rgba(0, 0, 0, 0.6);
-	width: 70%;
-	padding-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 70%;
+    padding-bottom: 50px;
 }
 
 .search-home {
-	padding-left: 50px;
-	padding-top: 20px;
-	p {
-		font-weight: bold;
-		text-transform: uppercase;
-		color: #FFF;
-		padding-left: 10px;
-	}
+    padding-left: 50px;
+    padding-top: 20px;
+    p {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #FFF;
+        padding-left: 10px;
+    }
+}
+
+.advanced-option .btn {
+        margin-top: 20px;
+        margin-left: 70px;
+        background-color: transparent;
+        border: none;
+        font-weight: bold;
+}
+
+.advanced-option a:hover {
+    background-color: #f0ad4e;
+}
+
+div.checkboxes {
+	padding-left: 70px;
+}
+
+.checkboxes input {
+	margin-right: 7px;
+}
+
+.checkboxes label {
+	margin-right: 15px;
 }
 
 .custom-list {
-	padding-top: 6px;
-	color: #FFF;
-	font-family: 'Roboto', sans-serif;
-	a {
-		color: #FFF;
-		font-family: 'Roboto', sans-serif;
-	}
+    padding-top: 6px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    a {
+        color: #FFF;
+        font-family: 'Roboto', sans-serif;
+    }
 }
 
 span.glyphicon.glyphicon-search {
-	color: white;
-	padding-left: 10px;
-	font-size: 20px;
+    color: white;
+    padding-left: 10px;
+    font-size: 20px;
 }
-

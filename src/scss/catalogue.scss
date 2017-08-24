@@ -1,11 +1,15 @@
 #catalogue legend.h3 {
-	margin-bottom: 30px;
 	padding-left: 15px;
 }
 
 #catalogue .catpion a {
 	color: #000 !important; 
 	text-decoration: none !important;
+}
+
+#catalogue .btn-default.info {
+	display: wrap;
+	justify-content: flex-end;
 }
 
 // CATALOGUE CONTENT
@@ -44,4 +48,21 @@
 
 #catalogue .autofocus {
 	padding-top: 30px;
+}
+
+// IMAGES EFECTS
+.zoomIt{
+display:block!important;
+-webkit-transition:-webkit-transform 0.1s ease-out;
+-moz-transition:-moz-transform 0.1s ease-out;
+-o-transition:-o-transform 0.1s ease-out;
+-ms-transition:-ms-transform 0.1s ease-out;
+transition:transform 0.1s ease-out;
+}
+.zoomIt:hover{
+-moz-transform: scale(1.1);
+-webkit-transform: scale(1.1);
+-o-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1)
 }

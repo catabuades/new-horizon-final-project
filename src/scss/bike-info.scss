@@ -1,0 +1,33 @@
+#bike-info .row {
+	padding-bottom: 20px;
+}
+
+.thumbnail {
+	margin-top: 40px;
+    border: none;
+    box-shadow: none;
+    img {
+    	border-width: 0;
+    }
+}
+
+.search-details.searcherbar {
+	background-color: rgba(0, 0, 0, 0.9);
+	margin-bottom: 30px;
+}
+
+.search-details {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	p {
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #FFF;
+		padding: 10px;
+	}
+}
+
+#bike-info.checkbox {
+	margin: 0;
+}
