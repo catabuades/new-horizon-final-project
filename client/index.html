@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" , href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- bootstrap checkbox y select -->
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
     <link rel='stylesheet' , href='css/styles.css'>
 </head>
 
@@ -29,7 +32,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class='white-link'><a href='catalogue.html'>Catalogue</a></li>
-                    <li class='white-link'><a href='routes.html'>Routes</a></li>
+<!--                     <li class='white-link'><a href='routes.html'>Routes</a></li> -->
                     <li class='white-link'><a href='contact.html'>Contact</a></li>
                     <li><a href='booking-step1.html'><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
                 </ul>
@@ -44,23 +47,20 @@
         <div class='container home'>
             <div class='row'>
                 <div class='search-container col-xs-12 col-md-8'>
-                    <h1 class='h1-search-home'>Find your bike now!</h1>
-                    <form class="navbar-form search-home" role="search">
-                        <div class='row'>
-                            <div class="form-group col-xs-12 col-sm-5">
+                    <h1 class='h1-search-home'>Find your bike in Alcudia now!</h1>
+                    <div class='search-home'>
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
                                 <p class='inline-block'>Pick-Up</p>
-                                <input type="date" class="form-control input-lg" placeholder="21/08/17  9:00">
+                                <input type="date" class="form-control" placeholder="21/08/17  9:00">
                             </div>
-                            <div class="form-group col-xs-12 col-sm-5">
+                            <div class="form-group">
                                 <p class='inline-block'>Drop-Off</p>
-                                <input type="date" class="form-control input-lg" placeholder="21/08/17  19:00">
+                                <input type="date" class="form-control" placeholder="21/08/17  19:00">
+                                <a href='search-result.html'><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
                             </div>
-                            <div class='search-picto form-group col-xs-12 col-sm-2'>
-                                <a href='search-result.html'><span class="glyphicon glyphicon-search picto" aria-hidden="true"></span></a>
-                            </div>
-                        </div>
-                    </form>
-                    <!-- </form> -->
+                        </form>
+                    </div>
                 </div>
                 <div class='col-md-4'>
                 </div>
@@ -79,7 +79,7 @@
                     <ul class='custom-list'>
                         <li>MENU</li>
                         <li><a href='catalogue.html'>Catalogue</a></li>
-                        <li><a href='routes.html'>Routes</a></li>
+                        <!-- <li><a href='routes.html'>Routes</a></li>-->
                         <li><a href='contact.html'>Contact</a></li>
                     </ul>
                 </div>
@@ -103,6 +103,9 @@
     <!-- @end footer -->
     <script src='https://code.jquery.com/jquery-2.0.3.min.js'></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <!-- bootstrap checkbox y select -->
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js'></script>
     <script src='../../client/js/main.js'></script>
 </body>
 
