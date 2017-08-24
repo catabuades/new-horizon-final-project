@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" , href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
     <link rel='stylesheet' , href='css/styles.css'>
 </head>
 
@@ -43,18 +44,20 @@
     <div class='container'>
         <div>
             <h2 class='h2 inline-block page-title'>Catalogue</h2>
-            <form class="autofocus navbar-form navbar-right">
-                <div class="form-group">
-                    <input ng-model="query" type="text" placeholder="Search..." class="form-control" placeholder="Search" autofocus />
-                </div>
-            </form>
+            <div class='inline-block pull-right'>
+                <p class='inline-block size'>Filter by</p>
+                <input type="checkbox" data-toggle="toggle" data-on="Road" data-off="Road">
+                <input type="checkbox" data-toggle="toggle" data-on="Mountain" data-off="Mountain">
+                <input type="checkbox" data-toggle="toggle" data-on="City" data-off="City">
+                <input type="checkbox" data-toggle="toggle" data-on="E-Bike" data-off="E-Bike">
+            </div>
         </div>
         <legend class='h3'>Road</legend>
         <div class="row">
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
                     <figure class="pull-left">
-                        <img style="background-image: url(css/images/catalogue/road/kross_vento7.png)" class="media-object img-rounded img-responsive">
+                        <a href=''><img style="background-image: url(css/images/catalogue/road/kross_vento7.png)" class="media-object img-rounded img-responsive"></a>
                     </figure>
                     <div class="caption">
                         <h4 class='h4'>Kross Vento</h4>
@@ -67,7 +70,7 @@
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
                     <figure class="pull-left">
-                        <img style="background-image: url(css/images/catalogue/road/scott_speedsterS20.jpg)" class="media-object img-rounded img-responsive">
+                        <a href=''><img style="background-image: url(css/images/catalogue/road/scott_speedsterS20.jpg)" class="media-object img-rounded img-responsive"></a>
                     </figure>
                     <div class="caption">
                         <h4 class='h4'>Scott Speedster</h4>
@@ -80,7 +83,7 @@
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
                     <figure class="pull-left">
-                        <img style="background-image: url(css/images/catalogue/road/orbea.jpg)" class="media-object img-rounded img-responsive">
+                        <a href=''><img style="background-image: url(css/images/catalogue/road/orbea.jpg)" class="media-object img-rounded img-responsive"></a>
                     </figure>
                     <div class="caption">
                         <h4 class='h4'>Orbea</h4>
@@ -93,7 +96,7 @@
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
                     <figure class="pull-left">
-                        <img style="background-image: url(css/images/catalogue/road/trek_emondaS5.jpg)" class="media-object img-rounded img-responsive">
+                        <a href=''><img style="background-image: url(css/images/catalogue/road/trek_emondaS5.jpg)" class="media-object img-rounded img-responsive"></a>
                     </figure>
                     <div class="caption">
                         <h4 class='h4'>Trek Emonda</h4>
@@ -109,7 +112,7 @@
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
                     <figure class="pull-left">
-                        <img style="background-image: url(css/images/catalogue/mountain/lea_mtb_mujer.jpg)" class="media-object img-rounded img-responsive">
+                        <a href=''><img style="background-image: url(css/images/catalogue/mountain/lea_mtb_mujer.jpg)" class="media-object img-rounded img-responsive"></a>
                     </figure>
                     <div class="caption">
                         <h4 class='h4'>Lea MTB Kross</h4>
@@ -121,7 +124,7 @@
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
                     <figure class="pull-left">
-                        <img style="background-image: url(css/images/catalogue/mountain/level_b6_grafitowo_zolty_mat.png)" class="media-object img-rounded img-responsive">
+                        <a href=''><img style="background-image: url(css/images/catalogue/mountain/level_b6_grafitowo_zolty_mat.png)" class="media-object img-rounded img-responsive"></a>
                     </figure>
                     <div class="caption">
                         <h4 class='h4'>Level MTB Kross</h4>
@@ -133,7 +136,7 @@
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
                     <figure class="pull-left">
-                        <img style="background-image: url(css/images/catalogue/mountain/lea_mtb_mujer.jpg)" class="media-object img-rounded img-responsive">
+                        <a href=''><img style="background-image: url(css/images/catalogue/mountain/lea_mtb_mujer.jpg)" class="media-object img-rounded img-responsive"></a>
                     </figure>
                     <div class="caption">
                         <h4 class='h4'>MTB</h4>
@@ -145,7 +148,7 @@
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
                     <figure class="pull-left">
-                        <img style="background-image: url(css/images/catalogue/mountain/level_b6_grafitowo_zolty_mat.png)" class="media-object img-rounded img-responsive">
+                        <a href=''><img style="background-image: url(css/images/catalogue/mountain/level_b6_grafitowo_zolty_mat.png)" class="media-object img-rounded img-responsive"></a>
                     </figure>
                     <div class="caption">
                         <h4 class='h4'>MTB</h4>
@@ -193,6 +196,7 @@
     <!-- @end footer -->
     <script src='https://code.jquery.com/jquery-2.0.3.min.js '></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js '></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
     <script src='../../client/js/main.js '></script>
 </body>
 
