@@ -22,18 +22,20 @@ figure.resume-image img {
 	font-weight: bold;
 }
 
-.remove-button {
-	
-}
-
-h4.list-group-item-heading {
-	margin-right: 10px;
-}
-
 h2.inline-block {
 	margin-top: 0;
 	color: #333;
 }
+
+h4.h4.inline-block.list-group-item-heading {
+	padding-right: 10px;
+	padding-left: 0;
+}
+
+p.quantity .inline-block {
+	margin-right: 10px;
+}
+
 
 .price-resume p {
 	padding-top: 8px;
@@ -44,8 +46,47 @@ h2.inline-block {
 }
 
 p.total-price {
+	padding-top: 40px;
 	display: flex;
 	justify-content: flex-end;
 	font-weight: bold;
 	font-size: 20px;
+}
+
+// BUTTON BOOKING STEP 1
+.btn.remove {
+	font-weight: bold;
+	background-color: transparent;
+	border: none;
+	color: #EF3054;
+	padding-right: 0;
+}
+
+.btn.btn-warning {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+// PAYMENT STYLES BOOKING STEP 3
+.panel-title {display: inline;font-weight: bold;}
+.checkbox.pull-right { margin: 0; }
+.pl-ziro { padding-left: 0px; }
+
+#booking3 .container {
+	margin-bottom: 40px;
+}
+
+// CONFIRMATION PAGE BOOKING STEP 4
+.cover-confirmed {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    overflow: hidden;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+	color: white;
+	overflow: hidden;
+	background-image: url('images/home/slide.jpg');
 }

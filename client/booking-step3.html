@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact us</title>
+    <title>Booking Step 1</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" , href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel='stylesheet' , href='css/styles.css'>
 </head>
 
-<body id='contact'>
+<body id='booking3'>
     <!-- navigator bar -->
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <a class="navbar-brand" href='index.html'><h1 class='h1-nav'>NEW HORIZON<br><small>rent a bike</small></h1></a>
+            <a class="navbar-brand" href="index.html"><h1 class='h1-nav'>NEW HORIZON<br><small>rent a bike</small></h1></a>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
@@ -39,75 +39,60 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- @end navigator bar -->
-    <!-- @begin contact form-->
-    <div class="anailetisim container-fluid">
-        <div class="container">
-            <h2 class='h2 inline-block cont'>Contact</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="iletisimform">
-                        <form role="form" action="/tr/iletisim/" method="post">
+
+    <!-- @begin resume -->
+    <div class="container">
+        <h2 class='inline-block h2'>Step 3: Payment</h2>
+        <div class="row">
+            <div class="col-xs-12 col-md-4 col-md-offset-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                        Payment Details
+                    </h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
                             <div class="form-group">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <input type="text" class="form-control input-lg" placeholder="Name" required="" name="name" id="name" value="">
+                                <label for="cardNumber">
+                                    CARD NUMBER</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number" required autofocus />
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-7 col-md-7">
+                                    <div class="form-group">
+                                        <p><strong>EXPIRY DATE</strong></p>
+                                        <div class="col-xs-6 col-lg-6 pl-ziro">
+                                            <input type="text" class="form-control" id="expityMonth" placeholder="MM" required />
+                                        </div>
+                                        <div class="col-xs-6 col-lg-6 pl-ziro">
+                                            <input type="text" class="form-control" id="expityYear" placeholder="YY" required />
+                                        </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <input type="text" class="form-control input-lg" placeholder="Surname" required="" name="surname" id="surname" value="">
+                                </div>
+                                <div class="col-xs-5 col-md-5 pull-right">
+                                    <div class="form-group">
+                                        <p><strong>CV CODE</strong></p>
+                                        <input type="password" class="form-control" id="cvCode" placeholder="CV" required />
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <input type="email" name="email" placeholder="E-mail adress" required="" class="form-control input-lg" id="email" value="">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="tel" name="tel" placeholder="Telefon" required="" class="form-control input-lg" id="tel" value="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <textarea name="message" class="form-control" rows="8" cols="80" placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary" name="gonder">Send</button>
                         </form>
                     </div>
                 </div>
-                <div class="col-md-1">
-                </div>
-                <div class="col-md-5 iletisimbilgi">
-                    <h2></h2>
-                    <table class="mtop">
-                        <tbody>
-                            <tr>
-                                <td><strong>Adress:</strong></td>
-                                <td>Avda. de la Playa nº3<br>07410 Puerto de Alcudia (Mallorca)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Telefon:</strong></td>
-                                <td>+34 971 59 79 87</td>
-                            </tr>
-                            <tr>
-                                <td><strong>E-Mail: </strong></td>
-                                <td>newhorizon@newhorizon.es</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#"><span class="badge pull-right"><span class="glyphicon glyphicon-usd"></span>4200</span> Final Payment</a>
+                    </li>
+                </ul>
+                <br/>
+                <a href="booking-step4.html" class="btn btn-success btn-lg btn-block" role="button">Pay</a>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3518.912558055216!2d3.1256436810449704!3d39.84306238234215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12962c8e2233761f%3A0xb8766c6d6d9db0cc!2sNew+Horizon!5e0!3m2!1ses!2ses!4v1503559818607" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
-        </div>
-    </div>
-    <!-- @end contact form -->
+    <!-- @end resume -->
     <!-- @begin footer -->
     <div class='footer'>
         <div class='container'>
@@ -139,11 +124,10 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- @end footer -->
-    <script src='https://code.jquery.com/jquery-2.0.3.min.js'></script>
-    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
-    <script src='../../client/js/main.js'></script>
+        <!-- @end footer -->
+        <script src='https://code.jquery.com/jquery-2.0.3.min.js '></script>
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js '></script>
+        <script src='../../client/js/main.js '></script>
 </body>
 
 </html>

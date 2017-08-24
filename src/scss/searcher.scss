@@ -58,6 +58,11 @@ p.inline-block.size {
 	font-size: 16px;
 }
 
+//LIST STYLE
+.col-md-5 ul:nth-child(4) li{
+	list-style-type: none;
+}
+
 // CUSTOMIZE OPTIONS RIGHT
 .right-column-options {
 	padding-top: 35px;

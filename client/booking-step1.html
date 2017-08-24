@@ -16,7 +16,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <a class="navbar-brand" href='index.html'><h1 class='h1-footer'>NEW HORIZON<br><small>rent a bike</small></h1></a>
+            <a class="navbar-brand" href="index.html"><h1 class='h1-nav'>NEW HORIZON<br><small>rent a bike</small></h1></a>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
@@ -31,7 +31,7 @@
                     <li class='white-link'><a href='catalogue.html'>Catalogue</a></li>
                     <li class='white-link'><a href='routes.html'>Routes</a></li>
                     <li class='white-link'><a href='contact.html'>Contact</a></li>
-                    <li><a href='booking.html'><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+                    <li><a href='booking-step1.html'><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -39,12 +39,16 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- @end navigator bar -->
+    <!-- @begin progress bar -->
+
+    <!-- @end progress bar -->
     <!-- @begin resume -->
     <div class='resume'>
         <div class="container">
             <div class="row">
                 <div class="well">
-                    <h5 class='inline-block page-title'>Resume</h5>
+                    <h2 class='inline-block h2'>Step 1: Resume</h2>
+                    <p class='total-price inline-block pull-right'>Total price: €€€€</p>
                     <div class="list-group">
                         <div class='row'>
                             <a href="#" class="col-md-6 list-group-item">
@@ -54,20 +58,20 @@
                                     </figure>
                                 </div>
                                 <div class="col-md-8">
-                                    <h4 class="inline-block list-group-item-heading">Kross Vento</h4>
+                                    <h4 class="h4 inline-block list-group-item-heading">Kross Vento</h4>
                                     <h2 class='inline-block'>S</h2>
                                     <p>Category: Road</p>
                                     <p><span class='bold'>Dates:</span> 29/09/17 to 04/10/17</p>
                                     <p><span class='bold'>Description:</span> Road Kross Vento, size S, own pedals</p>
                                     <div>
-                                        <p class='inline-block'>Quantity:</p>
-                                        <input type="number" class="inline-block form-control" id="quantity" value="">
+                                        <p class='quantity inline-block'>Quantity:</p>
+                                        <input type="number" class="inline-block" id="quantity" value="1">
                                     </div>
                                     <div class='price-resume'>
                                         <p>Price: xxxx</p>
                                     </div>
                                     <div class="remove-button text-center">
-                                        <button type="button" class=" btn btn-danger btn-block">Remove</button>
+                                        <button type="button" class="btn remove pull-right">Remove</button>
                                     </div>
                                 </div>
                             </a>
@@ -78,26 +82,26 @@
                                     </figure>
                                 </div>
                                 <div class="col-md-8">
-                                    <h4 class="inline-block list-group-item-heading">Specialized Allez</h4>
+                                    <h4 class="h4 inline-block list-group-item-heading">Specialized Allez</h4>
                                     <h2 class='inline-block'>L</h2>
                                     <p>Category: Road</p>
                                     <p><span class='bold'>Dates:</span> 29/09/17 to 04/10/17</p>
                                     <p><span class='bold'>Description:</span> Road Kross Vento, size L, pedals SDL</p>
                                     <div>
                                         <p class='inline-block'>Quantity:</p>
-                                        <input type="number" class="inline-block form-control" id="quantity" value="">
+                                        <input type="number" class="inline-block" id="quantity" value="1">
                                     </div>
                                     <div class='price-resume'>
                                         <p>Price: xxxx</p>
                                     </div>
                                     <div class="remove-button text-center">
-                                        <button type="button" class=" btn btn-danger btn-block">Remove</button>
+                                        <button type="button" class="btn remove pull-right">Remove</button>
                                     </div>
                                 </div>
                             </a>
                         </div>
+                        <a href="booking-step2.html" class="btn btn-warning pull-right">Next Step</a>
                     </div>
-                    <p class='total-price'>Total price: €€€€</p>
                 </div>
             </div>
         </div>
