@@ -1,15 +1,29 @@
 .cover {
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   overflow: hidden;
   height: 500px;
-  display: flex;
   justify-content: center;
-  padding-top: 100px;
   color: white;
   overflow: hidden;
-  background-image: url("images/home/slide3.jpg"); }
+  background-image: url(images/home/slide3.jpg); }
+
+.container.home {
+  left: 5%;
+  position: absolute;
+  top: 23%; }
+
+.video-cover {
+  min-height: 500px;
+  max-height: 500px;
+  object-fit: cover;
+  width: 100%; }
+
+@media (max-width: 768px) {
+  .cover {
+    background-image: none; } }
 
 .search-container {
   background-color: rgba(0, 0, 0, 0.6);
@@ -140,6 +154,7 @@ p.inline-block.size {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  width: auto;
   overflow: hidden; }
   .thumbnail img {
     background-size: contain;
@@ -308,6 +323,9 @@ p.total-price {
   padding-bottom: 20px; }
 
 .thumbnail {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   margin-top: 40px;
   border: none;
   box-shadow: none; }
@@ -330,6 +348,9 @@ p.total-price {
 
 #bike-info.checkbox {
   margin: 0; }
+
+#bike-info .btn-warning {
+  border: none; }
 
 body {
   font-family: 'Roboto', sans-serif; }
@@ -390,6 +411,12 @@ body {
   padding-right: 5px;
   display: flex;
   justify-content: flex-end;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 700; }
+
+.h3-price-search-detail {
+  padding-left: 50px;
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
   font-weight: 700; }
