@@ -8,6 +8,20 @@
 	border: none;
 }
 
+.row.list-resume {
+	display: block;
+}
+// SPACE UNDER THE CHECKBOX
+a.col-md-6.list-group-item.left-column {
+	margin-top: 78px;
+}
+
+.row.header-row {
+	margin-bottom: 30px;
+}
+
+//
+
 figure.resume-image img {
 	background-color: #FFF;
 }

@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" , href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
     <link rel='stylesheet' , href='css/styles.css'>
 </head>
 
@@ -41,71 +40,114 @@
     </nav>
     <!-- @end navigator bar -->
     <!-- @begin progress bar -->
-
     <!-- @end progress bar -->
     <!-- @begin resume -->
     <div class='resume'>
         <div class="container">
             <div class="row">
                 <div class="well">
-                    <h2 class='inline-block h2'>Step 1: Resume</h2>
-                    <p class='total-price inline-block pull-right'>Total price: €€€€</p>
-                    <div class="list-group">
-                        <div class='row'>
-                            <a href="#" class="col-md-6 list-group-item">
-                                <div class="media col-md-4">
-                                    <figure class="pull-left resume-image">
-                                        <img style="background-image: url(css/images/searcher-result/kross_vento7.png)" class="media-object img-rounded img-responsive">
-                                    </figure>
+                    <h2 class='col-xs-12 col-md-6 inline-block h2'>Step 1: Resume</h2>
+                    <!-- chekout bar -->
+                    <div class="col-xs-12 col-md-6 container">
+                        <div class="row bs-wizard" style="border-bottom:0;">
+                            <div class="col-xs-3 bs-wizard-step complete">
+                                <div class="text-center bs-wizard-stepnum">Step 1</div>
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
                                 </div>
-                                <div class="col-md-8">
-                                    <h4 class="h4 inline-block list-group-item-heading">Kross Vento</h4>
-                                    <h2 class='inline-block'>S</h2>
-                                    <p>Category: Road</p>
-                                    <p><span class='bold'>Dates:</span> 29/09/17 to 04/10/17</p>
-                                    <p><span class='bold'>Description:</span> Road Kross Vento, size S, own pedals</p>
-                                    <div>
-                                        <p class='quantity inline-block'>Quantity:</p>
-                                        <input type="number" class="inline-block" id="quantity" value="1">
-                                    </div>
-                                    <div class='price-resume'>
-                                        <p>Price: xxxx</p>
-                                    </div>
-                                    <div class="remove-button text-center">
-                                        <button type="button" class="btn remove pull-right">Remove</button>
-                                    </div>
+                                <a href="booking-step1.html" class="bs-wizard-dot"></a>
+                                <div class="bs-wizard-info text-center">Resume</div>
+                            </div>
+                            <div class="col-xs-3 bs-wizard-step complete">
+                                <!-- complete -->
+                                <div class="text-center bs-wizard-stepnum">Step 2</div>
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
                                 </div>
-                            </a>
-                            <a href="#" class="col-md-6 list-group-item">
-                                <div class="media col-md-4">
-                                    <figure class="pull-left resume-image">
-                                        <img style="background-image: url(css/images/searcher-result/specialized-allez.jpg)" class="media-object img-rounded img-responsive">
-                                    </figure>
+                                <a href="booking-step2.html" class="bs-wizard-dot"></a>
+                                <div class="bs-wizard-info text-center">Personal information</div>
+                            </div>
+                            <div class="col-xs-3 bs-wizard-step active">
+                                <!-- complete -->
+                                <div class="text-center bs-wizard-stepnum">Step 3</div>
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
                                 </div>
-                                <div class="col-md-8">
-                                    <h4 class="h4 inline-block list-group-item-heading">Specialized Allez</h4>
-                                    <h2 class='inline-block'>L</h2>
-                                    <p>Category: Road</p>
-                                    <p><span class='bold'>Dates:</span> 29/09/17 to 04/10/17</p>
-                                    <p><span class='bold'>Description:</span> Road Kross Vento, size L, pedals SDL</p>
-                                    <div>
-                                        <p class='inline-block'>Quantity:</p>
-                                        <input type="number" class="inline-block" id="quantity" value="1">
-                                    </div>
-                                    <div class='price-resume'>
-                                        <p>Price: xxxx</p>
-                                    </div>
-                                    <div class="remove-button text-center">
-                                        <button type="button" class="btn remove pull-right">Remove</button>
-                                    </div>
+                                <a href="booking-step3.html" class="bs-wizard-dot"></a>
+                                <div class="bs-wizard-info text-center">Payment</div>
+                            </div>
+                            <div class="col-xs-3 bs-wizard-step disabled">
+                                <!-- active -->
+                                <div class="text-center bs-wizard-stepnum">Step 4</div>
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
                                 </div>
-                            </a>
+                                <a href="booking-step4.html" class="bs-wizard-dot"></a>
+                                <div class="bs-wizard-info text-center">Confirmation</div>
+                            </div>
                         </div>
-                        <a href="booking-step2.html" class="btn btn-warning pull-right">Next Step</a>
                     </div>
+                    <!-- chekout bar -->
+                </div>
+            </div>
+            <div>
+                <p class='total-price pull-right'>Total price: €€€€</p>
+                <div class="list-group">
+                    <div class='row list-resume'>
+                        <a href="#" class="col-md-6 list-group-item left-column">
+                            <div class="media col-md-4">
+                                <figure class="pull-left resume-image">
+                                    <img style="background-image: url(css/images/searcher-result/kross_vento7.png)" class="media-object img-rounded img-responsive">
+                                </figure>
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="h4 inline-block list-group-item-heading">Kross Vento</h4>
+                                <h2 class='inline-block'>S</h2>
+                                <p>Category: Road</p>
+                                <p><span class='bold'>Dates:</span> 29/09/17 to 04/10/17</p>
+                                <p><span class='bold'>Description:</span> Road Kross Vento, size S, own pedals</p>
+                                <div>
+                                    <p class='quantity inline-block'>Quantity:</p>
+                                    <input type="number" class="inline-block" id="quantity" value="1">
+                                </div>
+                                <div class='price-resume'>
+                                    <p>Price: xxxx</p>
+                                </div>
+                                <div class="remove-button text-center">
+                                    <button type="button" class="btn remove pull-right">Remove</button>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="col-md-6 list-group-item">
+                            <div class="media col-md-4">
+                                <figure class="pull-left resume-image">
+                                    <img style="background-image: url(css/images/searcher-result/specialized-allez.jpg)" class="media-object img-rounded img-responsive">
+                                </figure>
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="h4 inline-block list-group-item-heading">Specialized Allez</h4>
+                                <h2 class='inline-block'>L</h2>
+                                <p>Category: Road</p>
+                                <p><span class='bold'>Dates:</span> 29/09/17 to 04/10/17</p>
+                                <p><span class='bold'>Description:</span> Road Kross Vento, size L, pedals SDL</p>
+                                <div>
+                                    <p class='inline-block'>Quantity:</p>
+                                    <input type="number" class="inline-block" id="quantity" value="1">
+                                </div>
+                                <div class='price-resume'>
+                                    <p>Price: xxxx</p>
+                                </div>
+                                <div class="remove-button text-center">
+                                    <button type="button" class="btn remove pull-right">Remove</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="booking-step2.html" class="btn btn-warning pull-right">Next Step</a>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- @end resume -->
     <!-- @begin footer -->
