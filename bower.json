@@ -1,0 +1,21 @@
+{
+  "name": "new-horizon",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Cata Buades <catabuades@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/catabuades/new-horizon-final-project",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}

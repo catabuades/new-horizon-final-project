@@ -1,0 +1,78 @@
+extends ../layout
+
+block content
+
+  .container.container-cover
+  .row.header-row
+    h2.h2.col-xs-12.col-md-6.inline-block Step 2: Personal information
+    // chekout bar
+    .col-xs-12.col-md-6.container
+      .row.bs-wizard(style='border-bottom:0;')
+        .col-xs-3.bs-wizard-step.complete
+          .text-center.bs-wizard-stepnum Step 1
+          .progress
+            .progress-bar
+          a.bs-wizard-dot(href='/booking-step1')
+          .bs-wizard-info.text-center Resume
+        .col-xs-3.bs-wizard-step.complete
+          // complete
+          .text-center.bs-wizard-stepnum Step 2
+          .progress
+            .progress-bar
+          a.bs-wizard-dot(href='/booking-step2')
+          .bs-wizard-info.text-center Personal information
+        .col-xs-3.bs-wizard-step.active
+          // complete
+          .text-center.bs-wizard-stepnum Step 3
+          .progress
+            .progress-bar
+          a.bs-wizard-dot(href='/booking-step3')
+          .bs-wizard-info.text-center Payment
+        .col-xs-3.bs-wizard-step.disabled
+          // active
+          .text-center.bs-wizard-stepnum Step 4
+          .progress
+            .progress-bar
+          a.bs-wizard-dot(href='/booking-step4')
+          .bs-wizard-info.text-center Confirmation
+  // chekout bar
+  div
+    form.form-horizontal
+      fieldset
+        // Form Name
+        // Text input
+        .form-group
+          label.col-md-4.control-label(for='name') Name *
+          .col-md-4
+            input#name.form-control.input-md(name='name', type='text', placeholder='', required='')
+        // Text input
+        .form-group
+          label.col-md-4.control-label(for='surname') Surname *
+          .col-md-4
+            input#surname.form-control.input-md(name='surname', type='text', placeholder='', required='')
+        // Text input
+        .form-group
+          label.col-md-4.control-label(for='contact') Phone Number 
+          .col-md-4
+            input#contact.form-control.input-md(name='contact', type='text', placeholder='', required='')
+        // Text input
+        .form-group
+          label.col-md-4.control-label(for='email') Email Address *
+          .col-md-4
+            input#email.form-control.input-md(name='email', type='text', placeholder='', required='')
+        // Text input
+        .form-group
+          label.col-md-4.control-label(for='country') Country *
+          .col-md-4
+            input#country.form-control.input-md(name='country', type='text', placeholder='')
+        // Text input
+        .form-group
+          label.col-md-4.control-label(for='hotel') Hotel
+          .col-md-4
+            input#hotel.form-control.input-md(name='hotel', type='text', placeholder='')
+        // Textarea
+        .form-group
+          label.col-md-4.control-label(for='comments') Comments
+          .col-md-4
+            textarea#comments.form-control(name='comments')
+      a.btn.btn-warning.col-md-offset-4.col-md-4(href='/booking-step3') Payment

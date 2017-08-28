@@ -1,0 +1,101 @@
+extends ../layout
+
+block content
+
+  .container
+    div
+      h2.h2.inline-block.page-title Catalogue
+      .inline-block.pull-right
+        p.inline-block.size Filter by
+        input(type='checkbox', data-toggle='toggle', data-on='Road', data-off='Road')
+        input(type='checkbox', data-toggle='toggle', data-on='Mountain', data-off='Mountain')
+        input(type='checkbox', data-toggle='toggle', data-on='City', data-off='City')
+        input(type='checkbox', data-toggle='toggle', data-on='E-Bike', data-off='E-Bike')
+    legend.h3 Road
+    .row
+      .col-sm-6.col-md-3
+        .zoomIt.thumbnail
+          figure.pull-left
+            a(href='bike-info.html')
+              img.media-object.img-rounded.img-responsive(style='background-image: url(css/images/catalogue/road/kross_vento7.png)')
+          .caption
+            h4.h4 Kross Vento
+            p Shimano Ultegra 22v
+            p Light carbon
+            p
+              a.btn.btn-default.info(href='/bike-info', role='button') + info
+      .col-sm-6.col-md-3
+        .zoomIt.thumbnail
+          figure.pull-left
+            a(href='bike-info.html')
+              img.media-object.img-rounded.img-responsive(style='background-image: url(css/images/catalogue/road/scott_speedsterS20.jpg)')
+          .caption
+            h4.h4 Scott Speedster
+            p Compack Shimano 105
+            p Light aluminium
+            p
+              a.btn.btn-default(href='/bike-info', role='button') + info
+      .col-sm-6.col-md-3
+        .zoomIt.thumbnail
+          figure.pull-left
+            a(href='bike-info.html')
+              img.media-object.img-rounded.img-responsive(style='background-image: url(css/images/catalogue/road/orbea.jpg)')
+          .caption
+            h4.h4 Orbea
+            p Shimano Triple Ultegra
+            p Carbon frame
+            p
+              a.btn.btn-default(href='/bike-info', role='button') + info
+      .col-sm-6.col-md-3
+        .zoomIt.thumbnail
+          figure.pull-left
+            a(href='bike-info.html')
+              img.media-object.img-rounded.img-responsive(style='background-image: url(css/images/catalogue/road/trek_emondaS5.jpg)')
+          .caption
+            h4.h4 Trek Emonda
+            p Compack Shimano 105
+            p Carbon frame
+            p
+              a.btn.btn-default(href='/bike-info', role='button') + info
+    legend.h3 Mountain
+    .row
+      .col-sm-6.col-md-3
+        .zoomIt.thumbnail
+          figure.pull-left
+            a(href='bike-info.html')
+              img.media-object.img-rounded.img-responsive(style='background-image: url(css/images/catalogue/mountain/lea_mtb_mujer.jpg)')
+          .caption
+            h4.h4 Lea MTB Kross
+            p ...
+            p
+              a.btn.btn-default(href='/bike-info', role='button') + info
+      .col-sm-6.col-md-3
+        .zoomIt.thumbnail
+          figure.pull-left
+            a(href='bike-info.html')
+              img.media-object.img-rounded.img-responsive(style='background-image: url(css/images/catalogue/mountain/level_b6_grafitowo_zolty_mat.png)')
+          .caption
+            h4.h4 Level MTB Kross
+            p ...
+            p
+              a.btn.btn-default(href='/bike-info', role='button') + info
+      .col-sm-6.col-md-3
+        .zoomIt.thumbnail
+          figure.pull-left
+            a(href='bike-info.html')
+              img.media-object.img-rounded.img-responsive(style='background-image: url(css/images/catalogue/mountain/lea_mtb_mujer.jpg)')
+          .caption
+            h4.h4 MTB
+            p ...
+            p
+              a.btn.btn-default(href='/bike-info', role='button') + info
+      .col-sm-6.col-md-3
+        .zoomIt.thumbnail
+          figure.pull-left
+            a(href='bike-info.html')
+              img.media-object.img-rounded.img-responsive(style='background-image: url(css/images/catalogue/mountain/level_b6_grafitowo_zolty_mat.png)')
+          .caption
+            h4.h4 MTB
+            p ...
+            p
+              a.btn.btn-default(href='/bike-info', role='button') + info

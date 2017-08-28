@@ -1,0 +1,87 @@
+extends ../layout
+
+block content
+
+  .resume
+  .container
+    .row
+      .well
+        h2.col-xs-12.col-md-6.inline-block.h2 Step 1: Resume
+        // chekout bar
+        .col-xs-12.col-md-6.container
+          .row.bs-wizard(style='border-bottom:0;')
+            .col-xs-3.bs-wizard-step.complete
+              .text-center.bs-wizard-stepnum Step 1
+              .progress
+                .progress-bar
+              a.bs-wizard-dot(href='/booking-step1')
+              .bs-wizard-info.text-center Resume
+            .col-xs-3.bs-wizard-step.complete
+              // complete
+              .text-center.bs-wizard-stepnum Step 2
+              .progress
+                .progress-bar
+              a.bs-wizard-dot(href='/booking-step2')
+              .bs-wizard-info.text-center Personal information
+            .col-xs-3.bs-wizard-step.active
+              // complete
+              .text-center.bs-wizard-stepnum Step 3
+              .progress
+                .progress-bar
+              a.bs-wizard-dot(href='/booking-step3')
+              .bs-wizard-info.text-center Payment
+            .col-xs-3.bs-wizard-step.disabled
+              // active
+              .text-center.bs-wizard-stepnum Step 4
+              .progress
+                .progress-bar
+              a.bs-wizard-dot(href='/booking-step4')
+              .bs-wizard-info.text-center Confirmation
+        // chekout bar
+    div
+      p.total-price.pull-right Total price: €€€€
+      .list-group
+        .row.list-resume
+          a.col-md-6.list-group-item.left-column(href='#')
+            .media.col-md-4
+              figure.pull-left.resume-image
+                img.media-object.img-rounded.img-responsive(style='background-image: url(css/images/searcher-result/kross_vento7.png)')
+            .col-md-8
+              h4.h4.inline-block.list-group-item-heading Kross Vento
+              h2.inline-block S
+              p Category: Road
+              p
+                span.bold Dates:
+                |  29/09/17 to 04/10/17
+              p
+                span.bold Description:
+                |  Road Kross Vento, size S, own pedals
+              div
+                p.quantity.inline-block Quantity:
+                input#quantity.inline-block(type='number', value='1')
+              .price-resume
+                p Price: xxxx
+              .remove-button.text-center
+                button.btn.remove.pull-right(type='button') Remove
+          a.col-md-6.list-group-item(href='#')
+            .media.col-md-4
+              figure.pull-left.resume-image
+                img.media-object.img-rounded.img-responsive(style='background-image: url(css/images/searcher-result/specialized-allez.jpg)')
+            .col-md-8
+              h4.h4.inline-block.list-group-item-heading Specialized Allez
+              h2.inline-block L
+              p Category: Road
+              p
+                span.bold Dates:
+                |  29/09/17 to 04/10/17
+              p
+                span.bold Description:
+                |  Road Kross Vento, size L, pedals SDL
+              div
+                p.inline-block Quantity:
+                input#quantity.inline-block(type='number', value='1')
+              .price-resume
+                p Price: xxxx
+              .remove-button.text-center
+                button.btn.remove.pull-right(type='button') Remove
+        a.btn.btn-warning.pull-right(href='/booking-step2') Next Step

@@ -1,0 +1,141 @@
+extends ../layout
+
+block content
+
+  .container
+    .row
+      .col-xs-12.col-md-5
+        a.thumbnail.bike-details(href='#')
+          img.media-object.img-responsive(style='background-image: url(css/images/catalogue/road/kross_vento7.png)')
+        table.table
+          thead
+            tr
+              th Frame
+              th
+          tbody
+            tr
+              td Frame
+              td T784 Carbon
+            tr
+              td Fork
+              td Carbon (tapered carbon steerer 1-1/8″-1,5″; QR12)
+        table.table
+          thead
+            tr
+              th Wheels
+              th
+          tbody
+            tr
+              td Front hub
+              td DT Swiss R23 Spline 12×100
+            tr
+              td Rear hub
+              td DT Swiss R23 Spline 12×142
+            tr
+              td Covers
+              td Shwalbe One V-Guard Folding 700-25c
+            tr
+              td Tires
+              td DT Swiss R23 Spline
+        table.table
+          thead
+            tr
+              th Drive
+              th
+          tbody
+            tr
+              td Front shift
+              td Shimano Ultegra FD-6800
+            tr
+              td Rear shift
+              td Shimano Ultegra RD-6800-SS;
+            tr
+              td Front brake
+              td Shimano BR-RS785 (hydraulic, disc, rotor 160mm)
+            tr
+              td Rear brake
+              td Shimano ST-RS685
+            tr
+              td Brake levers
+              td Shimano ST-RS685 2×11
+            tr
+              td Handles
+              td Shimano Ultegra FC-6800 52-36T (S 170mm, M 172.5mm L/XL 175mm)
+            tr
+              td Plate
+              td Shimano Press Fit SM-BB72-41B
+            tr
+              td Chain
+              td Shimano CN-HG600
+            tr
+              td Casette / Pinon
+              td Shimano Ultegra CS-6800 11-28T
+        table.table
+          thead
+            tr
+              th Components
+              th
+          tbody
+            tr
+              td Handlebar
+              td Zipp Service Course SL-80 (alloy, S – 400mm, M – 420mm, L/XL – 440mm, 31,8mm)
+            tr
+              td Power
+              td
+                | Zipp Service Course SL (alloy, S – 80mm, M – 90mm, L – 100mm, XL – 110mm, rise 6º, 31,8mm)
+            tr
+              td Seat post
+              td Zipp SL Speed (carbon, 330mm, 27,2mm)
+            tr
+              td Direction
+              td FSA Orbit C-40/48-CF 1-1/8″/1,5″
+            tr
+              td Seat belt
+              td F’izi:k Antares R7 Magnesium
+            tr
+              td Fists
+              td Velo
+      .col-xs-12.col-md-7
+        h2.h2.inline-block Kross Vento
+        .searcher
+          .flex-container.search-details.searcherbar
+            form.navbar-form(role='search')
+              .form-group
+                p.inline-block Pick-Up
+                input.form-control(type='date', placeholder='21/08/17  9:00')
+              .form-group
+                p.inline-block Drop-Off
+                input.form-control(type='date', placeholder='21/08/17  19:00')
+                a(href='search-result.html')
+                  span.glyphicon.glyphicon-search(aria-hidden='true')
+        .inline-block
+          p.inline-block Size:
+          select
+            option(value='', selected='', disabled='') ...
+            option 50 / XS
+            option 53 / S
+            option 56 / M
+            option 58 / L
+            option 60 / XL
+          p.inline-block Pedals:
+          select
+            option(value='', selected='', disabled='') ...
+            option Own pedals
+            option
+              | Shimano SPD 
+              strong 1€/day
+            option
+              | Shimano SPL 
+              strong 1€/day
+            option
+              | Look Kio 
+              strong 1€/day
+        .inline-block.pull-right
+          h3.h3-price-search 75€
+        .checkbox
+          label
+            input(type='checkbox')
+            | Insurance 
+            strong 1€/day
+        .add-button.text-center
+          button.btn.btn-primary.btn-block(type='button') Add to card

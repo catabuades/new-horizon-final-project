@@ -1,0 +1,51 @@
+extends ../layout
+
+block content
+
+  .anailetisim.container-fluid
+    .container
+      h2.h2.inline-block.cont Contact
+      .row
+        .col-md-6
+          .iletisimform
+            form(role='form', action='/tr/iletisim/', method='post')
+              .form-group
+                .row
+                  .col-md-6
+                    input#name.form-control.input-lg(type='text', placeholder='Name', required='', name='name', value='')
+                  .col-md-6
+                    input#surname.form-control.input-lg(type='text', placeholder='Surname', required='', name='surname', value='')
+              .form-group
+                .row
+                  .col-md-6
+                    input#email.form-control.input-lg(type='email', name='email', placeholder='E-mail adress', required='', value='')
+                  .col-md-6
+                    input#tel.form-control.input-lg(type='tel', name='tel', placeholder='Telefon', required='', value='')
+              .form-group
+                .row
+                  .col-md-12
+                    textarea.form-control(name='message', rows='8', cols='80', placeholder='Message')
+              button.btn.btn-primary(type='submit', name='gonder') Send
+        .col-md-1
+        .col-md-5.iletisimbilgi
+          h2
+          table.mtop
+            tbody
+              tr
+                td
+                  strong Adress:
+                td
+                  | Avda. de la Playa nº3
+                  br
+                  | 07410 Puerto de Alcudia (Mallorca)
+              tr
+                td
+                  strong Telefon:
+                td +34 971 59 79 87
+              tr
+                td
+                  strong E-Mail: 
+                td newhorizon@newhorizon.es
+  .container-fluid
+    .row
+      iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3518.912558055216!2d3.1256436810449704!3d39.84306238234215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12962c8e2233761f%3A0xb8766c6d6d9db0cc!2sNew+Horizon!5e0!3m2!1ses!2ses!4v1503559818607', width='100%', height='300', frameborder='0', style='border:0', allowfullscreen='')
