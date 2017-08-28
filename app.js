@@ -17,6 +17,7 @@ app.use(bodyParser.json())
 
 // app.use(routesApp)
 
+// PUG ROUTES
 app.get('/', (req, res) => {
   res.render('pages/home')
 })
@@ -51,6 +52,11 @@ app.get('/booking-step4', (req, res) => {
 
 app.get('/bike-info', (req, res) => {
   res.render('pages/bike-info')
+})
+
+// ANGULAR ROUTES
+app.get('/admin', (req, res) => {
+  res.redirect('/#!/reservas')
 })
 
 app.listen(PORT)
