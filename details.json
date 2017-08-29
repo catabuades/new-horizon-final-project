@@ -1,0 +1,87 @@
+[
+{
+    "title": "Kross Vento",
+    "category": "road",
+    "description": "",
+    "size": "M",
+    "details":
+    {
+        "Frame":
+        {
+            "Frame": "T784 Carbon",
+            "Fork": "Carbon (tapered carbon steerer 1-1/8″-1,5″; QR12)"
+        },
+        "Wheels":
+        {
+            "Front hub": "DT Swiss R23 Spline 12×100",
+            "Rear hub": "DT Swiss R23 Spline 12×142",
+            "Covers": " Shwalbe One V-Guard Folding 700-25c",
+            "Tires": "  DT Swiss R23 Spline"
+        },
+        "Drive":
+        {
+            "Front shift": "Shimano Ultegra FD-6800",
+            "Rear shift ": "Shimano Ultegra RD-6800-SS",
+            "Front brake": "Shimano BR-RS785 (hydraulic, disc, rotor 160mm)",
+            "Rear brake": "Shimano ST-RS685",
+            "Brake levers": "Shimano ST-RS685 2×11",
+            "Handles": "Shimano Ultegra FC-6800 52-36T (S 170mm, M 172.5mm L/XL 175mm)",
+            "Plate": "Shimano Press Fit SM-BB72-41B",
+            "Chain": "Shimano CN-HG600",
+            "Casette / Pinon": "Shimano Ultegra CS-6800 11-28T"
+        },
+        "Components":
+        {
+            "Handlebar": "  Zipp Service Course SL-80 (alloy, S – 400mm, M – 420mm, L/XL – 440mm, 31,8mm)",
+            "Power": "Zipp Service Course SL (alloy, S – 80mm, M – 90mm, L – 100mm, XL – 110mm, rise 6º, 31,8mm)",
+            "Seat post": "Zipp SL Speed (carbon, 330mm, 27,2mm)",
+            "Direction": "FSA Orbit C-40/48-CF 1-1/8″/1,5″",
+            "Seat belt": "F’izi:k Antares R7 Magnesium",
+            "Fists": "Velo"
+        }
+    },
+    "available": "true"
+},
+{
+    "title": "Kross Vento",
+    "category": "road",
+    "description": "",
+    "size": "M",
+    "details":
+    {
+        "Frame":
+        {
+            "Frame": "T784 Carbon",
+            "Fork": "Carbon (tapered carbon steerer 1-1/8″-1,5″; QR12)"
+        },
+        "Wheels":
+        {
+            "Front hub": "DT Swiss R23 Spline 12×100",
+            "Rear hub": "DT Swiss R23 Spline 12×142",
+            "Covers": " Shwalbe One V-Guard Folding 700-25c",
+            "Tires": "  DT Swiss R23 Spline"
+        },
+        "Drive":
+        {
+            "Front shift": "Shimano Ultegra FD-6800",
+            "Rear shift ": "Shimano Ultegra RD-6800-SS",
+            "Front brake": "Shimano BR-RS785 (hydraulic, disc, rotor 160mm)",
+            "Rear brake": "Shimano ST-RS685",
+            "Brake levers": "Shimano ST-RS685 2×11",
+            "Handles": "Shimano Ultegra FC-6800 52-36T (S 170mm, M 172.5mm L/XL 175mm)",
+            "Plate": "Shimano Press Fit SM-BB72-41B",
+            "Chain": "Shimano CN-HG600",
+            "Casette / Pinon": "Shimano Ultegra CS-6800 11-28T"
+        },
+        "Components":
+        {
+            "Handlebar": "  Zipp Service Course SL-80 (alloy, S – 400mm, M – 420mm, L/XL – 440mm, 31,8mm)",
+            "Power": "Zipp Service Course SL (alloy, S – 80mm, M – 90mm, L – 100mm, XL – 110mm, rise 6º, 31,8mm)",
+            "Seat post": "Zipp SL Speed (carbon, 330mm, 27,2mm)",
+            "Direction": "FSA Orbit C-40/48-CF 1-1/8″/1,5″",
+            "Seat belt": "F’izi:k Antares R7 Magnesium",
+            "Fists": "Velo"
+        }
+    },
+    "available": "true"
+}]
