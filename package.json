@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app",
-    "dev": "nodemon app.js",
+    "start": "node index",
+    "dev": "nodemon index.js",
     "build:scss": "node-sass src/scss/styles.scss client/css/styles.css",
     "builde:scss:watch": "node-sass src/scss/styles.scss client/css/styles.css --watch"
   },
@@ -15,6 +15,7 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
+    "mongoose": "^4.11.9",
     "pug": "^2.0.0-rc.3",
     "strftime": "^0.10.0"
   },

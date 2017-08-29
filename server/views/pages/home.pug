@@ -1,0 +1,39 @@
+extends ../layout
+
+block content
+
+  .cover
+    video.inline-block.video-cover(src='/video/cover-web.mp4', autoplay='', loop='')
+    .container.home
+      .row
+        .search-container.col-xs-12.col-md-8
+          h1.h1-search-home Find your bike in Alcudia now!
+          .search-home
+            form.navbar-form.navbar-left(role='search' action='/apiResults' method='post')
+              .form-group
+                p.inline-block Pick-Up
+                input.form-control(name='pickdate' type='date', placeholder='21/08/17  9:00')
+              .form-group
+                p.inline-block Drop-Off
+                input.form-control(name='dropdate' type='date', placeholder='21/08/17  19:00')
+                button.btn.btn-default Search
+              .advanced-option
+                p
+                  a.btn.btn-primary(data-toggle='collapse', href='#collapseExample', aria-expanded='false', aria-controls='collapseExample') Advanced search
+                #collapseExample.collapse
+                  .card.card-block
+                    .checkboxes
+                      label
+                        input(type='checkbox', name='type', value='road')
+                        | Road
+                      label
+                        input(type='checkbox', name='type', value='mountain')
+                        | Mountain
+                      label
+                        input(type='checkbox', name='type', value='city')
+                        | City
+                      label
+                        input(type='checkbox', name='type', value='e-bike')
+                        | E-Bike
+        .col-md-4
+
