@@ -1,6 +1,8 @@
+const detailsBike = require('../../details.json')
+
 function handlerHome (req, res) {
   console.log(req.body)
-  res.redirect('/search-results')
+  res.render()
 }
 
 module.exports = handlerHome

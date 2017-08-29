@@ -33,11 +33,11 @@ block content
                   figure.pull-left
                     img.media-object.img-rounded.img-responsive(style='background-image: url(css/images/searcher-result/kross_vento7.png)')
                 .col-md-5
-                  h3.h3.list-group-item-heading Kross Vento
-                  p Category: Road
+                  h3.h3.list-group-item-heading #{ title }
+                  p Category: #{ category }
                   p
                     span.bold Description:
-                  p Shimano Ultegra 22v, light carbon, hidraulic brake
+                  p #{ description }
                 .right-column-options.col-md-4
                   div
                     h3.h3-price-search 75€
@@ -69,79 +69,4 @@ block content
                       strong 1€/day
                   .add-button.text-center
                     button.btn.btn-primary.btn-block(type='button') Add to card
-              .list-group-item
-                .media.col-md-3
-                  figure.pull-left
-                    img.media-object.img-rounded.img-responsive(style='background-image: url(css/images/searcher-result/specialized-allez.jpg)')
-                .col-md-5
-                  h3.h3.list-group-item-heading Specialized Allez
-                  p Category: Road
-                .right-column-options.col-md-4
-                  div
-                    h3.h3-price-search 75€
-                  p.inline-block Size:
-                  select
-                    option(value='', selected='', disabled='') ...
-                    option 50 / XS
-                    option 53 / S
-                    option 56 / M
-                    option 58 / L
-                    option 60 / XL
-                  p.inline-block Pedals:
-                  select
-                    option(value='', selected='', disabled='') ...
-                    option Own pedals
-                    option
-                      | Shimano SPD 
-                      strong 1€/day
-                    option
-                      | Shimano SPL 
-                      strong 1€/day
-                    option
-                      | Look Kio 
-                      strong 1€/day
-                  .checkbox
-                    label
-                      input(type='checkbox')
-                      | Insurance 
-                      strong 1€/day
-                  .add-button.text-center
-                    button.btn.btn-primary.btn-block(type='button') Add to card
-              .list-group-item
-                .media.col-md-3
-                  figure.pull-left
-                    img.media-object.img-rounded.img-responsive(style='background-image: url(css/images/searcher-result/trek-emonda.jpg)')
-                .col-md-5
-                  h3.h3.list-group-item-heading Trek Emonda
-                  p Category: Road
-                .right-column-options.col-xs-12.col-md-4
-                  div
-                    h3.h3-price-search 75€
-                  p.inline-block Size:
-                  select
-                    option(value='', selected='', disabled='') ...
-                    option 50 / XS
-                    option 53 / S
-                    option 56 / M
-                    option 58 / L
-                    option 60 / XL
-                  p.inline-block Pedals:
-                  select
-                    option(value='', selected='', disabled='') ...
-                    option Own pedals
-                    option
-                      | Shimano SPD 
-                      strong 1€/day
-                    option
-                      | Shimano SPL 
-                      strong 1€/day
-                    option
-                      | Look Kio 
-                      strong 1€/day
-                  .checkbox
-                    label
-                      input(type='checkbox')
-                      | Insurance 
-                      strong 1€/day
-                  .add-button.text-center
-                    button.btn.btn-primary.btn-block(type='button') Add to card
+              
