@@ -1,6 +1,5 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
-const strftime = require('strftime')
 
 const collection = 'bikes'
 
@@ -14,15 +13,45 @@ var BikeSchema = new Schema({
     required: true
   },
   description: {
-    type: String
+    type: String,
+    default: ''
   },
   size: {
     type: String,
     required: true
   },
-  details: {
-    type: Object
-  },
+  image: String,
+  details: [{
+    frame: {
+      frame: String,
+      fork: String
+    },
+    wheels: {
+      frontHub: String,
+      rearHub: String,
+      covers: String,
+      tires: String
+    },
+    drive: {
+      frontShift: String,
+      rearShift: String,
+      frontBrake: String,
+      rearBrake: String,
+      brakeLevers: String,
+      handles: String,
+      plate: String,
+      chain: String,
+      casette: String
+    },
+    components: {
+      handlebar: String,
+      power: String,
+      seatPost: String,
+      direction: String,
+      seatBelt: String,
+      fists: String
+    }
+  }],
   available: {
     type: Boolean,
     default: true

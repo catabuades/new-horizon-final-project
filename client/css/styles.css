@@ -169,6 +169,7 @@ p.inline-block.size {
   padding-left: 15px; }
 
 .caption p {
+  min-height: 42px;
   padding-left: 15px; }
 
 #catalogue .autofocus {

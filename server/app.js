@@ -21,5 +21,4 @@ app.use(routesApp)
 app.use('/booking/', routesBooking)
 app.use('/api/', routesApi)
 
-
 module.exports = app

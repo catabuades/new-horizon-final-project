@@ -1,4 +1,4 @@
-const bikes = require(__base + '/data/bikes.json')
+const bikes = require(__base + '/data/bikes.mongo')
 
 function showHome (req, res) {
   res.render('pages/home')

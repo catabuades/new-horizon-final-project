@@ -1,0 +1,760 @@
+[{
+    "title": "Kross Vento 7",
+    "category": "road",
+    "description": "Shimano Ultegra 22v, light carbon frame, hidraulic brake",
+    "size": "M",
+    "image": "/images/bikes/road/kross-vento.png",
+    "details": [{
+      "frame": {
+        "frame": "T784 Carbon",
+        "fork": "Carbon (tapered carbon steerer 1-1/8″-1,5″; QR12)"
+      },
+      "wheels": {
+        "frontHub": "DT Swiss R23 Spline 12×100",
+        "rearHub": "DT Swiss R23 Spline 12×142",
+        "covers": " Shwalbe One V-Guard Folding 700-25c",
+        "tires": "  DT Swiss R23 Spline"
+      },
+      "drive": {
+        "frontShift": "Shimano Ultegra FD-6800",
+        "rearShift ": "Shimano Ultegra RD-6800-SS",
+        "frontBrake": "Shimano BR-RS785 (hydraulic, disc, rotor 160mm)",
+        "rearBrake": "Shimano ST-RS685",
+        "brakeLevers": "Shimano ST-RS685 2×11",
+        "handles": "Shimano Ultegra FC-6800 52-36T (S 170mm, M 172.5mm L/XL 175mm)",
+        "plate": "Shimano Press Fit SM-BB72-41B",
+        "chain": "Shimano CN-HG600",
+        "casette": "Shimano Ultegra CS-6800 11-28T"
+      },
+      "components": {
+        "handlebar": "  Zipp Service Course SL-80 (alloy, S – 400mm, M – 420mm, L/XL – 440mm, 31,8mm)",
+        "power": "Zipp Service Course SL (alloy, S – 80mm, M – 90mm, L – 100mm, XL – 110mm, rise 6º, 31,8mm)",
+        "seatPost": "Zipp SL Speed (carbon, 330mm, 27,2mm)",
+        "direction": "FSA Orbit C-40/48-CF 1-1/8″/1,5″",
+        "seatBelt": "F’izi:k Antares R7 Magnesium",
+        "fists": "Velo"
+      }
+    }],
+    "available": "true"
+  },
+  {
+    "title": "Trek Emonda S5",
+    "category": "road",
+    "description": "Compack Shimano 105 22v, carbon frame",
+    "size": "L",
+    "image": "/images/bikes/road/trek-emonda.jpg",
+    "details": {
+      "frame": {
+        "frame": "Ultralight 300 Series OCLV Carbon, ride-tuned performance tube optimization, E2 tapered head tube, BB86.5, DuoTrap compatible",
+        "fork": "Émonda carbon, E2 tapered steerer"
+      },
+      "wheels": {
+        "wheels": "Alloy hubs; Bontrager Tubeless Ready rims",
+        "frontHub": "Alloy",
+        "rearHub": "Alloy",
+        "rims": "Bontrager Tubeless Ready",
+        "tires": "Bontrager R1 Hard-Case Lite, 700x25c"
+      },
+      "drive": {
+        "frontShift": "Shimano 105, 11 speed",
+        "rearShift ": "Shimano 105, 11 speed",
+        "frontBrake": "Shimano 105",
+        "rearBrake": "Shimano 105",
+        "brakeLevers": "Shimano 105, 50/34 (compact)",
+        "handles": "Press Fit",
+        "plate": "Shimano Press Fit SM-BB72-41B",
+        "chain": "Shimano HG60",
+        "casette": "Shimano 105, 11-28, 11 speed"
+      },
+      "components": {
+        "handlebar": "Bontrager Race VR-C, 31.8mm",
+        "power": "Bontrager Elite, 31.8mm, 7 degree, w/computer & light mounts",
+        "seatPost": "Bontrager alloy, 2-bolt head, 27.2mm, 8mm offset",
+        "direction": "--",
+        "seatBelt": "Bontrager Montrose Comp",
+        "fists": "Bontrager Microfiber tape"
+      }
+    },
+    "available": "true"
+  },
+  {
+    "title": "Orbea Onix",
+    "category": "road",
+    "description": "Shimano Triple Ultegra 30v, carbon frame",
+    "size": "XL",
+    "image": "/images/bikes/road/orbea.jpg",
+    "details": {
+      "frame": {
+        "frame": "...",
+        "fork": "..."
+      },
+      "wheels": {
+        "wheels": "...",
+        "frontHub": "...",
+        "rearHub": "...",
+        "rims": "....",
+        "tires": "..."
+      },
+      "drive": {
+        "frontShift": "...",
+        "rearShift ": "...",
+        "frontBrake": "...",
+        "rearBrake": "...",
+        "brakeLevers": "...",
+        "handles": "...",
+        "plate": "...",
+        "chain": "...",
+        "casette": "..."
+      },
+      "components": {
+        "handlebar": "...",
+        "power": "...",
+        "seatPost": "...",
+        "direction": "...",
+        "seatBelt": "...",
+        "fists": "..."
+      }
+    },
+    "available": "true"
+  },
+  {
+    "title": "Tritan",
+    "category": "road",
+    "description": "Shimano Triple Ultegra 30v, carbon frame",
+    "size": "L",
+    "image": "/images/bikes/road/tritan.jpg",
+    "details": {
+      "frame": {
+        "frame": "...",
+        "fork": "..."
+      },
+      "wheels": {
+        "wheels": "...",
+        "frontHub": "...",
+        "rearHub": "...",
+        "rims": "....",
+        "tires": "..."
+      },
+      "drive": {
+        "frontShift": "...",
+        "rearShift ": "...",
+        "frontBrake": "...",
+        "rearBrake": "...",
+        "brakeLevers": "...",
+        "handles": "...",
+        "plate": "...",
+        "chain": "...",
+        "casette": "..."
+      },
+      "components": {
+        "handlebar": "...",
+        "power": "...",
+        "seatPost": "...",
+        "direction": "...",
+        "seatBelt": "...",
+        "fists": "..."
+      }
+    },
+    "available": "true"
+  },
+  {
+    "title": "Scott Speedster",
+    "category": "road",
+    "description": "Compack Shimano 105 22v, light aluminium frame",
+    "size": "XL",
+    "image": "/images/bikes/road/scott-speedster.jpg",
+    "details": {
+      "frame": {
+        "frame": "...",
+        "fork": "..."
+      },
+      "wheels": {
+        "wheels": "...",
+        "frontHub": "...",
+        "rearHub": "...",
+        "rims": "....",
+        "tires": "..."
+      },
+      "drive": {
+        "frontShift": "...",
+        "rearShift ": "...",
+        "frontBrake": "...",
+        "rearBrake": "...",
+        "brakeLevers": "...",
+        "handles": "...",
+        "plate": "...",
+        "chain": "...",
+        "casette": "..."
+      },
+      "components": {
+        "handlebar": "...",
+        "power": "...",
+        "seatPost": "...",
+        "direction": "...",
+        "seatBelt": "...",
+        "fists": "..."
+      }
+    },
+    "available": "true"
+  },
+  {
+    "title": "Specialized Allez",
+    "category": "road",
+    "description": "Shimano Triple Ultegra 30v, light aluminium frame",
+    "size": "XXL",
+    "image": "/images/bikes/road/specialized-allez.jpg",
+    "details": {
+      "frame": {
+        "frame": "...",
+        "fork": "..."
+      },
+      "wheels": {
+        "wheels": "...",
+        "frontHub": "...",
+        "rearHub": "...",
+        "rims": "....",
+        "tires": "..."
+      },
+      "drive": {
+        "frontShift": "...",
+        "rearShift ": "...",
+        "frontBrake": "...",
+        "rearBrake": "...",
+        "brakeLevers": "...",
+        "handles": "...",
+        "plate": "...",
+        "chain": "...",
+        "casette": "..."
+      },
+      "components": {
+        "handlebar": "...",
+        "power": "...",
+        "seatPost": "...",
+        "direction": "...",
+        "seatBelt": "...",
+        "fists": "..."
+      }
+    },
+    "available": "true"
+  },
+  {
+    "title": "Trek FX S5",
+    "category": "road",
+    "description": "Compack Shimano Tiagra 20v, carbon frame, hidraulic brake",
+    "size": "S",
+    "image": "/images/bikes/hibrid/trek-fxs5.jpg",
+    "details": {
+      "frame": {
+        "frame": "...",
+        "fork": "..."
+      },
+      "wheels": {
+        "wheels": "...",
+        "frontHub": "...",
+        "rearHub": "...",
+        "rims": "....",
+        "tires": "..."
+      },
+      "drive": {
+        "frontShift": "...",
+        "rearShift ": "...",
+        "frontBrake": "...",
+        "rearBrake": "...",
+        "brakeLevers": "...",
+        "handles": "...",
+        "plate": "...",
+        "chain": "...",
+        "casette": "..."
+      },
+      "components": {
+        "handlebar": "...",
+        "power": "...",
+        "seatPost": "...",
+        "direction": "...",
+        "seatBelt": "...",
+        "fists": "..."
+      }
+    },
+    "available": "true"
+  },
+  {
+    "title": "Trek Zektor 3",
+    "category": "road",
+    "description": "Compack Shimano Sora 18v, carbon frame, hidraulic brake",
+    "size": "S",
+    "image": "/images/bikes/hibrid/trek-zektor.jpg",
+    "details": {
+      "frame": {
+        "frame": "...",
+        "fork": "..."
+      },
+      "wheels": {
+        "wheels": "...",
+        "frontHub": "...",
+        "rearHub": "...",
+        "rims": "....",
+        "tires": "..."
+      },
+      "drive": {
+        "frontShift": "...",
+        "rearShift ": "...",
+        "frontBrake": "...",
+        "rearBrake": "...",
+        "brakeLevers": "...",
+        "handles": "...",
+        "plate": "...",
+        "chain": "...",
+        "casette": "..."
+      },
+      "components": {
+        "handlebar": "...",
+        "power": "...",
+        "seatPost": "...",
+        "direction": "...",
+        "seatBelt": "...",
+        "fists": "..."
+      }
+    },
+    "available": "true"
+  },
+  {
+    "title": "Kross Pulso 2",
+    "category": "road",
+    "description": "Triple Shimano Sora 24v, carbon frame",
+    "size": "XL",
+    "image": "/images/bikes/hibrid/kross-pulso2.png",
+    "details": {
+      "frame": {
+        "frame": "...",
+        "fork": "..."
+      },
+      "wheels": {
+        "wheels": "...",
+        "frontHub": "...",
+        "rearHub": "...",
+        "rims": "....",
+        "tires": "..."
+      },
+      "drive": {
+        "frontShift": "...",
+        "rearShift ": "...",
+        "frontBrake": "...",
+        "rearBrake": "...",
+        "brakeLevers": "...",
+        "handles": "...",
+        "plate": "...",
+        "chain": "...",
+        "casette": "..."
+      },
+      "components": {
+        "handlebar": "...",
+        "power": "...",
+        "seatPost": "...",
+        "direction": "...",
+        "seatBelt": "...",
+        "fists": "..."
+      }
+    },
+    "available": "true"
+  },
+  {
+    "title": "Trek 7.3 FX",
+    "category": "trekking",
+    "description": "Shimano Acera Triple 24v, aluminium frame",
+    "size": "M",
+    "image": "/images/bikes/hibrid/trek-red.jpg",
+    "details": {
+      "frame": {
+        "frame": "...",
+        "fork": "..."
+      },
+      "wheels": {
+        "wheels": "...",
+        "frontHub": "...",
+        "rearHub": "...",
+        "rims": "....",
+        "tires": "..."
+      },
+      "drive": {
+        "frontShift": "...",
+        "rearShift ": "...",
+        "frontBrake": "...",
+        "rearBrake": "...",
+        "brakeLevers": "...",
+        "handles": "...",
+        "plate": "...",
+        "chain": "...",
+        "casette": "..."
+      },
+      "components": {
+        "handlebar": "...",
+        "power": "...",
+        "seatPost": "...",
+        "direction": "...",
+        "seatBelt": "...",
+        "fists": "..."
+      }
+    },
+    "available": "true"
+  },
+      {
+    "title": "Scott Sportster",
+    "category": "trekking",
+    "description": "Shimano Acera Triple 24v, aluminium frame",
+    "size": "S",
+    "image": "/images/bikes/hibrid/scott-sportster.jpg",
+    "details": {
+      "frame": {
+        "frame": "...",
+        "fork": "..."
+      },
+      "wheels": {
+        "wheels": "...",
+        "frontHub": "...",
+        "rearHub": "...",
+        "rims": "....",
+        "tires": "..."
+      },
+      "drive": {
+        "frontShift": "...",
+        "rearShift ": "...",
+        "frontBrake": "...",
+        "rearBrake": "...",
+        "brakeLevers": "...",
+        "handles": "...",
+        "plate": "...",
+        "chain": "...",
+        "casette": "..."
+      },
+      "components": {
+        "handlebar": "...",
+        "power": "...",
+        "seatPost": "...",
+        "direction": "...",
+        "seatBelt": "...",
+        "fists": "..."
+      }
+    },
+    "available": "true"
+  },
+  {
+    "title": "Specialized Sirrus",
+    "category": "trekking",
+    "description": "Shimano Sora Triple 24v, aluminium frame",
+    "size": "L",
+    "image": "/images/bikes/hibrid/specialized-sirrus.jpg",
+    "details": {
+      "frame": {
+        "frame": "...",
+        "fork": "..."
+      },
+      "wheels": {
+        "wheels": "...",
+        "frontHub": "...",
+        "rearHub": "...",
+        "rims": "....",
+        "tires": "..."
+      },
+      "drive": {
+        "frontShift": "...",
+        "rearShift ": "...",
+        "frontBrake": "...",
+        "rearBrake": "...",
+        "brakeLevers": "...",
+        "handles": "...",
+        "plate": "...",
+        "chain": "...",
+        "casette": "..."
+      },
+      "components": {
+        "handlebar": "...",
+        "power": "...",
+        "seatPost": "...",
+        "direction": "...",
+        "seatBelt": "...",
+        "fists": "..."
+      }
+    },
+    "available": "true"
+  },
+  {
+    "title": "Kross E-Bike 5V",
+    "category": "e-bike",
+    "description": "Shimano Deore Triple 24v, aluminium frame",
+    "size": "XL",
+    "image": "/images/bikes/ebike.jpg",
+    "details": {
+      "frame": {
+        "frame": "...",
+        "fork": "..."
+      },
+      "wheels": {
+        "wheels": "...",
+        "frontHub": "...",
+        "rearHub": "...",
+        "rims": "....",
+        "tires": "..."
+      },
+      "drive": {
+        "frontShift": "...",
+        "rearShift ": "...",
+        "frontBrake": "...",
+        "rearBrake": "...",
+        "brakeLevers": "...",
+        "handles": "...",
+        "plate": "...",
+        "chain": "...",
+        "casette": "..."
+      },
+      "components": {
+        "handlebar": "...",
+        "power": "...",
+        "seatPost": "...",
+        "direction": "...",
+        "seatBelt": "...",
+        "fists": "..."
+      }
+    },
+    "available": "true"
+  },
+  {
+    "title": "Kross MTB Level 29″",
+    "category": "mountain",
+    "description": "Shimano Deore 30v, light frame",
+    "size": "L",
+    "image": "/images/bikes/mountain/level-b6.png",
+    "details": {
+      "frame": {
+        "frame": "...",
+        "fork": "..."
+      },
+      "wheels": {
+        "wheels": "...",
+        "frontHub": "...",
+        "rearHub": "...",
+        "rims": "....",
+        "tires": "..."
+      },
+      "drive": {
+        "frontShift": "...",
+        "rearShift ": "...",
+        "frontBrake": "...",
+        "rearBrake": "...",
+        "brakeLevers": "...",
+        "handles": "...",
+        "plate": "...",
+        "chain": "...",
+        "casette": "..."
+      },
+      "components": {
+        "handlebar": "...",
+        "power": "...",
+        "seatPost": "...",
+        "direction": "...",
+        "seatBelt": "...",
+        "fists": "..."
+      }
+    },
+    "available": "true"
+  },
+  {
+    "title": "Kross MTB Lea 29″",
+    "category": "mountain",
+    "description": "Shimano Deore 27v, light frame",
+    "size": "XS",
+    "image": "/images/bikes/mountain/lea-mtb.jpg",
+    "details": {
+      "frame": {
+        "frame": "...",
+        "fork": "..."
+      },
+      "wheels": {
+        "wheels": "...",
+        "frontHub": "...",
+        "rearHub": "...",
+        "rims": "....",
+        "tires": "..."
+      },
+      "drive": {
+        "frontShift": "...",
+        "rearShift ": "...",
+        "frontBrake": "...",
+        "rearBrake": "...",
+        "brakeLevers": "...",
+        "handles": "...",
+        "plate": "...",
+        "chain": "...",
+        "casette": "..."
+      },
+      "components": {
+        "handlebar": "...",
+        "power": "...",
+        "seatPost": "...",
+        "direction": "...",
+        "seatBelt": "...",
+        "fists": "..."
+      }
+    },
+    "available": "true"
+  },
+  {
+    "title": "Kross MTB Level 29″",
+    "category": "road",
+    "description": "Shimano Deore 30v, light frame",
+    "size": "L",
+    "image": "/images/bikes/mountain/level-b6.png",
+    "details": {
+      "frame": {
+        "frame": "...",
+        "fork": "..."
+      },
+      "wheels": {
+        "wheels": "...",
+        "frontHub": "...",
+        "rearHub": "...",
+        "rims": "....",
+        "tires": "..."
+      },
+      "drive": {
+        "frontShift": "...",
+        "rearShift ": "...",
+        "frontBrake": "...",
+        "rearBrake": "...",
+        "brakeLevers": "...",
+        "handles": "...",
+        "plate": "...",
+        "chain": "...",
+        "casette": "..."
+      },
+      "components": {
+        "handlebar": "...",
+        "power": "...",
+        "seatPost": "...",
+        "direction": "...",
+        "seatBelt": "...",
+        "fists": "..."
+      }
+    },
+    "available": "true"
+  },
+  {
+    "title": "Raleigh Straight″",
+    "category": "city",
+    "description": "Shimano Deore 24v, aluminium frame",
+    "size": "M",
+    "image": "/images/bikes/city/city.jpg",
+    "details": {
+      "frame": {
+        "frame": "...",
+        "fork": "..."
+      },
+      "wheels": {
+        "wheels": "...",
+        "frontHub": "...",
+        "rearHub": "...",
+        "rims": "....",
+        "tires": "..."
+      },
+      "drive": {
+        "frontShift": "...",
+        "rearShift ": "...",
+        "frontBrake": "...",
+        "rearBrake": "...",
+        "brakeLevers": "...",
+        "handles": "...",
+        "plate": "...",
+        "chain": "...",
+        "casette": "..."
+      },
+      "components": {
+        "handlebar": "...",
+        "power": "...",
+        "seatPost": "...",
+        "direction": "...",
+        "seatBelt": "...",
+        "fists": "..."
+      }
+    },
+    "available": "true"
+  },
+  {
+    "title": "Tempo Centro",
+    "category": "city",
+    "description": "Shimano 6v, aluminium frame",
+    "size": "M",
+    "image": "/images/bikes/city/tempo-centro.png",
+    "details": {
+      "frame": {
+        "frame": "...",
+        "fork": "..."
+      },
+      "wheels": {
+        "wheels": "...",
+        "frontHub": "...",
+        "rearHub": "...",
+        "rims": "....",
+        "tires": "..."
+      },
+      "drive": {
+        "frontShift": "...",
+        "rearShift ": "...",
+        "frontBrake": "...",
+        "rearBrake": "...",
+        "brakeLevers": "...",
+        "handles": "...",
+        "plate": "...",
+        "chain": "...",
+        "casette": "..."
+      },
+      "components": {
+        "handlebar": "...",
+        "power": "...",
+        "seatPost": "...",
+        "direction": "...",
+        "seatBelt": "...",
+        "fists": "..."
+      }
+    },
+    "available": "true"
+  },
+  {
+    "title": "Tempo Vivo",
+    "category": "city",
+    "description": "Shimano 7v, aluminium frame, rear brake",
+    "size": "L",
+    "image": "/images/bikes/city/tempo-vivo.png",
+    "details": {
+      "frame": {
+        "frame": "...",
+        "fork": "..."
+      },
+      "wheels": {
+        "wheels": "...",
+        "frontHub": "...",
+        "rearHub": "...",
+        "rims": "....",
+        "tires": "..."
+      },
+      "drive": {
+        "frontShift": "...",
+        "rearShift ": "...",
+        "frontBrake": "...",
+        "rearBrake": "...",
+        "brakeLevers": "...",
+        "handles": "...",
+        "plate": "...",
+        "chain": "...",
+        "casette": "..."
+      },
+      "components": {
+        "handlebar": "...",
+        "power": "...",
+        "seatPost": "...",
+        "direction": "...",
+        "seatBelt": "...",
+        "fists": "..."
+      }
+    },
+    "available": "true"
+  }
+]
