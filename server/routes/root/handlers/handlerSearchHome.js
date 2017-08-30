@@ -1,8 +1,20 @@
-const bikes = require(__base + '/data/bikes.json')
+const Bike = require(__base + '/models/Bike')
 
-function handlerHome (req, res) {
+function handlerSearchHome (req, res) {
   console.log(req.body)
-  res.render()
+  if (req.body.type) {
+  	Bike.find({'available': true, 'category': req.body.type })
+        .then(bikes => {
+          res.render('pages/search-results', { idPage: 'search-results', bikes })
+          // res.json(bikes)
+        })
+  } else {
+  	Bike.find({'available': true})
+        .then(bikes => {
+          res.render('pages/search-results', { idPage: 'search-results', bikes })
+          // res.json(bikes)
+        })
+  }
 }
 
-module.exports = handlerHome
+module.exports = handlerSearchHome

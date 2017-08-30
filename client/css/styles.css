@@ -40,7 +40,6 @@
 
 .advanced-option .btn {
   margin-top: 20px;
-  margin-left: 70px;
   background-color: transparent;
   border: none;
   font-weight: bold; }
@@ -134,13 +133,15 @@ p.inline-block.size {
   padding-top: 10px; }
 
 #catalogue legend.h3 {
-  padding-left: 15px; }
+  padding-left: 15px;
+  text-transform: uppercase; }
 
 #catalogue .catpion a {
   color: #000 !important;
   text-decoration: none !important; }
 
 #catalogue .btn-default.info {
+  margin-left: 10px;
   display: wrap;
   justify-content: flex-end; }
 
@@ -505,13 +506,13 @@ body {
   font-weight: 700; }
 
 .h3-price-search {
-  margin-top: 10px;
-  margin-bottom: 29px;
+  margin-top: 5px;
+  margin-bottom: 25px;
   padding-right: 5px;
   display: flex;
   justify-content: flex-end;
   font-family: 'Roboto', sans-serif;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 700; }
 
 .h3-price-search-detail {

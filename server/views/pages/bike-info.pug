@@ -6,7 +6,7 @@ block content
     .row
       .col-xs-12.col-md-5
         a.thumbnail.bike-details(href='#')
-          img.media-object.img-responsive(style='background-image: url(#{bike.image})')
+          img.media-object.img-responsive(style='background-image: url(' + bike.image + ')')
         table.table
           thead
             tr
@@ -90,7 +90,7 @@ block content
               td #{ bike.details[0].components.direction }
             tr
               td Seat belt
-              td #{ bike.details[0].components.seatBetl }
+              td #{ bike.details[0].components.seatBelt }
             tr
               td Fists
               td #{ bike.details[0].components.fists }
