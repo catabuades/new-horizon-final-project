@@ -17,12 +17,10 @@ router.get('/', showHome)
 router.get('/search-results', showSearchResults)
 router.get('/contact', showContact)
 router.get('/catalogue', showCatalogue)
-router.get('/bike-info', showBikeInfo)
+router.get('/bike-info/:title', showBikeInfo)
 
 // !!!!!!!!!!!!!!!!!!
 router.post('/apiResults', handlerSearchHome)
-
-
 
 // router for Admin Reservas (ANGULAR)
 // router.get('/admin', handlerAdminReservas)

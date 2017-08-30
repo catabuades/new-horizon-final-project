@@ -1,0 +1,12 @@
+{
+	"bike": {
+		"es": "Bicicleta",
+		"ca": "Bicicleta",
+		"en": "Bike"
+	},
+	"road": {
+		"es": "Carretera",
+		"ca": "Carretera",
+		"en": "Road"
+	}
+}

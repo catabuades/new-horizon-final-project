@@ -12,15 +12,21 @@ block content
         input(type='checkbox', data-toggle='toggle', data-on='Trekking', data-off='Trekking')
         input(type='checkbox', data-toggle='toggle', data-on='City', data-off='City')
         input(type='checkbox', data-toggle='toggle', data-on='E-bike', data-off='E-bike')
-    legend.h3 Road
-    .row
-      each bike in bikes
-        .col-sm-6.col-md-3
-          .zoomIt.thumbnail
-            figure.pull-left
-              a(href='bike-info.html')
-                img.media-object.img-rounded.img-responsive(style='background-image: url(' + bike.image + ')')
-            .caption
-              h4.h4 #{ bike.title }
-              p #{ bike.description }
-              a.btn.btn-default.info(href='/bike-info', role='button') + info
+
+      each category in Object.keys(categorizedBikes)
+        legend.h3= category
+        .row
+          each bike in categorizedBikes[category]
+            .col-sm-6.col-md-3
+              .zoomIt.thumbnail
+                figure.pull-left
+                  a(href='bike-info.html')
+                    img.media-object.img-rounded.img-responsive(style='background-image: url(' + bike.image + ')')
+                .caption
+                  h4.h4 #{ bike.title }
+                  p #{ bike.description }
+                  a.btn.btn-default.info(href=`/bike-info/${bike.title}`, role='button') + info
+
+
+
+

@@ -6,7 +6,7 @@ block content
     .row
       .col-xs-12.col-md-5
         a.thumbnail.bike-details(href='#')
-          img.media-object.img-responsive(style='background-image: url(css/images/catalogue/road/kross_vento7.png)')
+          img.media-object.img-responsive(style='background-image: url(#{bike.image})')
         table.table
           thead
             tr
@@ -15,10 +15,10 @@ block content
           tbody
             tr
               td Frame
-              td T784 Carbon
+              td #{ bike.details[0].frame.frame }
             tr
               td Fork
-              td Carbon (tapered carbon steerer 1-1/8″-1,5″; QR12)
+              td #{ bike.details[0].frame.fork }
         table.table
           thead
             tr
@@ -27,16 +27,16 @@ block content
           tbody
             tr
               td Front hub
-              td DT Swiss R23 Spline 12×100
+              td #{ bike.details[0].wheels.frontHub }
             tr
               td Rear hub
-              td DT Swiss R23 Spline 12×142
+              td #{ bike.details[0].wheels.rearHub }
             tr
               td Covers
-              td Shwalbe One V-Guard Folding 700-25c
+              td #{ bike.details[0].wheels.covers }
             tr
               td Tires
-              td DT Swiss R23 Spline
+              td #{ bike.details[0].wheels.tires }
         table.table
           thead
             tr
@@ -45,31 +45,31 @@ block content
           tbody
             tr
               td Front shift
-              td Shimano Ultegra FD-6800
+              td #{ bike.details[0].drive.frontShift }
             tr
               td Rear shift
-              td Shimano Ultegra RD-6800-SS;
+              td #{ bike.details[0].drive.rearShift }
             tr
               td Front brake
-              td Shimano BR-RS785 (hydraulic, disc, rotor 160mm)
+              td #{ bike.details[0].drive.frontBrake }
             tr
               td Rear brake
-              td Shimano ST-RS685
+              td #{ bike.details[0].drive.rearBrake }
             tr
               td Brake levers
-              td Shimano ST-RS685 2×11
+              td #{ bike.details[0].drive.brakeLevers }
             tr
               td Handles
-              td Shimano Ultegra FC-6800 52-36T (S 170mm, M 172.5mm L/XL 175mm)
+              td #{ bike.details[0].drive.handles }
             tr
               td Plate
-              td Shimano Press Fit SM-BB72-41B
+              td #{ bike.details[0].drive.plate }
             tr
               td Chain
-              td Shimano CN-HG600
+              td #{ bike.details[0].drive.chain }
             tr
               td Casette / Pinon
-              td Shimano Ultegra CS-6800 11-28T
+              td #{ bike.details[0].drive.casette }
         table.table
           thead
             tr
@@ -78,25 +78,24 @@ block content
           tbody
             tr
               td Handlebar
-              td Zipp Service Course SL-80 (alloy, S – 400mm, M – 420mm, L/XL – 440mm, 31,8mm)
+              td #{ bike.details[0].components.handlebar }
             tr
               td Power
-              td
-                | Zipp Service Course SL (alloy, S – 80mm, M – 90mm, L – 100mm, XL – 110mm, rise 6º, 31,8mm)
+              td #{ bike.details[0].components.power }
             tr
               td Seat post
-              td Zipp SL Speed (carbon, 330mm, 27,2mm)
+              td #{ bike.details[0].components.seatPost }
             tr
               td Direction
-              td FSA Orbit C-40/48-CF 1-1/8″/1,5″
+              td #{ bike.details[0].components.direction }
             tr
               td Seat belt
-              td F’izi:k Antares R7 Magnesium
+              td #{ bike.details[0].components.seatBetl }
             tr
               td Fists
-              td Velo
+              td #{ bike.details[0].components.fists }
       .col-xs-12.col-md-7
-        h2.h2.inline-block Kross Vento
+        h2.h2.inline-block #{ bike.title }
         .searcher
           .flex-container.search-details.searcherbar
             form.navbar-form(role='search')
