@@ -22,7 +22,7 @@ block content
             span.subtitle-h2 12/09/17 to 20/09/17
           .inline-block.pull-right
             p.inline-block.size Filter by
-            input(type='checkbox', data-toggle='toggle', data-on='Road', data-off='Road')
+            input(value=bike.category, type='checkbox', data-toggle='toggle', data-on='Road', data-off='Road')
             input(type='checkbox', data-toggle='toggle', data-on='Mountain', data-off='Mountain')
             input(type='checkbox', data-toggle='toggle', data-on='Trekking', data-off='Trekking')
             input(type='checkbox', data-toggle='toggle', data-on='City', data-off='City')
@@ -35,7 +35,7 @@ block content
                     figure.pull-left
                       img.media-object.img-rounded.img-responsive(style='background-image: url(' + bike.image + ')')
                   .col-md-5
-                    h3.h3.list-group-item-heading #{ title }
+                    h3.h3.list-group-item-heading #{ bike.title }
                     span.bold Category: 
                     p #{ bike.category }
                     span.bold Description:
