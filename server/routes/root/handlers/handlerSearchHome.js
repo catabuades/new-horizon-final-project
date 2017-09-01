@@ -1,6 +1,7 @@
 const Bike = require(__base + '/models/Bike')
 
 function handlerSearchHome (req, res) {
+  // TODO use req.query instead, as method is GET, not POST
   console.log(req.body)
   if (req.body.type) {
     Bike.find({'available': true, 'category': req.body.type })
