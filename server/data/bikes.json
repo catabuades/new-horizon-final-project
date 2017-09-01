@@ -43,10 +43,10 @@
     }],
     "datesBooked": [
     {
-        "pickUp": "1504181514",
-        "dropOff": "1504581514"
+        "pickUp": 1504181514,
+        "dropOff": 1504581514
     }],
-    "available": "true"
+    "available": true
 },
 {
     "title": "Trek Emonda S5",
@@ -93,10 +93,10 @@
     },
     "datesBooked": [
     {
-        "pickUp": "1504181514",
-        "dropOff": "1504581514"
+        "pickUp": 1504181514,
+        "dropOff": 1504581514
     }],
-    "available": "true"
+    "available": true
 },
 {
     "title": "Orbea Onix",
@@ -143,10 +143,10 @@
     },
     "datesBooked": [
     {
-        "pickUp": "1504181514",
-        "dropOff": "1504581514"
+        "pickUp": 1504181514,
+        "dropOff": 1504581514
     }],
-    "available": "true"
+    "available": true
 },
 {
     "title": "Tritan",
@@ -193,10 +193,10 @@
     },
     "datesBooked": [
     {
-        "pickUp": "1504181514",
-        "dropOff": "1504581514"
+        "pickUp": 1504181514,
+        "dropOff": 1504581514
     }],
-    "available": "true"
+    "available": true
 },
 {
     "title": "Scott Speedster",
@@ -243,10 +243,10 @@
     },
     "datesBooked": [
     {
-        "pickUp": "1504181514",
-        "dropOff": "1504581514"
+        "pickUp": 1504181514,
+        "dropOff": 1504581514
     }],
-    "available": "true"
+    "available": true
 },
 {
     "title": "Specialized Allez",
@@ -293,10 +293,10 @@
     },
     "datesBooked": [
     {
-        "pickUp": "1504181514",
-        "dropOff": "1504581514"
+        "pickUp": 1504181514,
+        "dropOff": 1504581514
     }],
-    "available": "true"
+    "available": true
 },
 {
     "title": "Trek FX S5",
@@ -343,10 +343,10 @@
     },
     "datesBooked": [
     {
-        "pickUp": "1504181514",
-        "dropOff": "1504581514"
+        "pickUp": 1504181514,
+        "dropOff": 1504581514
     }],
-    "available": "true"
+    "available": true
 },
 {
     "title": "Trek Zektor 3",
@@ -393,10 +393,10 @@
     },
     "datesBooked": [
     {
-        "pickUp": "1504181514",
-        "dropOff": "1504581514"
+        "pickUp": 1504181514,
+        "dropOff": 1504581514
     }],
-    "available": "true"
+    "available": true
 },
 {
     "title": "Kross Pulso 2",
@@ -443,10 +443,10 @@
     },
     "datesBooked": [
     {
-        "pickUp": "1504181514",
-        "dropOff": "1504581514"
+        "pickUp": 1504181514,
+        "dropOff": 1504581514
     }],
-    "available": "true"
+    "available": true
 },
 {
     "title": "Trek 7.3 FX",
@@ -493,10 +493,10 @@
     },
     "datesBooked": [
     {
-        "pickUp": "1504181514",
-        "dropOff": "1504581514"
+        "pickUp": 1504181514,
+        "dropOff": 1504581514
     }],
-    "available": "true"
+    "available": true
 },
 {
     "title": "Scott Sportster",
@@ -543,10 +543,10 @@
     },
     "datesBooked": [
     {
-        "pickUp": "1504181514",
-        "dropOff": "1504581514"
+        "pickUp": 1504181514,
+        "dropOff": 1504581514
     }],
-    "available": "true"
+    "available": true
 },
 {
     "title": "Specialized Sirrus",
@@ -593,10 +593,10 @@
     },
     "datesBooked": [
     {
-        "pickUp": "1504181514",
-        "dropOff": "1504581514"
+        "pickUp": 1504181514,
+        "dropOff": 1504581514
     }],
-    "available": "true"
+    "available": true
 },
 {
     "title": "Kross E-Bike 5V",
@@ -643,10 +643,10 @@
     },
     "datesBooked": [
     {
-        "pickUp": "1504181514",
-        "dropOff": "1504581514"
+        "pickUp": 1504181514,
+        "dropOff": 1504581514
     }],
-    "available": "true"
+    "available": true
 },
 {
     "title": "Kross MTB Level 29″",
@@ -693,10 +693,10 @@
     },
     "datesBooked": [
     {
-        "pickUp": "1504181514",
-        "dropOff": "1504581514"
+        "pickUp": 1504181514,
+        "dropOff": 1504581514
     }],
-    "available": "true"
+    "available": true
 },
 {
     "title": "Kross MTB Lea 29″",
@@ -743,10 +743,10 @@
     },
     "datesBooked": [
     {
-        "pickUp": "1504181514",
-        "dropOff": "1504581514"
+        "pickUp": 1504181514,
+        "dropOff": 1504581514
     }],
-    "available": "true"
+    "available": true
 },
 {
     "title": "Kross MTB Level 29″",
@@ -793,10 +793,10 @@
     },
     "datesBooked": [
     {
-        "pickUp": "1504181514",
-        "dropOff": "1504581514"
+        "pickUp": 1504181514,
+        "dropOff": 1504581514
     }],
-    "available": "true"
+    "available": true
 },
 {
     "title": "Raleigh Straight″",
@@ -843,10 +843,10 @@
     },
     "datesBooked": [
     {
-        "pickUp": "1504181514",
-        "dropOff": "1504581514"
+        "pickUp": 1504181514,
+        "dropOff": 1504581514
     }],
-    "available": "true"
+    "available": true
 },
 {
     "title": "Tempo Centro",
@@ -893,10 +893,10 @@
     },
     "datesBooked": [
     {
-        "pickUp": "1504181514",
-        "dropOff": "1504581514"
+        "pickUp": 1504181514,
+        "dropOff": 1504581514
     }],
-    "available": "true"
+    "available": true
 },
 {
     "title": "Tempo Vivo",
@@ -943,8 +943,8 @@
     },
     "datesBooked": [
     {
-        "pickUp": "1504181514",
-        "dropOff": "1504581514"
+        "pickUp": 1504181514,
+        "dropOff": 1504581514
     }],
-    "available": "true"
+    "available": true
 }]
