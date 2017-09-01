@@ -56,7 +56,14 @@ var BikeSchema = new Schema({
     type: Boolean,
     default: true
   },
-  datesBooked: [String],
+  datesBooked: [{
+    pickUp: {
+      type: Number
+    },
+    dropOff: {
+      type: Number
+    }
+  }],
   createdAt: {
     type: Number,
     default: +new Date()
