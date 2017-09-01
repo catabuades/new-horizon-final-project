@@ -7,12 +7,12 @@ function handlerSearchHome (req, res) {
   const { dropdate, pickdate } = req.query
 
 // string date to time stamp
-  const stampPickUp = Date.parse(pickdate)
-  const stampDropOff = Date.parse(dropdate)
+//   const stampPickUp = Date.parse(pickdate)
+//   const stampDropOff = Date.parse(dropdate)
 
-// time stamp to human date
-  const date1 = (new Date(pickdate)).toUTCString()
-  const date2 = (new Date(dropdate)).toUTCString()
+// // time stamp to human date
+//   const date1 = (new Date(pickdate)).toUTCString()
+//   const date2 = (new Date(dropdate)).toUTCString()
 
   if (type) {
     Bike.find({'datesBooked.pickUp': {'$gte': stampDropOff, '$lt': stampDropOff }})
