@@ -14,28 +14,28 @@ block content
               .text-center.bs-wizard-stepnum Step 1
               .progress
                 .progress-bar
-              a.bs-wizard-dot(href='/booking-step1')
+              a.bs-wizard-dot(href='/step_1')
               .bs-wizard-info.text-center Resume
             .col-xs-3.bs-wizard-step.complete
               // complete
               .text-center.bs-wizard-stepnum Step 2
               .progress
                 .progress-bar
-              a.bs-wizard-dot(href='/booking-step2')
+              a.bs-wizard-dot(href='/step_2')
               .bs-wizard-info.text-center Personal information
             .col-xs-3.bs-wizard-step.active
               // complete
               .text-center.bs-wizard-stepnum Step 3
               .progress
                 .progress-bar
-              a.bs-wizard-dot(href='/booking-step3')
+              a.bs-wizard-dot(href='/step_3')
               .bs-wizard-info.text-center Payment
             .col-xs-3.bs-wizard-step.disabled
               // active
               .text-center.bs-wizard-stepnum Step 4
               .progress
                 .progress-bar
-              a.bs-wizard-dot(href='/booking-step4')
+              a.bs-wizard-dot(href='/step_4')
               .bs-wizard-info.text-center Confirmation
         // chekout bar
     div
@@ -84,4 +84,4 @@ block content
                 p Price: xxxx
               .remove-button.text-center
                 button.btn.remove.pull-right(type='button') Remove
-        a.btn.btn-warning.pull-right(href='/booking-step2') Next Step
+        a.btn.btn-warning.pull-right(href='/step_2') Next Step

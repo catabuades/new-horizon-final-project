@@ -2,42 +2,44 @@ extends ../layout
 
 block content
 
-  .container.container-cover
-  .row.header-row
-    h2.h2.col-xs-12.col-md-6.inline-block Step 2: Personal information
-    // chekout bar
-    .col-xs-12.col-md-6.container
-      .row.bs-wizard(style='border-bottom:0;')
-        .col-xs-3.bs-wizard-step.complete
-          .text-center.bs-wizard-stepnum Step 1
-          .progress
-            .progress-bar
-          a.bs-wizard-dot(href='/booking-step1')
-          .bs-wizard-info.text-center Resume
-        .col-xs-3.bs-wizard-step.complete
-          // complete
-          .text-center.bs-wizard-stepnum Step 2
-          .progress
-            .progress-bar
-          a.bs-wizard-dot(href='/booking-step2')
-          .bs-wizard-info.text-center Personal information
-        .col-xs-3.bs-wizard-step.active
-          // complete
-          .text-center.bs-wizard-stepnum Step 3
-          .progress
-            .progress-bar
-          a.bs-wizard-dot(href='/booking-step3')
-          .bs-wizard-info.text-center Payment
-        .col-xs-3.bs-wizard-step.disabled
-          // active
-          .text-center.bs-wizard-stepnum Step 4
-          .progress
-            .progress-bar
-          a.bs-wizard-dot(href='/booking-step4')
-          .bs-wizard-info.text-center Confirmation
-  // chekout bar
-  div
-    form.form-horizontal
+  .resume
+  .container
+    .row
+      .well
+        h2.col-xs-12.col-md-6.inline-block.h2 Step 2: Personal information
+        // chekout bar
+        .col-xs-12.col-md-6.container
+          .row.bs-wizard(style='border-bottom:0;')
+            .col-xs-3.bs-wizard-step.complete
+              .text-center.bs-wizard-stepnum Step 1
+              .progress
+                .progress-bar
+              a.bs-wizard-dot(href='/step_1')
+              .bs-wizard-info.text-center Resume
+            .col-xs-3.bs-wizard-step.complete
+              // complete
+              .text-center.bs-wizard-stepnum Step 2
+              .progress
+                .progress-bar
+              a.bs-wizard-dot(href='/step_2')
+              .bs-wizard-info.text-center Personal information
+            .col-xs-3.bs-wizard-step.active
+              // complete
+              .text-center.bs-wizard-stepnum Step 3
+              .progress
+                .progress-bar
+              a.bs-wizard-dot(href='/step_3')
+              .bs-wizard-info.text-center Payment
+            .col-xs-3.bs-wizard-step.disabled
+              // active
+              .text-center.bs-wizard-stepnum Step 4
+              .progress
+                .progress-bar
+              a.bs-wizard-dot(href='/step_4')
+              .bs-wizard-info.text-center Confirmation
+        // chekout bar
+    div
+    form.form-horizontal(action="/clientInfo", method='POST')
       fieldset
         // Form Name
         // Text input
@@ -52,9 +54,9 @@ block content
             input#surname.form-control.input-md(name='surname', type='text', placeholder='', required='')
         // Text input
         .form-group
-          label.col-md-4.control-label(for='contact') Phone Number 
+          label.col-md-4.control-label(for='phoneNumber') Phone Number 
           .col-md-4
-            input#contact.form-control.input-md(name='contact', type='text', placeholder='', required='')
+            input#contact.form-control.input-md(name='phoneNumber', type='text', placeholder='', required='')
         // Text input
         .form-group
           label.col-md-4.control-label(for='email') Email Address *
@@ -75,4 +77,4 @@ block content
           label.col-md-4.control-label(for='comments') Comments
           .col-md-4
             textarea#comments.form-control(name='comments')
-      a.btn.btn-warning.col-md-offset-4.col-md-4(href='/booking-step3') Payment
+      button.btn.btn-warning.col-md-offset-4.col-md-4 Payment

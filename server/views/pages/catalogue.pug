@@ -7,11 +7,11 @@ block content
       h2.h2.inline-block.page-title Catalogue
       .inline-block.pull-right
         p.inline-block.size Filter by
-        input(type='checkbox', data-toggle='toggle', data-on='Road', data-off='Road')
-        input(type='checkbox', data-toggle='toggle', data-on='Mountain', data-off='Mountain')
-        input(type='checkbox', data-toggle='toggle', data-on='Trekking', data-off='Trekking')
-        input(type='checkbox', data-toggle='toggle', data-on='City', data-off='City')
-        input(type='checkbox', data-toggle='toggle', data-on='E-bike', data-off='E-bike')
+        input(id='road' type='checkbox', data-toggle='toggle', value='road', data-on='road', data-off='road')
+        input(id='mountain' type='checkbox', data-toggle='toggle', value='mountain', data-on='mountain', data-off='mountain')
+        input(id='trekking' type='checkbox', data-toggle='toggle', value='trekking', data-on='trekking', data-off='trekking')
+        input(id='city' type='checkbox', data-toggle='toggle', value='city', data-on='city', data-off='city')
+        input(id='e-bike' type='checkbox', data-toggle='toggle', value='e-bike', data-on='e-bike', data-off='e-bike')
 
       each category in Object.keys(categorizedBikes)
         legend.h3= category
@@ -26,7 +26,3 @@ block content
                   h4.h4 #{ bike.title }
                   p #{ bike.description }
                   a.btn.btn-default.info(href=`/bike-info/${bike.title}`, role='button') + info
-
-
-
-

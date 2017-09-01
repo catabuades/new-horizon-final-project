@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000
 
 console.log(`Connecting to ${DB_URI}...`)
 
-db.open(DB_URI)
+db.openUri(DB_URI)
 app.listen(PORT)
 
 console.log(`Listening on port ${PORT}...`)

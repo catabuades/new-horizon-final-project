@@ -7,4 +7,4 @@ curl localhost:3000/api/bikes
 demonio -> mongod --dbpath /Users/catabuadescoll/mongo/db
 
 // IMPORT BIKES JSON
-mongoimport -d newHorizon -c bikes --jsonArray --file bikes.mongo
+mongoimport -d newHorizon -c bikes --jsonArray --file server/data/bikes.json
