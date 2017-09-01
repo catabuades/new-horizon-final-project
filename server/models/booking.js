@@ -31,6 +31,12 @@ var BookingSchema = new Schema({
   comments: {
     type: String,
     required: false
+  },
+  bikesBooked: [{
+    type: String
+  }],
+  datesBooked: {
+    type: String
   }
 }, { collection })
 
