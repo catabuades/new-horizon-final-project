@@ -12,3 +12,5 @@ demonio -> mongod --dbpath /Users/catabuadescoll/mongo/db
 
 // IMPORT BIKES JSON
 mongoimport -d newHorizon -c bikes --jsonArray --file server/data/bikes.json
+
+mongoimport -h ds123614.mlab.com:23614 -d newhorizon -c bikes -u admin -p admin --jsonArray --file server/data/bikes.json
