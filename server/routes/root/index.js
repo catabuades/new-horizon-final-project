@@ -20,7 +20,7 @@ const handlerClientInfo = require('../booking/handlers/handlerClientInfo')
 // const handlerAdminManual = require('./a-admin-manual/handlerAdminManual')
 
 router.get('/', showHome)
-router.get('/search-results', showSearchResults)
+router.get('/search-results?', showSearchResults)
 router.get('/contact', showContact)
 router.get('/catalogue', showCatalogue)
 router.get('/bike-info/:title', showBikeInfo)

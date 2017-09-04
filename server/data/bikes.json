@@ -749,56 +749,6 @@
     "available": true
 },
 {
-    "title": "Kross MTB Level 29″",
-    "category": "road",
-    "description": "Shimano Deore 30v, light frame",
-    "size": "L",
-    "image": "/images/bikes/mountain/level-b6.png",
-    "details":
-    {
-        "frame":
-        {
-            "frame": "...",
-            "fork": "..."
-        },
-        "wheels":
-        {
-            "wheels": "...",
-            "frontHub": "...",
-            "rearHub": "...",
-            "rims": "....",
-            "tires": "..."
-        },
-        "drive":
-        {
-            "frontShift": "...",
-            "rearShift ": "...",
-            "frontBrake": "...",
-            "rearBrake": "...",
-            "brakeLevers": "...",
-            "handles": "...",
-            "plate": "...",
-            "chain": "...",
-            "casette": "..."
-        },
-        "components":
-        {
-            "handlebar": "...",
-            "power": "...",
-            "seatPost": "...",
-            "direction": "...",
-            "seatBelt": "...",
-            "fists": "..."
-        }
-    },
-    "datesBooked": [
-    {
-        "pickUp": 1505865600000,
-        "dropOff": 1506297600000
-    }],
-    "available": true
-},
-{
     "title": "Raleigh Straight″",
     "category": "city",
     "description": "Shimano Deore 24v, aluminium frame",

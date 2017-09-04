@@ -15,7 +15,7 @@ function handlerCatalogue (req, res) {
       const categorizedBikes = _.groupBy(bikes, bike => bike.category)
 
         // for (const key in Object.keys(categorizedBikes)) {
-        // 	categorizedBikes[key].translation = translationService.get(key, 'en')
+        //  categorizedBikes[key].translation = translationService.get(key, 'en')
         // }
 
       res.render('pages/catalogue', { idPage: 'catalogue', categorizedBikes })
