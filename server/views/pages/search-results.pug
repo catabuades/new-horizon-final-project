@@ -44,31 +44,31 @@ block content
                     div
                       h3.h3-price-search 75€
                     p.inline-block Size:
-                    select
+                    select.sizeToCard(name='size')
                       option(value='', selected='', disabled='') ...
-                      option 50 / XS
-                      option 53 / S
-                      option 56 / M
-                      option 58 / L
-                      option 60 / XL
+                      option(value='50 / XS') 50 / XS
+                      option(value='53 / S') 53 / S
+                      option(value='56 / M') 56 / M
+                      option(value='58 / L') 58 / L
+                      option(value='60 / XL') 60 / XL
                     p.inline-block Pedals:
-                    select
+                    select.pedalsToCard(name='pedals')
                       option(value='', selected='', disabled='') ...
-                      option Own pedals
-                      option
+                      option(value='Own pedals') Own pedals
+                      option(value='Shimano SPD')
                         | Shimano SPD 
                         strong 1€/day
-                      option
+                      option(value='Shimano SPL')
                         | Shimano SPL 
                         strong 1€/day
-                      option
+                      option(value='Look Kio')
                         | Look Kio 
                         strong 1€/day
                     .checkbox
                       label
-                        input(type='checkbox')
+                        input.insuranceToCard(type='checkbox')
                         | Insurance 
                         strong 1€/day
                     .add-button.text-center
-                      button.btn.btn-primary.btn-block(type='button') Add to card
+                      button.addCard.btn.btn-primary.btn-block(data-id=bike._id, type='button') Add to card
                 
