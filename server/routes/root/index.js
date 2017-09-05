@@ -8,7 +8,7 @@ const showSearchResults = require('./handlers/showSearchResults')
 const showContact = require('./handlers/showContact')
 const showCatalogue = require('./handlers/showCatalogue')
 const showBikeInfo = require('./handlers/showBikeInfo')
-const handlerAddToCard = require('./handlers/handlerAddToCard')
+const handlerAddToCart = require('./handlers/handlerAddToCart')
 
 // handlers for booking
 const showStep1 = require('../booking/handlers/showStep1_BookingCustom')
@@ -34,7 +34,7 @@ router.get('/step_2', showStep2)
 router.post('/clientInfo', handlerClientInfo)
 router.get('/step_3', showStep3)
 router.get('/step_4', showStep4)
-router.post('/card/:bikeID', handlerAddToCard)
+router.post('/cart/:bikeId', handlerAddToCart)
 
 // router for Admin Reservas (ANGULAR)
 // router.get('/admin', handlerAdminReservas)

@@ -40,20 +40,20 @@ function getFiltersApplied () {
   return aFilters
 }
 
-$('.addCard').on('click', function (e) {
-  const bikeID = $(this).data('id')
-  const size = $('select[name=size]').val()
-  console.log(size)
-  const pedals = $('select[name=pedals]').val()
-  console.log(pedals)
-  const insurance = $("input.insuranceToCard[type='checkbox']").val()
-  console.log(insurance)
-  const url = `/card/${bikeID}`
-  const method = 'POST'
-  const data = {size, pedals, insurance}
+// $('.addCart').on('click', function (e) {
+//   const bikeID = $(this).data('id')
+//   const size = $('.sizeToCard option:selected').text()
+//   console.log(size)
+//   const pedals = $('.pedalsToCard option:selected').text()
+//   console.log(pedals)
+//   const insurance = $('insuranceToCard').val()
+//   console.log(insurance)
+//   const url = `/cart/${bikeID}`
+//   const method = 'POST'
+//   const data = {size, pedals, insurance}
 
-  $.ajax({ url, method, data })
-        .then(msg => {
-          window.location.reload()
-        })
-})
+//   $.ajax({ url, method, data })
+//         .then(msg => {
+//           window.location.reload()
+//         })
+// })

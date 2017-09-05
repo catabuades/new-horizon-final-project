@@ -5,6 +5,7 @@ function handlerSearchHome (req, res) {
 
   const type = req.query.type
   const { dropdate, pickdate } = req.query
+  // req.session.dates.push({ dropdate, pickdate })
 
 // string date to time stamp
   const stampPickUp = Date.parse(pickdate)
@@ -52,13 +53,13 @@ function handlerSearchHome (req, res) {
     Bike.find({'available': true, 'category': type})
         .then(bikes => {
           console.log(bikes)
-          res.render('pages/search-results', { idPage: 'search-results', bikes })
+          res.render('pages/search-results', { idPage: 'search-results', bikes, dropdate, pickdate })
           // res.json(bikes)
         })
   } else {
     Bike.find({'available': true})
         .then(bikes => {
-          res.render('pages/search-results', { idPage: 'search-results', bikes })
+          res.render('pages/search-results', { idPage: 'search-results', bikes, dropdate, pickdate })
           // res.json(bikes)
         })
   }

@@ -38,8 +38,8 @@ block content
               a.bs-wizard-dot(href='/step_4')
               .bs-wizard-info.text-center Confirmation
         // chekout bar
-    div
       p.total-price.pull-right Total price: €€€€
+    div
       .list-group
         .row.list-resume
           each bike, i in bikes
@@ -55,7 +55,7 @@ block content
                   |  #{bike[0].category}
                 p
                   span.bold Dates:
-                  |  #{ bike[0].datesBooked[0]["pickUp"] } to #{ bike[0].datesBooked[0]["dropOff"] }
+                  |  #{pickdate} to #{dropdate}
                 p
                   span.bold Description:
                   |  #{bike[0].description}

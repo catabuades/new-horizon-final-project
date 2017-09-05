@@ -27,6 +27,7 @@ app.use(cookieSession({
 app.use((req, res, next) => {
 	// ESTO ES MI CARRO
   req.session.cart = req.session.cart || []
+  req.session.dates = req.session.dates || []
   console.log(req.session.cart)
   next()
 })
