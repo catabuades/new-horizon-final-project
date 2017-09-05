@@ -35,9 +35,9 @@ var BookingSchema = new Schema({
   bikesBooked: [{
     type: String
   }],
-  datesBooked: {
-    type: String
-  }
+  datesBooked: [{
+    type: Number
+  }]
 }, { collection })
 
 module.exports = mongoose.model('Book', BookingSchema)

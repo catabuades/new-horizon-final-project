@@ -4,28 +4,32 @@
   background-repeat: no-repeat;
   background-position: center center;
   overflow: hidden;
-  height: 500px;
+  min-height: 500px;
   justify-content: center;
-  color: white;
-  overflow: hidden; }
+  color: #000;
+  background-image: url(/images/cover-home2.jpg); }
 
 .container.home {
   left: 5%;
   position: absolute;
   top: 23%; }
 
-.video-cover {
-  min-height: 500px;
-  max-height: 500px;
-  object-fit: cover;
-  width: 100%; }
-
-@media (max-width: 768px) {
-  .cover {
-    background-image: none; } }
-
+/*.video-cover {
+    min-height: 500px;
+    max-height: 500px;
+    object-fit: cover;
+    width: 100%; // opacity: 0.9;
+}
+*/
+/*
+@media(max-width: 768px) {
+    .cover {
+        background-image: none;
+    }
+}
+*/
 .search-container {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(192, 227, 78, 0.8);
   width: 70%;
   padding-bottom: 50px; }
 
@@ -35,7 +39,7 @@
   .search-home p {
     font-weight: bold;
     text-transform: uppercase;
-    color: #FFF;
+    color: #000;
     padding-left: 10px; }
 
 div.checkboxes {
@@ -55,6 +59,15 @@ div.checkboxes {
   .custom-list a {
     color: #FFF;
     font-family: 'Roboto', sans-serif; }
+
+span.glyphicon.glyphicon-menu-right {
+  color: #000;
+  font-weight: bold; }
+
+.btn-default {
+  height: 20px;
+  border-radius: 0px;
+  height: 34px; }
 
 span.glyphicon.glyphicon-search {
   color: white;
@@ -183,6 +196,14 @@ p.inline-block.size {
   -ms-transform: scale(1.1);
   transform: scale(1.1); }
 
+.btn.btn-primary:hover {
+  background-color: #ABCF34; }
+
+.btn.btn-primary {
+  background-color: #C0E34E;
+  border-color: #ABCF34;
+  border-radius: 0; }
+
 .container.container-cover {
   padding-bottom: 30px; }
 
@@ -193,9 +214,6 @@ p.inline-block.size {
 
 .row.list-resume {
   display: block; }
-
-a.col-md-6.list-group-item.left-column {
-  margin-top: 30px; }
 
 .row.header-row {
   margin-bottom: 30px; }
@@ -230,11 +248,15 @@ p.quantity .inline-block {
   font-size: 16px; }
 
 p.total-price {
+  padding-right: 20px;
   padding-top: 40px;
   display: flex;
   justify-content: flex-end;
   font-weight: bold;
   font-size: 20px; }
+
+.col-xs-12.col-md-6.container {
+  right: -20px; }
 
 .btn.remove {
   font-weight: bold;
@@ -244,9 +266,13 @@ p.total-price {
   padding-right: 0;
   text-decoration: underline; }
 
-.btn.btn-warning {
+.btn.btn-success {
+  border: none;
+  background-color: #c0e34e;
   margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  color: #000;
+  font-weight: bold; }
 
 .panel-title {
   display: inline;
@@ -378,12 +404,15 @@ p.total-price {
   position: relative; }
 
 .bs-wizard > .bs-wizard-step .bs-wizard-stepnum {
-  color: #595959;
+  color: #000;
   font-size: 12px;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: bold; }
 
 .bs-wizard > .bs-wizard-step .bs-wizard-info {
-  color: #999;
+  color: #000;
   font-size: 12px; }
 
 .bs-wizard > .bs-wizard-step > .bs-wizard-dot {
@@ -391,7 +420,7 @@ p.total-price {
   width: 30px;
   height: 30px;
   display: block;
-  background: #fbe8aa;
+  background: #C0E34E;
   top: 45px;
   left: 50%;
   margin-top: -15px;
@@ -402,7 +431,7 @@ p.total-price {
   content: ' ';
   width: 14px;
   height: 14px;
-  background: #fbbd19;
+  background: #000;
   border-radius: 50px;
   position: absolute;
   top: 8px;
@@ -418,7 +447,7 @@ p.total-price {
 .bs-wizard > .bs-wizard-step > .progress > .progress-bar {
   width: 0px;
   box-shadow: none;
-  background: #fbe8aa; }
+  background: #C0E34E; }
 
 .bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar {
   width: 100%; }
@@ -459,7 +488,7 @@ body {
   font-style: italic;
   margin-top: 0;
   padding-left: 50px;
-  color: #FFFFFF;
+  color: #C0E34E;
   line-height: 0.8; }
   .h1-nav a a:hover a:active a:link a:visited {
     color: #000;
@@ -478,10 +507,13 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
   font-weight: 700;
-  color: #FFF;
+  color: #000;
   font-style: italic;
   padding-left: 70px;
   padding-top: 20px; }
+
+small.subtitle {
+  color: #FFF; }
 
 .h2 {
   font-family: 'Roboto', sans-serif;
@@ -555,6 +587,9 @@ nav.navbar.navbar-default {
 
 .navbar-right {
   color: #FFF; }
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  color: #C0E34E; }
 
 img {
   width: 90%;

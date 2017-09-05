@@ -18,7 +18,7 @@ body {
     font-style: italic;
     margin-top: 0;
     padding-left: 50px;
-    color: #FFFFFF;
+    color: #C0E34E;
     line-height: 0.8;
     a a:hover a:active a:link a:visited {
         color: #000;
@@ -40,10 +40,14 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     font-weight: 700;
-    color: #FFF;
+    color: #000;
     font-style: italic;
     padding-left: 70px;
     padding-top: 20px;
+}
+
+small.subtitle {
+    color: #FFF;
 }
 
 .h2 {
@@ -131,6 +135,10 @@ nav.navbar.navbar-default {
 
 .navbar-right {
     color: #FFF;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #C0E34E;
 }
 
 img {

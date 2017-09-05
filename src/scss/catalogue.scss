@@ -70,3 +70,14 @@ transition:transform 0.1s ease-out;
 -ms-transform: scale(1.1);
 transform: scale(1.1)
 }
+
+// TOGGLE CHECKBOX FILTERS
+.btn.btn-primary:hover  {
+	background-color: #ABCF34;
+}
+
+.btn.btn-primary {
+	background-color: #C0E34E;
+	border-color: #ABCF34;
+	border-radius: 0;
+} 

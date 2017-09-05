@@ -12,9 +12,9 @@
 	display: block;
 }
 // SPACE UNDER THE CHECKBOX
-a.col-md-6.list-group-item.left-column {
-	margin-top: 30px;
-}
+// a.col-md-6.list-group-item.left-column {
+// 	margin-top: 20px;
+// }
 
 .row.header-row {
 	margin-bottom: 30px;
@@ -60,11 +60,16 @@ p.quantity .inline-block {
 }
 
 p.total-price {
+	padding-right: 20px;
 	padding-top: 40px;
 	display: flex;
 	justify-content: flex-end;
 	font-weight: bold;
 	font-size: 20px;
+}
+
+.col-xs-12.col-md-6.container {
+	right: -20px;
 }
 
 // BUTTON BOOKING STEP 1
@@ -77,9 +82,13 @@ p.total-price {
 	text-decoration: underline;
 }
 
-.btn.btn-warning {
+.btn.btn-success {
+	border: none;
+	background-color: rgb(192, 227, 78);
 	margin-top: 30px;
 	margin-bottom: 30px;
+	color: #000;
+	font-weight: bold;
 }
 
 // PAYMENT STYLES BOOKING STEP 3

@@ -20,7 +20,7 @@ $('#road, #mountain, #trekking, #city, #e-bike').change(function () {
 
 function createQueryFilters (filters) {
   var tplQueryFilters = '?filters='
-  var tplQueryFiltersSearch = '?filters='
+//  var tplQueryFiltersSearch = '?filters='
   var { search, origin, pathname } = window.location
   if (pathname === '/catalogue') {
     var newQuery = tplQueryFilters + filters.join(',')
