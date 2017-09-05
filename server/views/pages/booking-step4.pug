@@ -3,10 +3,41 @@ extends ../layout
 block content
 
   .cover-confirmed
-      .container
-        .row
-          .col-md-6.col-offset-3
-            h2.h2 Booking confirmed!
-            p
-              | Your reservation has been processed correctly, you will shortly receive a confirmation email.
-            a.btn(href='home.html', role='button') Back home
+    .container
+      .row
+        .col-md-6
+          h2.h2 Step 4: Booking confirmed!
+          p
+            | Your reservation has been processed correctly, you will shortly receive a confirmation email.
+          a.btn(href='home.html', role='button') Back home
+        // chekout bar
+        .col-md-6.container
+          .row.bs-wizard(style='border-bottom:0;')
+            .col-xs-3.bs-wizard-step.complete
+              .text-center.bs-wizard-stepnum Step 1
+              .progress
+                .progress-bar
+              a.bs-wizard-dot(href='/step_1')
+              .bs-wizard-info.text-center Resume
+            .col-xs-3.bs-wizard-step.complete
+              // complete
+              .text-center.bs-wizard-stepnum Step 2
+              .progress
+                .progress-bar
+              a.bs-wizard-dot(href='/step_2')
+              .bs-wizard-info.text-center Personal information
+            .col-xs-3.bs-wizard-step.complete
+              // complete
+              .text-center.bs-wizard-stepnum Step 3
+              .progress
+                .progress-bar
+              a.bs-wizard-dot(href='/step_3')
+              .bs-wizard-info.text-center Payment
+            .col-xs-3.bs-wizard-step.complete
+              // active
+              .text-center.bs-wizard-stepnum Step 4
+              .progress
+                .progress-bar
+              a.bs-wizard-dot(href='/step_4')
+              .bs-wizard-info.text-center Confirmation
+        // chekout bar

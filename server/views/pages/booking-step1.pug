@@ -4,7 +4,7 @@ block content
 
   .resume
   .container
-    .row
+    .row.head-steps
       .well
         h2.col-xs-12.col-md-6.inline-block.h2 Step 1: Resume
         // chekout bar
@@ -14,28 +14,28 @@ block content
               .text-center.bs-wizard-stepnum Step 1
               .progress
                 .progress-bar
-              a.bs-wizard-dot(href='/step_1')
+              a.step1.bs-wizard-dot(href='/step_1')
               .bs-wizard-info.text-center Resume
-            .col-xs-3.bs-wizard-step.complete
+            .col-xs-3.bs-wizard-step.disabled
               // complete
               .text-center.bs-wizard-stepnum Step 2
               .progress
                 .progress-bar
-              a.bs-wizard-dot(href='/step_2')
+              a.step2.bs-wizard-dot(href='/step_2')
               .bs-wizard-info.text-center Personal information
-            .col-xs-3.bs-wizard-step.active
+            .col-xs-3.bs-wizard-step.disabled
               // complete
               .text-center.bs-wizard-stepnum Step 3
               .progress
                 .progress-bar
-              a.bs-wizard-dot(href='/step_3')
+              a.step3.bs-wizard-dot(href='/step_3')
               .bs-wizard-info.text-center Payment
             .col-xs-3.bs-wizard-step.disabled
               // active
               .text-center.bs-wizard-stepnum Step 4
               .progress
                 .progress-bar
-              a.bs-wizard-dot(href='/step_4')
+              a.step4.bs-wizard-dot(href='/step_4')
               .bs-wizard-info.text-center Confirmation
         // chekout bar
       p.total-price.pull-right Total price: €€€€
@@ -43,30 +43,31 @@ block content
       .list-group
         .row.list-resume
           each bike, i in bikes
-            a.col-md-6.list-group-item.left-column(href='#')
-              .media.col-md-4
-                figure.pull-left.resume-image
-                  img.media-object.img-rounded.img-responsive(style='background-image: url(' + bike[0].image + ')')
-              .col-md-8
-                h4.h4.inline-block.list-group-item-heading #{bike[0].title}
-                h2.inline-block #{customBike[i].size}
-                p
-                  span.bold Category:
-                  |  #{bike[0].category}
-                p
-                  span.bold Dates:
-                  |  #{pickdate} to #{dropdate}
-                p
-                  span.bold Description:
-                  |  #{bike[0].description}
-                p
-                  span.bold Pedals:
-                  |  #{customBike[i].pedals}
-                p
-                  span.bold Insurance:
-                  |  #{customBike[i].insurance}
-                .price-resume
-                  p Price: xxxx
-                .remove-button.text-center
-                  button.btn.remove.pull-right(type='button') Remove
+            div.contain-bike-resume
+              a.col-md-6.list-group-item.left-column(href='#')
+                .media.col-md-4
+                  figure.pull-left.resume-image
+                    img.media-object.img-rounded.img-responsive(style='background-image: url(' + bike[0].image + ')')
+                .col-md-8
+                  h4.h4.inline-block.list-group-item-heading #{bike[0].title}
+                  h2.inline-block #{customBike[i].size}
+                  p
+                    span.bold Category:
+                    |  #{bike[0].category}
+                  p
+                    span.bold Dates:
+                    |  #{dates[0].pickdate} to #{dates[0].dropdate}
+                  p
+                    span.bold Description:
+                    |  #{bike[0].description}
+                  p
+                    span.bold Pedals:
+                    |  #{customBike[i].pedals}
+                  p
+                    span.bold Insurance:
+                    |  #{customBike[i].insurance}
+                  .price-resume
+                    p Price: xxxx
+                  .remove-button.text-center
+                    button.btn.remove.pull-right(data-id=bike[0]._id, type='button') Remove
       a.btn.btn-warning.pull-right(href='/step_2') Next Step

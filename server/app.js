@@ -28,12 +28,11 @@ app.use((req, res, next) => {
 	// ESTO ES MI CARRO
   req.session.cart = req.session.cart || []
   req.session.dates = req.session.dates || []
-  console.log(req.session.cart)
   next()
 })
 
 app.use(routesApp)
-app.use('/booking/', routesBooking)
+// app.use('/booking/', routesBooking)
 app.use('/api/', routesApi)
 
 module.exports = app

@@ -1,28 +1,27 @@
-const Bike = require(__base + '/models/Bike')
+var Bike = require(__base + '/models/Bike')
 
 function showStep1_BookingCustom (req, res) {
-  const ids = req.session.cart.map((obj) => {
-    return obj.bikeID
+  var ids = req.session.cart.map((obj) => {
+    return obj.bikeId
   })
 
-  const customBike = req.session.cart.reduce((acc, bike) => {
-    acc.push({ pedals: bike.pedals, size: bike.size, insaurance: bike.insurance })
+  var customBike = req.session.cart.reduce((acc, bike) => {
+    console.log('ppppppppp', bike.insurance)
+    acc.push({ pedals: bike.pedals, size: bike.size, insurance: bike.insurance })
     return acc
   }, [])
 
-  const promises = ids.map((id) => {
+  var promises = ids.map((id) => {
     return Bike.find({ '_id': id })
   })
 
-  const dates = req.session.dates
+  var dates = req.session.dates
+  console.log('dates req session', dates)
 
   Promise.all(promises)
-    .then((bikes) => {
-      console.log('------------------------------')
-      console.log(bikes)
-      console.log('-------------------------------')
-      res.render('pages/booking-step1', { idPage: 'booking1', bikes, customBike, dates})
-    })
+        .then((bikes) => {
+          res.render('pages/booking-step1', { idPage: 'booking1', bikes, customBike, dates })
+        })
 }
 
 module.exports = showStep1_BookingCustom

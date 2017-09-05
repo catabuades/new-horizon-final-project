@@ -286,6 +286,9 @@ p.total-price {
 #booking4 .cover-confirmed a:hover {
   text-decoration: underline; }
 
+.head-steps {
+  margin-bottom: 40px; }
+
 .cover-contact {
   background-size: cover;
   background-repeat: no-repeat;
@@ -362,7 +365,8 @@ p.total-price {
   border: none; }
 
 .bs-wizard {
-  margin-top: 40px; }
+  margin-top: 20px;
+  padding: 0; }
 
 /*Form Wizard*/
 .bs-wizard {
@@ -380,7 +384,7 @@ p.total-price {
 
 .bs-wizard > .bs-wizard-step .bs-wizard-info {
   color: #999;
-  font-size: 14px; }
+  font-size: 12px; }
 
 .bs-wizard > .bs-wizard-step > .bs-wizard-dot {
   position: absolute;

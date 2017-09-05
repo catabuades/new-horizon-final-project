@@ -4,8 +4,8 @@ function handlerSearchHome (req, res) {
   console.log(req.query)
 
   const type = req.query.type
-  const { dropdate, pickdate } = req.query
-  // req.session.dates.push({ dropdate, pickdate })
+  const { pickdate, dropdate } = req.query
+  req.session.dates.push({ dropdate, pickdate })
 
 // string date to time stamp
   const stampPickUp = Date.parse(pickdate)

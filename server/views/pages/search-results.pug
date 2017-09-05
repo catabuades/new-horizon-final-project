@@ -30,7 +30,7 @@ block content
           .list-group
             .row
               each bike, index in bikes
-                form.add-to-cart-form(action="/cart/bike._id", method='POST')
+                form.add-to-cart-form
                   .list-group-item
                     .media.col-md-3
                       figure.pull-left
@@ -45,7 +45,7 @@ block content
                       div
                         h3.h3-price-search 75€
                       p.inline-block Size:
-                      select.size(name='size')
+                      select.size(required='', name='size')
                         option(value='', selected='', disabled='') ...
                         option(value='50 / XS') 50 / XS
                         option(value='53 / S') 53 / S
@@ -53,7 +53,7 @@ block content
                         option(value='58 / L') 58 / L
                         option(value='60 / XL') 60 / XL
                       p.inline-block Pedals:
-                      select.pedals(name='pedals')
+                      select.pedals(required='', name='pedals')
                         option(value='', selected='', disabled='') ...
                         option(value='Own pedals') Own pedals
                         option(value='Shimano SPD')
@@ -71,5 +71,5 @@ block content
                           | Insurance 
                           strong 1€/day
                       .add-button.text-center
-                        button.add-to-cart.btn.btn-primary.btn-block(type='submit') Add to card
+                        button.add-to-cart.btn.btn-primary.btn-block(type='submit', id="bikeid",value=bike._id) Add to card
                   
