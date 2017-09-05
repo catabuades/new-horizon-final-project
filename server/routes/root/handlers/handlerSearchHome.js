@@ -1,19 +1,21 @@
-const Bike = require(__base + '/models/Bike')
+var Bike = require(__base + '/models/Bike')
 
 function handlerSearchHome (req, res) {
-  console.log(req.query)
+  // console.log(req.query)
 
-  const type = req.query.type
-  const { pickdate, dropdate } = req.query
+  var type = req.query.type
+  var { pickdate, dropdate } = req.query
   req.session.dates.push({ dropdate, pickdate })
 
 // string date to time stamp
-  const stampPickUp = Date.parse(pickdate)
-  const stampDropOff = Date.parse(dropdate)
+  var stampPickUp = Date.parse(pickdate)
+  var stampDropOff = Date.parse(dropdate)
+
+  var len = req.session.cart.length
 
 // // time stamp to human date
-//   const date1 = (new Date(pickdate)).toUTCString()
-//   const date2 = (new Date(dropdate)).toUTCString()
+//   var date1 = (new Date(pickdate)).toUTCString()
+//   var date2 = (new Date(dropdate)).toUTCString()
 
 // https://stackoverflow.com/questions/2943222/find-objects-between-two-dates-mongodb
 // items.save({
@@ -52,14 +54,13 @@ function handlerSearchHome (req, res) {
   if (type) {
     Bike.find({'available': true, 'category': type})
         .then(bikes => {
-          console.log(bikes)
-          res.render('pages/search-results', { idPage: 'search-results', bikes, dropdate, pickdate })
+          res.render('pages/search-results', { idPage: 'search-results', bikes, dropdate, pickdate, len })
           // res.json(bikes)
         })
   } else {
     Bike.find({'available': true})
         .then(bikes => {
-          res.render('pages/search-results', { idPage: 'search-results', bikes, dropdate, pickdate })
+          res.render('pages/search-results', { idPage: 'search-results', bikes, dropdate, pickdate, len })
           // res.json(bikes)
         })
   }

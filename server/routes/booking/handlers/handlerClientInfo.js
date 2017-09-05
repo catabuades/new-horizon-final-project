@@ -1,7 +1,6 @@
 const Book = require('../../../models/booking')
 
 function handlerClientInfo (req, res) {
-  console.log(req.body)
   const { name, surname, phoneNumber, email, country, hotel, comments } = req.body
   const book = new Book({ name, surname, phoneNumber, email, country, hotel, comments })
 

@@ -18,9 +18,11 @@ function showStep1_BookingCustom (req, res) {
   var dates = req.session.dates
   console.log('dates req session', dates)
 
+  var len = req.session.cart.length
+
   Promise.all(promises)
         .then((bikes) => {
-          res.render('pages/booking-step1', { idPage: 'booking1', bikes, customBike, dates })
+          res.render('pages/booking-step1', { idPage: 'booking1', bikes, customBike, dates, len })
         })
 }
 

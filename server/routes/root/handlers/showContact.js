@@ -1,5 +1,6 @@
 function showContact (req, res) {
-  res.render('pages/contact')
+  var len = req.session.cart.length
+  res.render('pages/contact', len)
 }
 
 module.exports = showContact

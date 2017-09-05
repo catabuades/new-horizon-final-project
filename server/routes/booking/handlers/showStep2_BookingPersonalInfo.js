@@ -1,5 +1,6 @@
 function showStep2_BookingPersonalInfo (req, res) {
-  res.render('pages/booking-step2', { idPage: 'booking2' })
+  const len = req.session.cart.length
+  res.render('pages/booking-step2', { idPage: 'booking2', len })
 }
 
 module.exports = showStep2_BookingPersonalInfo

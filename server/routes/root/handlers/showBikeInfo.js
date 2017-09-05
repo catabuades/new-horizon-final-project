@@ -1,11 +1,11 @@
-const Bike = require(__base + '/models/Bike')
+var Bike = require(__base + '/models/Bike')
 
 function handlerBikeInfo (req, res) {
-  const { title } = req.params
-  console.log(title)
+  var len = req.session.cart.length
+  var { title } = req.params
   Bike.findOne({title: title})
     .then(bike => {
-      res.render('pages/bike-info', { idPage: 'bike-info', bike })
+      res.render('pages/bike-info', { idPage: 'bike-info', bike, len })
     })
 }
 

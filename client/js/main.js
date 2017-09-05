@@ -71,7 +71,7 @@ $('.add-to-cart-form').submit(function (e) {
   $.ajax({ url, method, data })
         .then(msg => {
           console.log(msg)
-          /// window.location.reload()
+          window.location.reload()
         })
 })
 
