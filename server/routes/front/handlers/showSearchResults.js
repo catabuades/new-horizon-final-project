@@ -50,6 +50,7 @@ function showSearchResults (req, res) {
       console.log(bikes.length)
       const filteredBikes = bikes.filter(function (bike) {
         console.log(bike.title)
+        console.log(bike.bookings, 'hiugyg')
         const { startDate, endDate } = bike.bookings[0]
         const pickupIsInBookingRange = ((stampPickUp >= startDate) && (stampPickUp <= endDate))
         const dropOffIsInBookingRange = ((stampDropOff >= startDate) && (stampDropOff <= endDate))
@@ -58,7 +59,7 @@ function showSearchResults (req, res) {
         console.log(pickupIsInBookingRange)
         console.log(dropOffIsInBookingRange)
         console.log(pickupIsInBookingRange || dropOffIsInBookingRange)
-        return pickupIsInBookingRange || dropOffIsInBookingRange
+        return !(pickupIsInBookingRange || dropOffIsInBookingRange)
         // return (((stampPickUp && stampDropOff) < bike.bookings[0].startDate) || ((stampPickUp && stampDropOff) > bike.bookings[0].endDate))
       })
       console.log('filteredBikes....')
