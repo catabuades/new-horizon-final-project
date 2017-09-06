@@ -53,10 +53,6 @@ var BikeSchema = new Schema({
       fists: String
     }
   }],
-  available: {
-    type: Boolean,
-    default: true
-  },
   bookings: [{
     type: ObjectId,
     ref: 'Booking'

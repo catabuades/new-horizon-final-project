@@ -18,5 +18,6 @@ mongoimport -h ds123614.mlab.com:23614 -d newhorizon -c bikes -u admin -p admin 
 ### Add booking
 
 ```
-curl localhost:3000/api/book-bikes -H "Content-Type: application/json"  -X POST -d '{ "bikes": "59a69eaadb4a14bb7d63e71d,59a69eaadb4a14bb7d63e71e", "startDate": "1504562400000", "endDate": "1504821600000" }'
+curl localhost:3000/api/book-bikes -H "Content-Type: application/json"  -X POST -d '{ "bikes": "59afda90e3678ea4896bc2e9,59afda90e3678ea4896bc2eb", "startDate": "1505301292", "endDate": "1505906092" }'
 ```
+

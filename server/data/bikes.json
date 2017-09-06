@@ -40,13 +40,7 @@
             "seatBelt": "F’izi:k Antares R7 Magnesium",
             "fists": "Velo"
         }
-    }],
-    "datesBooked": [
-    {
-        "pickUp": 1505865600000,
-        "dropOff": 1506297600000
-    }],
-    "available": true
+    }]
 },
 {
     "title": "Trek Emonda S5",
@@ -90,13 +84,7 @@
             "seatBelt": "Bontrager Montrose Comp",
             "fists": "Bontrager Microfiber tape"
         }
-    },
-    "datesBooked": [
-    {
-        "pickUp": 1505865600000,
-        "dropOff": 1506297600000
-    }],
-    "available": true
+    }
 },
 {
     "title": "Orbea Onix",
@@ -140,13 +128,7 @@
             "seatBelt": "...",
             "fists": "..."
         }
-    },
-    "datesBooked": [
-    {
-        "pickUp": 1505865600000,
-        "dropOff": 1506297600000
-    }],
-    "available": true
+    }
 },
 {
     "title": "Tritan",
@@ -190,13 +172,7 @@
             "seatBelt": "...",
             "fists": "..."
         }
-    },
-    "datesBooked": [
-    {
-        "pickUp": 1505865600000,
-        "dropOff": 1506297600000
-    }],
-    "available": true
+    }
 },
 {
     "title": "Scott Speedster",
@@ -240,13 +216,7 @@
             "seatBelt": "...",
             "fists": "..."
         }
-    },
-    "datesBooked": [
-    {
-        "pickUp": 1505865600000,
-        "dropOff": 1506297600000
-    }],
-    "available": true
+    }
 },
 {
     "title": "Specialized Allez",
@@ -290,13 +260,7 @@
             "seatBelt": "...",
             "fists": "..."
         }
-    },
-    "datesBooked": [
-    {
-        "pickUp": 1505865600000,
-        "dropOff": 1506297600000
-    }],
-    "available": true
+    }
 },
 {
     "title": "Trek FX S5",
@@ -340,13 +304,7 @@
             "seatBelt": "...",
             "fists": "..."
         }
-    },
-    "datesBooked": [
-    {
-        "pickUp": 1505865600000,
-        "dropOff": 1506297600000
-    }],
-    "available": true
+    }
 },
 {
     "title": "Trek Zektor 3",
@@ -390,13 +348,7 @@
             "seatBelt": "...",
             "fists": "..."
         }
-    },
-    "datesBooked": [
-    {
-        "pickUp": 1505865600000,
-        "dropOff": 1506297600000
-    }],
-    "available": true
+    }
 },
 {
     "title": "Kross Pulso 2",
@@ -440,13 +392,7 @@
             "seatBelt": "...",
             "fists": "..."
         }
-    },
-    "datesBooked": [
-    {
-        "pickUp": 1505865600000,
-        "dropOff": 1506297600000
-    }],
-    "available": true
+    }
 },
 {
     "title": "Trek 7.3 FX",
@@ -490,13 +436,7 @@
             "seatBelt": "...",
             "fists": "..."
         }
-    },
-    "datesBooked": [
-    {
-        "pickUp": 1505865600000,
-        "dropOff": 1506297600000
-    }],
-    "available": true
+    }
 },
 {
     "title": "Scott Sportster",
@@ -540,13 +480,7 @@
             "seatBelt": "...",
             "fists": "..."
         }
-    },
-    "datesBooked": [
-    {
-        "pickUp": 1505865600000,
-        "dropOff": 1506297600000
-    }],
-    "available": true
+    }
 },
 {
     "title": "Specialized Sirrus",
@@ -590,13 +524,7 @@
             "seatBelt": "...",
             "fists": "..."
         }
-    },
-    "datesBooked": [
-    {
-        "pickUp": 1505865600000,
-        "dropOff": 1506297600000
-    }],
-    "available": true
+    }
 },
 {
     "title": "Kross E-Bike 5V",
@@ -640,13 +568,7 @@
             "seatBelt": "...",
             "fists": "..."
         }
-    },
-    "datesBooked": [
-    {
-        "pickUp": 1505865600000,
-        "dropOff": 1506297600000
-    }],
-    "available": true
+    }
 },
 {
     "title": "Kross MTB Level 29″",
@@ -690,13 +612,7 @@
             "seatBelt": "...",
             "fists": "..."
         }
-    },
-    "datesBooked": [
-    {
-        "pickUp": 1505865600000,
-        "dropOff": 1506297600000
-    }],
-    "available": true
+    }
 },
 {
     "title": "Kross MTB Lea 29″",
@@ -740,13 +656,7 @@
             "seatBelt": "...",
             "fists": "..."
         }
-    },
-    "datesBooked": [
-    {
-        "pickUp": 1505865600000,
-        "dropOff": 1506297600000
-    }],
-    "available": true
+    }
 },
 {
     "title": "Raleigh Straight″",
@@ -790,13 +700,7 @@
             "seatBelt": "...",
             "fists": "..."
         }
-    },
-    "datesBooked": [
-    {
-        "pickUp": 1505865600000,
-        "dropOff": 1506297600000
-    }],
-    "available": true
+    }
 },
 {
     "title": "Tempo Centro",
@@ -840,13 +744,7 @@
             "seatBelt": "...",
             "fists": "..."
         }
-    },
-    "datesBooked": [
-    {
-        "pickUp": 1505865600000,
-        "dropOff": 1506297600000
-    }],
-    "available": true
+    }
 },
 {
     "title": "Tempo Vivo",
@@ -890,11 +788,5 @@
             "seatBelt": "...",
             "fists": "..."
         }
-    },
-    "datesBooked": [
-    {
-        "pickUp": 1505865600000,
-        "dropOff": 1506297600000
-    }],
-    "available": true
+    }
 }]
