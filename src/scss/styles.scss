@@ -60,6 +60,7 @@ small.subtitle {
     margin-top: 0;
     color: #000;
     .subtitle-h2 {
+        font-weight: normal;
         font-size: 18px;
         margin-left: 15px;
     }
@@ -141,6 +142,12 @@ nav.navbar.navbar-default {
     color: #C0E34E;
 }
 
+.badge {
+    color: #000;
+    margin-left: 5px;
+    background-color: #C0E34E;
+}
+
 img {
     width: 90%;
     height: 200px !important;
@@ -167,4 +174,3 @@ img {
 	color: #DDD;
     font-weight: bold;
 }
-

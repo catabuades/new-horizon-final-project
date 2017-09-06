@@ -9,7 +9,7 @@ block content
         .search-container.col-xs-12.col-md-8
           h1.h1-search-home Find your bike in Alcudia now!
           .search-home
-            form.navbar-form.navbar-left(role='search' action='/apiResults' method='GET')
+            form.navbar-form.navbar-left(role='search' action='/search-results' method='GET')
               .form-group
                 p.inline-block Pick-Up
                 input.form-control(name='pickdate' type='date', placeholder='21/08/17  9:00')
@@ -21,19 +21,18 @@ block content
                   span.glyphicon.glyphicon-menu-right(aria-hidden="true")
               .checkboxes
                 label
-                  input(type='checkbox', name='type', value='road')
+                  input(type='checkbox', name='filter_road', value='1')
                   | Road
                 label
-                  input(type='checkbox', name='type', value='mountain')
+                  input(type='checkbox', name='filter_mountain', value='1')
                   | Mountain
                 label
-                  input(type='checkbox', name='type', value='trekking')
+                  input(type='checkbox', name='filter_trekking', value='1')
                   | Trekking
                 label
-                  input(type='checkbox', name='type', value='city')
+                  input(type='checkbox', name='filter_city', value='1')
                   | City
                 label
-                  input(type='checkbox', name='type', value='e-bike')
+                  input(type='checkbox', name='filter_ebike', value='1')
                   | E-Bike
         .col-md-4
-

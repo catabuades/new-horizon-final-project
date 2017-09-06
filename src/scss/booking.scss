@@ -89,6 +89,13 @@ p.total-price {
 	margin-bottom: 30px;
 	color: #000;
 	font-weight: bold;
+	border-radius: 0;
+}
+
+// FORM STEP 2
+
+#booking2 .container {
+	margin-bottom: 40px;
 }
 
 // PAYMENT STYLES BOOKING STEP 3
@@ -100,13 +107,30 @@ p.total-price {
 	margin-bottom: 40px;
 }
 
+#booking3 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+	background-color: #000;
+	border-radius: 0;
+}
+
+#booking3 .list-group-item.active>.badge, .nav-pills>.active>a>.badge {
+	color: #000;
+}
+
+#booking3 .btn.btn-success {
+	margin-top: 0px;
+}
+
+.panel, .input-group-addon:last-child {
+	border-radius: 0;
+}
+
 // CONFIRMATION PAGE BOOKING STEP 4
 .cover-confirmed {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
     overflow: hidden;
-    height: 500px;
+    min-height: 700px;
     display: flex;
     justify-content: center;
     padding-top: 20px;

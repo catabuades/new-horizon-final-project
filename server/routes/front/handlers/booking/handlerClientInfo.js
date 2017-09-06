@@ -1,4 +1,4 @@
-const Book = require('../../../models/booking')
+const Book = require(__base + '/models/Booking')
 
 function handlerClientInfo (req, res) {
   const { name, surname, phoneNumber, email, country, hotel, comments } = req.body

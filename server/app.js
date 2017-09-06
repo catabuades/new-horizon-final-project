@@ -5,8 +5,8 @@ const cookieSession = require('cookie-session')
 
 const app = express()
 
-const routesApp = require('./routes/root/')
-const routesBooking = require('./routes/booking/')
+const routesApp = require('./routes/front/')
+// const routesBooking = require('./routes/booking/')
 const routesApi = require('./routes/api/')
 
 app.set('view engine', 'pug')

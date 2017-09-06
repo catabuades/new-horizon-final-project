@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
+const ObjectId = Schema.ObjectId
 
 const collection = 'bikes'
 
@@ -56,13 +57,9 @@ var BikeSchema = new Schema({
     type: Boolean,
     default: true
   },
-  datesBooked: [{
-    pickUp: {
-      type: Number
-    },
-    dropOff: {
-      type: Number
-    }
+  bookings: [{
+    type: ObjectId,
+    ref: 'Booking'
   }],
   createdAt: {
     type: Number,

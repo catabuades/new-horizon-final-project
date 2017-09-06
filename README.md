@@ -14,3 +14,9 @@ demonio -> mongod --dbpath /Users/catabuadescoll/mongo/db
 mongoimport -d newHorizon -c bikes --jsonArray --file server/data/bikes.json
 
 mongoimport -h ds123614.mlab.com:23614 -d newhorizon -c bikes -u admin -p admin --jsonArray --file server/data/bikes.json
+
+### Add booking
+
+```
+curl localhost:3000/api/book-bikes -H "Content-Type: application/json"  -X POST -d '{ "bikes": "59a69eaadb4a14bb7d63e71d,59a69eaadb4a14bb7d63e71e", "startDate": "1504562400000", "endDate": "1504821600000" }'
+```

@@ -19,7 +19,7 @@ block content
         .well
           h2.h2.inline-block
             | Search Result 
-            span.subtitle-h2 #{ pickdate } to #{ dropdate }
+            span.subtitle-h2 #{ parsedPickdate } to #{ parsedDropdate }
           .inline-block.pull-right
             p.inline-block.size Filter by
             input(id='road' type='checkbox', data-toggle='toggle', value='road', data-on='road', data-off='road')
@@ -27,49 +27,51 @@ block content
             input(id='trekking' type='checkbox', data-toggle='toggle', value='trekking', data-on='trekking', data-off='trekking')
             input(id='city' type='checkbox', data-toggle='toggle', value='city', data-on='city', data-off='city')
             input(id='e-bike' type='checkbox', data-toggle='toggle', value='e-bike', data-on='e-bike', data-off='e-bike')
-          .list-group
-            .row
-              each bike, index in bikes
-                form.add-to-cart-form
-                  .list-group-item
-                    .media.col-md-3
-                      figure.pull-left
-                        img.media-object.img-rounded.img-responsive(style='background-image: url(' + bike.image + ')')
-                    .col-md-5
-                      h3.h3.list-group-item-heading #{ bike.title }
-                      span.bold Category: 
-                      p #{ bike.category }
-                      span.bold Description:
-                      p #{ bike.description }
-                    .right-column-options.col-md-4
-                      div
-                        h3.h3-price-search 75€
-                      p.inline-block Size:
-                      select.size(required='', name='size')
-                        option(value='', selected='', disabled='') ...
-                        option(value='50 / XS') 50 / XS
-                        option(value='53 / S') 53 / S
-                        option(value='56 / M') 56 / M
-                        option(value='58 / L') 58 / L
-                        option(value='60 / XL') 60 / XL
-                      p.inline-block Pedals:
-                      select.pedals(required='', name='pedals')
-                        option(value='', selected='', disabled='') ...
-                        option(value='Own pedals') Own pedals
-                        option(value='Shimano SPD')
-                          | Shimano SPD 
-                          strong 1€/day
-                        option(value='Shimano SPL')
-                          | Shimano SPL 
-                          strong 1€/day
-                        option(value='Look Kio')
-                          | Look Kio 
-                          strong 1€/day
-                      .checkbox
-                        label
-                          input.insurance(name='insurance', type='checkbox', checked)
-                          | Insurance 
-                          strong 1€/day
-                      .add-button.text-center
-                        button.add-to-cart.btn.btn-primary.btn-block(type='submit', id="bikeid",value=bike._id) Add to card
-                  
+          each category in Object.keys(categorizedBikes)
+            legend.h3= category
+            .list-group
+              .row
+                each bike in categorizedBikes[category]
+                  form.add-to-cart-form
+                    .list-group-item
+                      .media.col-md-3
+                        figure.pull-left
+                          img.media-object.img-rounded.img-responsive(style='background-image: url(' + bike.image + ')')
+                      .col-md-5
+                        h3.h3.list-group-item-heading #{ bike.title }
+                        span.bold Category: 
+                        p #{ bike.category }
+                        span.bold Description:
+                        p #{ bike.description }
+                      .right-column-options.col-md-4
+                        div
+                          h3.h3-price-search 75€
+                        p.inline-block Size:
+                        select.size(required='', name='size')
+                          option(value='', selected='', disabled='') ...
+                          option(value='50 / XS') 50 / XS
+                          option(value='53 / S') 53 / S
+                          option(value='56 / M') 56 / M
+                          option(value='58 / L') 58 / L
+                          option(value='60 / XL') 60 / XL
+                        p.inline-block Pedals:
+                        select.pedals(required='', name='pedals')
+                          option(value='', selected='', disabled='') ...
+                          option(value='Own pedals') Own pedals
+                          option(value='Shimano SPD')
+                            | Shimano SPD 
+                            strong 1€/day
+                          option(value='Shimano SPL')
+                            | Shimano SPL 
+                            strong 1€/day
+                          option(value='Look Kio')
+                            | Look Kio 
+                            strong 1€/day
+                        .checkbox
+                          label
+                            input.insurance(name='insurance', type='checkbox', checked)
+                            | Insurance 
+                            strong 1€/day
+                        .add-button.text-center
+                          button.add-to-cart.btn.btn-primary.btn-block(type='submit', id="bikeid",value=bike._id) Add to card
+                    

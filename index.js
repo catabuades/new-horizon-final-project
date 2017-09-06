@@ -2,6 +2,9 @@ const path = require('path')
 
 global.__base = path.join(__dirname, 'server')
 
+// require('./server/models/Bike')
+// require('./server/models/Booking')
+
 const app = require('./server/app')
 const db = require('./server/config/db')
 

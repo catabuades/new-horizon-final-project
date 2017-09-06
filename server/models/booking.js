@@ -1,16 +1,17 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
+const ObjectId = Schema.ObjectId
 
 const collection = 'books'
 
 var BookingSchema = new Schema({
   name: {
     type: String,
-    required: true
+    required: false
   },
   surname: {
     type: String,
-    required: true
+    required: false
   },
   phoneNumber: {
     type: Number,
@@ -18,11 +19,11 @@ var BookingSchema = new Schema({
   },
   email: {
     type: String,
-    required: true
+    required: false
   },
   country: {
     type: String,
-    required: true
+    required: false
   },
   hotel: {
     type: String,
@@ -32,12 +33,12 @@ var BookingSchema = new Schema({
     type: String,
     required: false
   },
-  bikesBooked: [{
-    type: String
+  bikes: [{
+    type: ObjectId,
+    ref: 'Bike'
   }],
-  datesBooked: [{
-    type: Number
-  }]
+  startDate: Number,
+  endDate: Number
 }, { collection })
 
-module.exports = mongoose.model('Book', BookingSchema)
+module.exports = mongoose.model('Booking', BookingSchema)
