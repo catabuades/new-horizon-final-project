@@ -85,6 +85,16 @@ mongod --dbpath /Users/catabuadescoll/mongo/db
 
 ---
 
+## Export JSON
+**CMND Export Json from Robo3T**
+```
+mongoexport -d newHorizon -c books --jsonArray -o server/data/books.json
+mongoexport -d newHorizon -c bikes --jsonArray -o server/data/bikes.json
+```
+
+---
+
+
 ## Add Bikes
 
 ```
@@ -113,17 +123,18 @@ mongoimport -h ds123614.mlab.com:23614 -d newhorizon -c bikes -u admin -p admin 
 
 ---
 
-## Export JSON
+## Add booking
 
+### Import Booking mLAB
 ```
-mongoexport -d newHorizon -c books -o server/data/books.json
-mongoexport -d newHorizon -c bikes -o server/data/bikes.json
+mongoimport -h ds123614.mlab.com:23614 -d newhorizon -c books -u admin -p admin --jsonArray --file server/data/books.json
 ```
+
+mongoimport -h ds123614.mlab.com:23614 -d newhorizon -c bookings -u <user> -p <password> --file <input file>
 
 ---
 
-## Add booking
-
+### Manual add
 Add booking all bikes
 ```
 curl localhost:3000/api/book-bikes -H "Content-Type: application/json"  -X POST -d '{ "bikes": "59b128da35a24e8500e623ea,59b128da35a24e8500e623eb,59b128da35a24e8500e623ec,59b128da35a24e8500e623ed,59b128da35a24e8500e623ee,59b128da35a24e8500e623ef,59b128da35a24e8500e623f0,59b128da35a24e8500e623f1,59b128da35a24e8500e623f2,59b128da35a24e8500e623f3,59b128da35a24e8500e623f4,59b128da35a24e8500e623f5,59b128da35a24e8500e623f6,59b128da35a24e8500e623f7,59b128da35a24e8500e623f8,59b128da35a24e8500e623f9,59b128da35a24e8500e623fa,59b128da35a24e8500e623fb", "startDate": "2017-09-14", "endDate": "2017-09-17" }'
