@@ -86,7 +86,6 @@ function showSearchResults (req, res) {
       console.log(filteredBikes.length)
 
       var categorizedBikes = _.groupBy(filteredBikes, bike => bike.category)
-      console.log('fufufufufufufufufuf', categorizedBikes.road[5].bookings)
 
       res.render('pages/search-results', { idPage: 'search-results', categorizedBikes, pickdate, dropdate, len })
         // res.json(bikes)
