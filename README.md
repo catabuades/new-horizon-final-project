@@ -5,7 +5,7 @@
 [![npm](https://github.com/MarioTerron/logo-images/blob/master/logos/npm.png)](https://www.npmjs.com/)
 [![Bower](https://github.com/FransLopez/logo-images/blob/master/logos/bower.png)](https://bower.io/)
 [![MongoDB](https://github.com/FransLopez/logo-images/blob/master/logos/mongodb.png)](https://www.mongodb.com/)
-[![Monogoose](https://github.com/MarioTerron/logo-images/blob/master/logos/mongoose.png)]
+![Monogoose](https://github.com/MarioTerron/logo-images/blob/master/logos/mongoose.png)
 [![HTML5,CSS3 and JS](https://github.com/FransLopez/logo-images/blob/master/logos/html5-css3-js.png)](http://www.w3.org/)
 [![PugJS](https://github.com/MarioTerron/logo-images/blob/master/logos/pug.png)](http://www.pugjs.org/) 
 [![Bootstrap](https://github.com/FransLopez/logo-images/blob/master/logos/bootstrap.png)](http://getbootstrap.com/)  
@@ -93,16 +93,22 @@ curl localhost:3000/api/bikes
 ---
 
 ### Import Bikes JSON
+```
 mongoimport -d newHorizon -c bikes --jsonArray --file server/data/bikes.json
+```
 ---
 
 ### Import Bikes mLAB
+```
 mongoimport -h ds123614.mlab.com:23614 -d newhorizon -c bikes -u admin -p admin --jsonArray --file server/data/bikes.json
+```
 ---
 
 ## Export JSON
+```
 mongoexport -d newHorizon -c books -o server/data/books.json
 mongoexport -d newHorizon -c bikes -o server/data/bikes.json
+```
 ---
 
 ## Add booking
@@ -121,6 +127,7 @@ curl localhost:3000/api/book-bikes -H "Content-Type: application/json"  -X POST 
 ---
 
 ### Bike ID's
+```
 ObjectId("59b128da35a24e8500e623ea") Trek Emonda
 ObjectId("59b128da35a24e8500e623eb") Tritan
 7-12/09
