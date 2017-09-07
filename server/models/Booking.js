@@ -33,6 +33,7 @@ var BookingSchema = new Schema({
     type: String,
     required: false
   },
+  customBike: [String],
   bikes: [{
     type: ObjectId,
     ref: 'Bike'

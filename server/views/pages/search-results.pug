@@ -38,11 +38,13 @@ block content
                         figure.pull-left
                           img.media-object.img-rounded.img-responsive(style='background-image: url(' + bike.image + ')')
                       .col-md-5
-                        h3.h3.list-group-item-heading #{ bike.title }
+                        h3.title.h3.list-group-item-heading #{ bike.title }
                         span.bold Category: 
                         p #{ bike.category }
                         span.bold Description:
                         p #{ bike.description }
+                        each book in bike.bookings
+                          p Booking: #{ book.startDate } to #{ book.endDate }
                       .right-column-options.col-md-4
                         div
                           h3.h3-price-search 75€

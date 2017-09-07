@@ -74,14 +74,6 @@ function showSearchResults (req, res) {
 
           const mRangeBooking = moment.range(mStartDate, mEndDate)
 
-          // const pickupIsInBookingRange = mPickdate.isBetween(mStartDate, mEndDate)
-          // const dropOffIsInBookingRange = mDropdate.isBetween(mStartDate, mEndDate)
-          // console.log(`range booking between ${startDate} AND ${endDate}`)
-          // console.log(`request booking between ${pickdate} AND ${dropdate}`)
-          // console.log(pickupIsInBookingRange)
-          // console.log(dropOffIsInBookingRange)
-          // console.log(pickupIsInBookingRange || dropOffIsInBookingRange)
-          // return pickupIsInBookingRange || dropOffIsInBookingRange
           return mRangeRequestBooking.overlaps(mRangeBooking, { adjacent: true })
         }
         const hasMatchAnyBooking = bike.bookings.some(hasMatchBooking)
@@ -89,16 +81,12 @@ function showSearchResults (req, res) {
         if (hasMatchAnyBooking) console.log('======>>>>> DISCARDED!!!')
         else console.log('======>>>>> INCLUDED!!!')
         return !hasMatchAnyBooking
-        // return (((stampPickUp && stampDropOff) < bike.bookings[0].startDate) || ((stampPickUp && stampDropOff) > bike.bookings[0].endDate))
       })
       console.log('filteredBikes....')
       console.log(filteredBikes.length)
-      // console.log('aaaaa', filteredBikes.length)
-      // bikes.find({
-      //   'bookings': {'$lt': 'startDate', '$gte': 'endDate'}
-      // })
-      // console.log(JSON.stringify(bikes, null, 2))
+
       var categorizedBikes = _.groupBy(filteredBikes, bike => bike.category)
+      console.log('fufufufufufufufufuf', categorizedBikes.road[5].bookings)
 
       res.render('pages/search-results', { idPage: 'search-results', categorizedBikes, pickdate, dropdate, len })
         // res.json(bikes)

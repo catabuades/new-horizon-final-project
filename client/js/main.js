@@ -56,6 +56,9 @@ $('.add-to-cart-form').submit(function (e) {
   var insurance = self.find('.insurance').is(':checked')
   console.log(insurance)
 
+  var title = self.find('.title').text()
+  console.log(title)
+
     //
     // var size = $('.sizeToCard option:selected').text();
     // console.log(size);
@@ -66,7 +69,7 @@ $('.add-to-cart-form').submit(function (e) {
 
   var url = `/cart/${bikeId}`
   var method = 'POST'
-  var data = { size, pedals, insurance }
+  var data = { size, pedals, insurance, title }
 
   $.ajax({ url, method, data })
         .then(msg => {
