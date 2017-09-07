@@ -24,13 +24,12 @@ curl localhost:3000/api/book-bikes -H "Content-Type: application/json"  -X POST 
 ```
 
 ```
-curl localhost:3000/api/book-bikes -H "Content-Type: application/json"  -X POST -d '{ "bikes": "59b128da35a24e8500e623eb", "startDate": "2017-09-07", "endDate": "2017-09-12" }'
+curl localhost:3000/api/book-bikes -H "Content-Type: application/json"  -X POST -d '{ "bikes": "59b128da35a24e8500e623eb", "startDate": "2017-09-07", "endDate": "2017-09-16" }'
 ```
 
 
 ObjectId("59b128da35a24e8500e623ea") Trek Emonda
 ObjectId("59b128da35a24e8500e623eb") Tritan
-7-12/09
 ObjectId("59b128da35a24e8500e623ec") Orbea Onix
 ObjectId("59b128da35a24e8500e623ed") Kross Vento
 ObjectId("59b128da35a24e8500e623ee") Trek Fx S5
