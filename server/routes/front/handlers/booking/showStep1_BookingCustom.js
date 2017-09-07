@@ -15,6 +15,7 @@ function showStep1_BookingCustom (req, res) {
   })
 
   var dates = req.session.dates
+  console.log(dates)
 
   var len = req.session.cart.length
 

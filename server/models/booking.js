@@ -37,8 +37,8 @@ var BookingSchema = new Schema({
     type: ObjectId,
     ref: 'Bike'
   }],
-  startDate: Number,
-  endDate: Number
+  startDate: String, // 'YYYY-MM-DD'
+  endDate: String // 'YYYY-MM-DD'
 }, { collection })
 
 module.exports = mongoose.model('Booking', BookingSchema)

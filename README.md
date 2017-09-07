@@ -13,45 +13,42 @@ demonio -> mongod --dbpath /Users/catabuadescoll/mongo/db
 // IMPORT BIKES JSON
 mongoimport -d newHorizon -c bikes --jsonArray --file server/data/bikes.json
 
+mongoexport -d newHorizon -c books -o server/data/books.json
+
 mongoimport -h ds123614.mlab.com:23614 -d newhorizon -c bikes -u admin -p admin --jsonArray --file server/data/bikes.json
 
 ### Add booking
 Para importar-los todos
 ```
-curl localhost:3000/api/book-bikes -H "Content-Type: application/json"  -X POST -d '{ "bikes": "59b0f98cb4be98dd6e626e3b,59b0f98cb4be98dd6e626e3c,59b0f98cb4be98dd6e626e3d,59b0f98cb4be98dd6e626e3e,59b0f98cb4be98dd6e626e3f,59b0f98cb4be98dd6e626e40,59b0f98cb4be98dd6e626e41,59b0f98cb4be98dd6e626e42,59b0f98cb4be98dd6e626e43,59b0f98cb4be98dd6e626e44,59b0f98cb4be98dd6e626e45,59b0f98cb4be98dd6e626e46,59b0f98cb4be98dd6e626e47,59b0f98cb4be98dd6e626e48,59b0f98cb4be98dd6e626e49,59b0f98cb4be98dd6e626e4a,59b0f98cb4be98dd6e626e4b,59b0f98cb4be98dd6e626e4c", "startDate": "1504252431000", "endDate": "1504338831000" }'
+curl localhost:3000/api/book-bikes -H "Content-Type: application/json"  -X POST -d '{ "bikes": "59b128da35a24e8500e623ea,59b128da35a24e8500e623eb,59b128da35a24e8500e623ec,59b128da35a24e8500e623ed,59b128da35a24e8500e623ee,59b128da35a24e8500e623ef,59b128da35a24e8500e623f0,59b128da35a24e8500e623f1,59b128da35a24e8500e623f2,59b128da35a24e8500e623f3,59b128da35a24e8500e623f4,59b128da35a24e8500e623f5,59b128da35a24e8500e623f6,59b128da35a24e8500e623f7,59b128da35a24e8500e623f8,59b128da35a24e8500e623f9,59b128da35a24e8500e623fa,59b128da35a24e8500e623fb", "startDate": "2017-09-14", "endDate": "2017-09-17" }'
 ```
 
 ```
-curl localhost:3000/api/book-bikes -H "Content-Type: application/json"  -X POST -d '{ "bikes": "59b0f98cb4be98dd6e626e3d", "startDate": "1506066831000", "endDate": "1506671631000" }'
+curl localhost:3000/api/book-bikes -H "Content-Type: application/json"  -X POST -d '{ "bikes": "59b128da35a24e8500e623eb", "startDate": "2017-09-07", "endDate": "2017-09-12" }'
 ```
 
 
+ObjectId("59b128da35a24e8500e623ea") Trek Emonda
+ObjectId("59b128da35a24e8500e623eb") Tritan
+7-12/09
+ObjectId("59b128da35a24e8500e623ec") Orbea Onix
+ObjectId("59b128da35a24e8500e623ed") Kross Vento
+ObjectId("59b128da35a24e8500e623ee") Trek Fx S5
+ObjectId("59b128da35a24e8500e623ef") Specialized Allez
+ObjectId("59b128da35a24e8500e623f0") Scott Speedster
+ObjectId("59b128da35a24e8500e623f1") Trek Zektor 3
+ObjectId("59b128da35a24e8500e623f2") Kross Pulso 2
+ObjectId("59b128da35a24e8500e623f3") Trek 7.3 FX
+ObjectId("59b128da35a24e8500e623f4") Scott Sportster
+ObjectId("59b128da35a24e8500e623f5") Kross MTB Level
+ObjectId("59b128da35a24e8500e623f6") Kross MTB Lea
+ObjectId("59b128da35a24e8500e623f7") Raleigh Straight
+ObjectId("59b128da35a24e8500e623f8") Specialized Sirrus
+ObjectId("59b128da35a24e8500e623f9") Tempo Centro
+ObjectId("59b128da35a24e8500e623fa") Tempo Vivo
+ObjectId("59b128da35a24e8500e623fb") E-Bike
 
 
-59b0f98cb4be98dd6e626e3b Kross Vento
-59b0f98cb4be98dd6e626e3c Trek Emonda
+59b128da35a24e8500e623ea,59b128da35a24e8500e623eb,59b128da35a24e8500e623ec,59b128da35a24e8500e623ed,59b128da35a24e8500e623ee,59b128da35a24e8500e623ef,59b128da35a24e8500e623f0,59b128da35a24e8500e623f1,59b128da35a24e8500e623f2,59b128da35a24e8500e623f3,59b128da35a24e8500e623f4,59b128da35a24e8500e623f5,59b128da35a24e8500e623f6,59b128da35a24e8500e623f7,59b128da35a24e8500e623f8,59b128da35a24e8500e623f9,59b128da35a24e8500e623fa,59b128da35a24e8500e623fb
 
-59b0f98cb4be98dd6e626e3d Orbea Onix
-22/09 - 29/09 1506066831000 - 1506671631000
-
-59b0f98cb4be98dd6e626e3e Tritan
-59b0f98cb4be98dd6e626e3f Scott Speedster
-59b0f98cb4be98dd6e626e40 Trek FX S5
-59b0f98cb4be98dd6e626e41 Specialized Allez
-59b0f98cb4be98dd6e626e42 Trek Zektor 3
-
-59b0f98cb4be98dd6e626e43 Kross Pulso 2
-13/09 - 18/09 1505289231000 - 1505721231000
-
-59b0f98cb4be98dd6e626e44 Trek 7.3 FX
-59b0f98cb4be98dd6e626e45 Scott Sportster
-59b0f98cb4be98dd6e626e46 Kross MTB Level
-59b0f98cb4be98dd6e626e47 Kross MTB Lea
-59b0f98cb4be98dd6e626e48 Specialized Sirrus
-59b0f98cb4be98dd6e626e49 Raleigh Straight
-59b0f98cb4be98dd6e626e4a Tempo Centro
-59b0f98cb4be98dd6e626e4b Tempo Vivo
-59b0f98cb4be98dd6e626e4c E-Bike
-
-1/09 - 2/09 1504252431000 - 1504338831000
 
