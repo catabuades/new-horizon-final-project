@@ -1,17 +1,17 @@
-var Bike = require(__base + '/models/Bike')
+// var Bike = require(__base + '/models/Bike')
 
-function handlerSearchHome (req, res) {
+// function handlerSearchHome (req, res) {
   // console.log(req.query)
 
-  var type = req.query.type
-  var { pickdate, dropdate } = req.query
-  req.session.dates.push({ dropdate, pickdate })
+  // var type = req.query.type
+  // var { pickdate, dropdate } = req.query
+  // req.session.dates.push({ dropdate, pickdate })
 
 // string date to time stamp
-  var stampPickUp = Date.parse(pickdate)
-  var stampDropOff = Date.parse(dropdate)
+  // var stampPickUp = Date.parse(pickdate)
+  // var stampDropOff = Date.parse(dropdate)
 
-  var len = req.session.cart.length
+  // var len = req.session.cart.length
 
 // // time stamp to human date
 //   var date1 = (new Date(pickdate)).toUTCString()
@@ -51,19 +51,19 @@ function handlerSearchHome (req, res) {
   //       })
   // }
 
-  if (type) {
-    Bike.find({'available': true, 'category': type})
-        .then(bikes => {
-          res.render('pages/search-results', { idPage: 'search-results', bikes, dropdate, pickdate, len })
-          // res.json(bikes)
-        })
-  } else {
-    Bike.find({'available': true})
-        .then(bikes => {
-          res.render('pages/search-results', { idPage: 'search-results', bikes, dropdate, pickdate, len })
-          // res.json(bikes)
-        })
-  }
-}
+//   if (type) {
+//     Bike.find({'available': true, 'category': type})
+//         .then(bikes => {
+//           res.render('pages/search-results', { idPage: 'search-results', bikes, dropdate, pickdate, len })
+//           // res.json(bikes)
+//         })
+//   } else {
+//     Bike.find({'available': true})
+//         .then(bikes => {
+//           res.render('pages/search-results', { idPage: 'search-results', bikes, dropdate, pickdate, len })
+//           // res.json(bikes)
+//         })
+//   }
+// }
 
-module.exports = handlerSearchHome
+// module.exports = handlerSearchHome

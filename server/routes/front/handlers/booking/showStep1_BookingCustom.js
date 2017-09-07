@@ -6,7 +6,6 @@ function showStep1_BookingCustom (req, res) {
   })
 
   var customBike = req.session.cart.reduce((acc, bike) => {
-    console.log('ppppppppp', bike.insurance)
     acc.push({ pedals: bike.pedals, size: bike.size, insurance: bike.insurance })
     return acc
   }, [])
@@ -16,7 +15,6 @@ function showStep1_BookingCustom (req, res) {
   })
 
   var dates = req.session.dates
-  console.log('dates req session', dates)
 
   var len = req.session.cart.length
 

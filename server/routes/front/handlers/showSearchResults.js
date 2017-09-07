@@ -46,20 +46,18 @@ function showSearchResults (req, res) {
   Bike.find(query)
     .populate('bookings')
     .then(bikes => {
-      console.log('bikes....')
-      console.log(bikes.length)
+      // console.log('bikes....')
+      // console.log(bikes.length)
       const filteredBikes = bikes.filter(function (bike) {
-        console.log(bike.title)
-        console.log(bike.bookings, 'hiugyg')
         const { startDate, endDate } = bike.bookings[0]
         const pickupIsInBookingRange = ((stampPickUp >= startDate) && (stampPickUp <= endDate))
         const dropOffIsInBookingRange = ((stampDropOff >= startDate) && (stampDropOff <= endDate))
-        console.log(`range booking between ${startDate} AND ${endDate}`)
-        console.log(`request booking between ${stampPickUp} AND ${stampDropOff}`)
+        // console.log(`range booking between ${startDate} AND ${endDate}`)
+        // console.log(`request booking between ${stampPickUp} AND ${stampDropOff}`)
         console.log(pickupIsInBookingRange)
         console.log(dropOffIsInBookingRange)
-        console.log(pickupIsInBookingRange || dropOffIsInBookingRange)
-        return !(pickupIsInBookingRange || dropOffIsInBookingRange)
+        // console.log(pickupIsInBookingRange || dropOffIsInBookingRange)
+        return pickupIsInBookingRange || dropOffIsInBookingRange
         // return (((stampPickUp && stampDropOff) < bike.bookings[0].startDate) || ((stampPickUp && stampDropOff) > bike.bookings[0].endDate))
       })
       console.log('filteredBikes....')
@@ -74,23 +72,6 @@ function showSearchResults (req, res) {
       res.render('pages/search-results', { idPage: 'search-results', categorizedBikes, parsedPickdate, parsedDropdate })
         // res.json(bikes)
     })
-
-  // db.posts.find( // query today up to tonight
-  // {'created_on': {'$gte': new Date(2012, 7, 14), '$lt': new Date(2012, 7, 15)}})
-
-  // if (req.body.type) {
-  //   Bike.find({ 'available': true, 'category': req.body.type })
-  //           .then(bikes => {
-  //             res.render('pages/search-results', { idPage: 'search-results', bikes })
-  //               // res.json(bikes)
-  //           })
-  // } else {
-  //   Bike.find({ 'available': true })
-  //           .then(bikes => {
-  //             res.render('pages/search-results', { idPage: 'search-results', bikes })
-  //               // res.json(bikes)
-  //           })
-  // }
 }
 
 module.exports = showSearchResults
