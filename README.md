@@ -79,10 +79,14 @@ The server part has multiple **API endpoints** using several routes:
 ---
 
 ## Demon
+```
 mongod --dbpath /Users/catabuadescoll/mongo/db
+```
 
 ---
+
 ## Add Bikes
+
 ```
 curl -H "Content-Type: application/json" -X POST -d '{ "title": "Kross Vento 7", "category": "road", "size": "M" }' localhost:3000/api/bikes
 
@@ -90,43 +94,65 @@ curl -H "Content-Type: application/json" -X POST -d '{ "title": "peugeout", "cat
 
 curl localhost:3000/api/bikes
 ```
+
 ---
 
 ### Import Bikes JSON
+
 ```
 mongoimport -d newHorizon -c bikes --jsonArray --file server/data/bikes.json
 ```
+
 ---
 
 ### Import Bikes mLAB
+
 ```
 mongoimport -h ds123614.mlab.com:23614 -d newhorizon -c bikes -u admin -p admin --jsonArray --file server/data/bikes.json
 ```
+
 ---
 
 ## Export JSON
+
 ```
 mongoexport -d newHorizon -c books -o server/data/books.json
 mongoexport -d newHorizon -c bikes -o server/data/bikes.json
 ```
+
 ---
 
 ## Add booking
+
 Add booking all bikes
 ```
 curl localhost:3000/api/book-bikes -H "Content-Type: application/json"  -X POST -d '{ "bikes": "59b128da35a24e8500e623ea,59b128da35a24e8500e623eb,59b128da35a24e8500e623ec,59b128da35a24e8500e623ed,59b128da35a24e8500e623ee,59b128da35a24e8500e623ef,59b128da35a24e8500e623f0,59b128da35a24e8500e623f1,59b128da35a24e8500e623f2,59b128da35a24e8500e623f3,59b128da35a24e8500e623f4,59b128da35a24e8500e623f5,59b128da35a24e8500e623f6,59b128da35a24e8500e623f7,59b128da35a24e8500e623f8,59b128da35a24e8500e623f9,59b128da35a24e8500e623fa,59b128da35a24e8500e623fb", "startDate": "2017-09-14", "endDate": "2017-09-17" }'
 ```
+
 Add booking Tritan
 ```
-curl localhost:3000/api/book-bikes -H "Content-Type: application/json"  -X POST -d '{ "bikes": "59b128da35a24e8500e623eb", "startDate": "2017-09-07", "endDate": "2017-09-16" }'
+curl localhost:3000/api/book-bikes -H "Content-Type: application/json"  -X POST -d '{ "bikes": "59b128da35a24e8500e623eb", "startDate": "2017-09-07", "endDate": "2017-09-10" }'
 ```
+
 Add booking mountain bikes Kross MTB Level and Kross MTB Lea
 ```
 curl localhost:3000/api/book-bikes -H "Content-Type: application/json"  -X POST -d '{ "bikes": "59b128da35a24e8500e623f5,59b128da35a24e8500e623f6", "startDate": "2017-09-30", "endDate": "2017-10-07" }'
 ```
+
+Add booking city bikes
+```
+curl localhost:3000/api/book-bikes -H "Content-Type: application/json"  -X POST -d '{ "bikes": "59b128da35a24e8500e623f9,59b128da35a24e8500e623fa", "startDate": "2017-10-05", "endDate": "2017-10-15" }'
+```
+
+Add booking Orbea, Trek Zektor, Kross Pulso
+```
+curl localhost:3000/api/book-bikes -H "Content-Type: application/json"  -X POST -d '{ "bikes": "59b128da35a24e8500e623ec,59b128da35a24e8500e623f1,59b128da35a24e8500e623f2", "startDate": "2017-09-18", "endDate": "2017-10-01" }'
+```
+
 ---
 
 ### Bike ID's
+
 ```
 ObjectId("59b128da35a24e8500e623ea") Trek Emonda
 ObjectId("59b128da35a24e8500e623eb") Tritan
