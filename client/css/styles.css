@@ -89,6 +89,10 @@ span.glyphicon.glyphicon-search {
   font-size: 27px;
   font-family: 'Roboto', sans-serif; }
 
+#search-results .btn.btn-primary {
+  font-weight: bold;
+  color: #000; }
+
 #search-results legend.h3 {
   padding-left: 15px;
   text-transform: uppercase; }

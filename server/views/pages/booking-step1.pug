@@ -49,17 +49,17 @@ block content
                   figure.pull-left.resume-image
                     img.media-object.img-rounded.img-responsive(style='background-image: url(' + bike[0].image + ')')
                 .col-md-8
-                  h4.h4.inline-block.list-group-item-heading #{bike.title}
+                  h4.h4.inline-block.list-group-item-heading #{bike[0].title}
                   h2.inline-block #{customBike[i].size}
                   p
                     span.bold Category:
-                    |  #{bike.category}
+                    |  #{bike[0].category}
                   p
                     span.bold Dates:
                     |  #{dates[0].pickdate} to #{dates[0].dropdate}
                   p
                     span.bold Description:
-                    |  #{bike.description}
+                    |  #{bike[0].description}
                   p
                     span.bold Pedals:
                     |  #{customBike[i].pedals}
@@ -69,5 +69,5 @@ block content
                   .price-resume
                     p Price: xxxx
                   .remove-button.text-center
-                    button.btn.remove.pull-right(data-id=bike._id, type='button') Remove
+                    button.btn.remove.pull-right(data-id=bike[0]._id, type='button') Remove
       a.btn.btn-success.pull-right(href='/step_2') Next Step
