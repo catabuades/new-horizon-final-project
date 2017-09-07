@@ -23,7 +23,7 @@ You need to have installed [NodeJS](https://nodejs.org/) with [npm](https://www.
 
 ---
 
-### To instal dependencies:
+### To install dependencies:
 
 ```
 $ npm install 
@@ -49,7 +49,7 @@ $npm run dev
 
 The server part has multiple **API endpoints** using several routes:
 
-- `/api` -> Serves the internal data of the users and players.
+- `/api` -> Serves the internal data of the bikes and bookings.
 
 ---
 
@@ -81,7 +81,7 @@ The server part has multiple **API endpoints** using several routes:
 ## Demon
 mongod --dbpath /Users/catabuadescoll/mongo/db
 
-
+---
 ## Add Bikes
 ```
 curl -H "Content-Type: application/json" -X POST -d '{ "title": "Kross Vento 7", "category": "road", "size": "M" }' localhost:3000/api/bikes
@@ -90,15 +90,20 @@ curl -H "Content-Type: application/json" -X POST -d '{ "title": "peugeout", "cat
 
 curl localhost:3000/api/bikes
 ```
+---
+
 ### Import Bikes JSON
 mongoimport -d newHorizon -c bikes --jsonArray --file server/data/bikes.json
+---
 
 ### Import Bikes mLAB
 mongoimport -h ds123614.mlab.com:23614 -d newhorizon -c bikes -u admin -p admin --jsonArray --file server/data/bikes.json
+---
 
 ## Export JSON
 mongoexport -d newHorizon -c books -o server/data/books.json
 mongoexport -d newHorizon -c bikes -o server/data/bikes.json
+---
 
 ## Add booking
 Add booking all bikes
@@ -113,6 +118,7 @@ Add booking mountain bikes Kross MTB Level and Kross MTB Lea
 ```
 curl localhost:3000/api/book-bikes -H "Content-Type: application/json"  -X POST -d '{ "bikes": "59b128da35a24e8500e623f5,59b128da35a24e8500e623f6", "startDate": "2017-09-30", "endDate": "2017-10-07" }'
 ```
+---
 
 ### Bike ID's
 ObjectId("59b128da35a24e8500e623ea") Trek Emonda
