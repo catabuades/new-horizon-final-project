@@ -130,8 +130,6 @@ mongoimport -h ds123614.mlab.com:23614 -d newhorizon -c bikes -u admin -p admin 
 mongoimport -h ds123614.mlab.com:23614 -d newhorizon -c books -u admin -p admin --jsonArray --file server/data/books.json
 ```
 
-mongoimport -h ds123614.mlab.com:23614 -d newhorizon -c bookings -u <user> -p <password> --file <input file>
-
 ---
 
 ### Manual add

@@ -20,7 +20,7 @@ block content
             .col-sm-6.col-md-3
               .zoomIt.thumbnail
                 figure.pull-left
-                  a(href='bike-info.html')
+                  a(href=`/bike-info/${bike.title}`)
                     img.media-object.img-rounded.img-responsive(style='background-image: url(' + bike.image + ')')
                 .caption
                   h4.h4 #{ bike.title }
