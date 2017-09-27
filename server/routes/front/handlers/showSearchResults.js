@@ -12,7 +12,7 @@ function showSearchResults (req, res) {
     // FILTERS CATEGORY
 
   const { pickdate, dropdate } = req.query
-  req.session.dates.push({ pickdate, dropdate })
+  req.session.dates = { pickdate, dropdate }
 
   const queryParameters = Object.keys(req.query)
   const aFilters = queryParameters.reduce((acc, param) => {
