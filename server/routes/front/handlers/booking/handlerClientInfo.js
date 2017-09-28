@@ -5,7 +5,6 @@ function handlerClientInfo (req, res) {
   const { name, surname, phoneNumber, email, country, hotel, comments } = req.body
   console.log(req.session.dates)
   const { pickdate, dropdate } = req.session.dates
-  
 
   const customBike = req.session.cart.map((bike) => {
     return `Bike:${bike.title}, Size:${bike.size}, Pedals:${bike.pedals}, Insurance: ${bike.insurance}, ID:${bike.bikeId}`

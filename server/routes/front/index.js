@@ -18,6 +18,8 @@ const showStep4BookingConfirmation = require('./handlers/booking/showStep4_Booki
 const handlerClientInfo = require('./handlers/booking/handlerClientInfo')
 const deleteBike = require('./handlers/booking/handlerDelete')
 
+const handlerSendBookings = require('./handlers/booking/handlerGetBooks')
+
 router.get('/', showHome)
 router.get('/search-results', showSearchResults)
 router.get('/contact', showContact)
@@ -34,5 +36,7 @@ router.get('/step_4', showStep4BookingConfirmation)
 
 router.post('/clientInfo', handlerClientInfo)
 router.delete('/cart/:bikeId', deleteBike)
+
+router.get('/api/getBooks', handlerSendBookings)
 
 module.exports = router

@@ -18,27 +18,11 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Stephanie Sulzen</td>
-                            <td>19/09/17</td>
-                            <td>25/09/17</td>
-                            <td>75€ (30€)</td>
-                            <td>
-                                <p class='inline-block'>WEB</p>
-                            </td>
-                            <td><span class="glyphicon glyphicon-ok"></span></td>
-                            <td>
-                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-eye-open"></span></button>
-                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-print"></span></button>
-                                <button type="button" class="lista-reservas btn btn-default"><span class="glyphicon glyphicon-trash"></span></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Stephanie Sulzen</td>
-                            <td>19/09/17</td>
-                            <td>25/09/17</td>
+                        <tr ng-repeat="book in books">
+                            <td>{{$index+1}}</td>
+                            <td>{{book.name + ' ' + book.surname}}</td>
+                            <td>{{book.startDate}}</td>
+                            <td>{{book.endDate}}</td>
                             <td>75€ (30€)</td>
                             <td>
                                 <p class='inline-block'>WEB</p>
